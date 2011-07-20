@@ -43,7 +43,7 @@
 	
 	
 	
-	SliderViewController *lController = [[SliderViewController alloc]initWithPageCount:24];
+	SliderViewController *lController = [[SliderViewController alloc]initWithPageCount:556];
 	lController.view.frame = window.bounds;
 	
 	

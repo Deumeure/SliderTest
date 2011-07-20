@@ -29,6 +29,7 @@
 	mPageCount = pPageCount;
 	mCurrentPage = 0;
 	
+	mLockObject = [[NSObject alloc]init];
 	return self;
 }
 
@@ -108,16 +109,19 @@
 
 -(void)setImage:(UIImage*)lImage forIndex:(uint)pIndex
 {
+		
 	UIScrollView* lScrollView  =(UIScrollView*) [mScrollView viewWithTag:pIndex];
-	
-
+		
+		
 	if(lScrollView == nil)
 		return;
 	
 	UIImageView* lImageView = (UIImageView*)[lScrollView viewWithTag:101];
-	
-	NSLog(@"seting image");
+		
+
 	lImageView.image = lImage;
+
+	
 }
 
 
@@ -129,29 +133,33 @@
 -(void)unCachePage:(uint)pPageIndex
 {
 	
-	if(pPageIndex <= 0 || pPageIndex >mPageCount)
-		return;
 	
-	//On cherche la srollView a l'index
 	
-	UIScrollView* lScrollView  =(UIScrollView*) [mScrollView viewWithTag:pPageIndex];
-	
-	//Déja uncache ?? on quitte
-	
-	if(lScrollView == nil)
-		return;
-	
-	NSLog(@"*REMOVE scrollview %d",lScrollView);
-	
-	//On remove la scrollView
-	[lScrollView removeFromSuperview];
+		if(pPageIndex <= 0 || pPageIndex >mPageCount)
+			return;
+		
+		//On cherche la srollView a l'index
+		
+		UIScrollView* lScrollView  =(UIScrollView*) [mScrollView viewWithTag:pPageIndex];
+		
+		//Déja uncache ?? on quitte
+		
+		if(lScrollView == nil)
+			return;
+		
+		NSLog(@"*REMOVE scrollview %d",lScrollView);
+		
+		
+		[self setImage:nil forIndex:pPageIndex];
+		
+		//On remove la scrollView
+		[lScrollView removeFromSuperview];
 	
 	
 }
 
 -(void)cachePage:(uint)pPageIndex
 {
-
 	
 	if(pPageIndex <= 0 || pPageIndex >mPageCount)
 		return;
@@ -168,7 +176,7 @@
 		NSLog(@"DEJA CACHE");
 		
 		return;
-	
+		
 	}
 	//On créé la scrollview
 	lScrollView = [[[UIScrollView alloc]initWithFrame:CGRectMake(768 * (pPageIndex-1), 0, 768, 1024)] autorelease];
@@ -183,18 +191,18 @@
 	//On l'ajoute
 	[mScrollView addSubview:lScrollView];
 	
-		NSLog(@"*ADD scrollview %d",lScrollView);
-
+	NSLog(@"*ADD scrollview %d",lScrollView);
+	
 	//On demande l'image au datasource
 	[mDataSource sliderViewController:self cachePageAtIndex:pPageIndex];
+		
+	
 }
 
 
 
 -(void)pagePlus
 {
-	NSLog(@"PagePlus");
-	
 	//On decache la page la plus en arriere
 	[self unCachePage:mCurrentPage - CACHE_NUM];
 	
@@ -244,8 +252,8 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-	//NSLog(@"scrollViewDidScroll");
 	
+
 	uint lCurrentPage = (uint) scrollView.contentOffset.x  /768 +1;
 	
 		if (mCurrentPage > lCurrentPage)
@@ -257,33 +265,19 @@
 	{
 		[self pagePlus];
 	}
-	
-//	if (mCurrentPage != lCurrentPage)
-//	{
-//		//mCurrentPage = lCurrentPage;
-//		NSLog(@"lPage %d",lCurrentPage);
-//		[self raisePageChange];
-//		
-//	}
-	//mScrollView.scrollEnabled = NO;
-	//[self performSelector:@selector(pppp) withObject:nil afterDelay:0.5];
-	
+
 }
 
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
-{
-	NSLog(@"scrollViewWillBeginDragging");
-}
-
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
-{
-//	uint lPage = (uint) scrollView.contentOffset.x  /768;
-//	
-//	
-//		NSLog(@"X %f    Width %f",  scrollView.contentOffset.x,scrollView.contentSize.width );
-//	NSLog(@"lPage %d",lPage);
-}
-
+//- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+//{
+//
+//}
+//
+//- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+//{
+//
+//}
+//
 
 
 
@@ -299,7 +293,7 @@
 @synthesize dataSource = mDataSource;
 @synthesize delegate =mDelegate;
 @synthesize pageCount = mPageCount;
-
+@synthesize currentPage = mCurrentPage;
 @end
 
 

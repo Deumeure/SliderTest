@@ -9,14 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "SliderViewController.h"
 #import "PDFLoader.h"
-#import "PDFImageLoader.h"
+#import "PDFPageOperation.h"
 #import "SliderViewController.h"
 
-@interface SliderDelegate : NSObject <SliderViewControllerDelegate,SliderViewControllerDataSource,PDFImageLoaderDelegate>
+@interface SliderDelegate : NSObject <SliderViewControllerDelegate,SliderViewControllerDataSource,PDFPageOperationDelegate>
 {
 
 	PDFLoader* mLoader;
-	PDFImageLoader* mImageloader;
+	NSOperationQueue* mPageLoadingQueue;
 	
 	SliderViewController* mSliderController;
 	

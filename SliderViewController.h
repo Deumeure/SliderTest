@@ -25,6 +25,8 @@
 	id<SliderViewControllerDataSource> mDataSource;
 	id<SliderViewControllerDelegate> mDelegate;
 	
+	
+	NSObject* mLockObject;
 }
 
 -(id)initWithPageCount:(uint)pPageCount;
@@ -36,7 +38,7 @@
 @property(nonatomic,assign)id<SliderViewControllerDelegate> delegate;
 
 @property(nonatomic,assign)uint pageCount;
-
+@property(nonatomic,assign)uint currentPage;
 @end
 
 

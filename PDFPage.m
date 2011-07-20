@@ -13,6 +13,7 @@
 
 -(id)initWithPDFPage:(CGPDFPageRef)pPage pageIndex:(uint)pPageIndex
 {
+	//TODO vier le retain
 	mPDFPage = 	CGPDFPageRetain(pPage);
 	mPageIndex = pPageIndex;
 
@@ -89,7 +90,24 @@ CGAffineTransform aspectFit(CGRect innerRect, CGRect outerRect) {
 		
 		rect = CGRectIntegral(rect);
 		
-		CGContextRef ctx = [GraphicsUtils newRGBABitmapContextWithSize:CGSizeMake(pImageRect.size.width, pImageRect.size.height)];
+		//CGContextRef ctx = [GraphicsUtils newRGBABitmapContextWithSize:CGSizeMake(pImageRect.size.width, pImageRect.size.height)];
+		
+		
+		
+		CGSize cachePageSize = CGSizeMake(pImageRect.size.width, pImageRect.size.height);
+		
+		
+		CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+		CGContextRef ctx = CGBitmapContextCreate(NULL, 
+										cachePageSize.width, 
+										cachePageSize.height, 
+										8,						/* bits per component*/
+										cachePageSize.width * 4, 	/* bytes per row */
+										colorSpace, 
+										kCGImageAlphaPremultipliedLast);
+		CGColorSpaceRelease(colorSpace);
+
+		
 		
 		CGContextSetRGBFillColor(ctx, 255, 255, 255, 1);
 		
@@ -146,6 +164,8 @@ CGAffineTransform aspectFit(CGRect innerRect, CGRect outerRect) {
 
 -(void)dealloc
 {
+	
+//	NSLog(@"mPDFPage retain count %d",CFGetRetainCount(mPDFPage));
 	CGPDFPageRelease(mPDFPage);
 	CGPDFPageRelease(mPDFPage2);
 	

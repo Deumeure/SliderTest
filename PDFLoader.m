@@ -44,7 +44,8 @@
 -(PDFPage*)pageAtIndex:(uint)pPageIndex
 {
 	CGPDFPageRef page = CGPDFDocumentGetPage(mPDF, pPageIndex );
-	[(id)page autorelease];
+	
+	//[(id)page autorelease];
 	return [[[PDFPage alloc]initWithPDFPage:page pageIndex:pPageIndex] autorelease];
 }
 

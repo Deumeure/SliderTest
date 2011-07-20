@@ -20,6 +20,9 @@
 		D92EA1AD13D470F70026D8B1 /* PDFPage.m in Sources */ = {isa = PBXBuildFile; fileRef = D92EA1AC13D470F70026D8B1 /* PDFPage.m */; };
 		D92EA1D613D483530026D8B1 /* GraphicsUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D92EA1D513D483530026D8B1 /* GraphicsUtils.m */; };
 		D92EA1FC13D487600026D8B1 /* mobile.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D92EA1FB13D487600026D8B1 /* mobile.pdf */; };
+		D98BE48013D704E500B35FCD /* PDFPageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D98BE47F13D704E500B35FCD /* PDFPageOperation.m */; };
+		D98BE60213D72B7900B35FCD /* CachingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D98BE60113D72B7900B35FCD /* CachingTool.m */; };
+		D98BE60513D72F6000B35FCD /* NSFileUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = D98BE60413D72F6000B35FCD /* NSFileUtility.m */; };
 		D98F28F813D57078005BFC94 /* SliderDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D98F28F713D57078005BFC94 /* SliderDelegate.m */; };
 		D98F2DEA13D58AAF005BFC94 /* PDFImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D98F2DE413D58AAF005BFC94 /* PDFImageLoader.m */; };
 		D98F2DEB13D58AAF005BFC94 /* BlockingQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D98F2DE713D58AAF005BFC94 /* BlockingQueue.m */; };
@@ -49,6 +52,12 @@
 		D92EA1D413D483530026D8B1 /* GraphicsUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicsUtils.h; sourceTree = "<group>"; };
 		D92EA1D513D483530026D8B1 /* GraphicsUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphicsUtils.m; sourceTree = "<group>"; };
 		D92EA1FB13D487600026D8B1 /* mobile.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = mobile.pdf; sourceTree = "<group>"; };
+		D98BE47E13D704E500B35FCD /* PDFPageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFPageOperation.h; sourceTree = "<group>"; };
+		D98BE47F13D704E500B35FCD /* PDFPageOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFPageOperation.m; sourceTree = "<group>"; };
+		D98BE60013D72B7900B35FCD /* CachingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CachingTool.h; sourceTree = "<group>"; };
+		D98BE60113D72B7900B35FCD /* CachingTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CachingTool.m; sourceTree = "<group>"; };
+		D98BE60313D72F6000B35FCD /* NSFileUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSFileUtility.h; sourceTree = "<group>"; };
+		D98BE60413D72F6000B35FCD /* NSFileUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSFileUtility.m; sourceTree = "<group>"; };
 		D98F28F613D57078005BFC94 /* SliderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderDelegate.h; sourceTree = "<group>"; };
 		D98F28F713D57078005BFC94 /* SliderDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderDelegate.m; sourceTree = "<group>"; };
 		D98F2DE313D58AAF005BFC94 /* PDFImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFImageLoader.h; sourceTree = "<group>"; };
@@ -163,6 +172,8 @@
 		D92EA1D313D483460026D8B1 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				D98BE60313D72F6000B35FCD /* NSFileUtility.h */,
+				D98BE60413D72F6000B35FCD /* NSFileUtility.m */,
 				D98F2DE513D58AAF005BFC94 /* BlockingQueue */,
 				D98F2DE813D58AAF005BFC94 /* InvocationUtil.h */,
 				D98F2DE913D58AAF005BFC94 /* InvocationUtil.m */,
@@ -177,6 +188,10 @@
 			children = (
 				D98F2DE313D58AAF005BFC94 /* PDFImageLoader.h */,
 				D98F2DE413D58AAF005BFC94 /* PDFImageLoader.m */,
+				D98BE47E13D704E500B35FCD /* PDFPageOperation.h */,
+				D98BE47F13D704E500B35FCD /* PDFPageOperation.m */,
+				D98BE60013D72B7900B35FCD /* CachingTool.h */,
+				D98BE60113D72B7900B35FCD /* CachingTool.m */,
 			);
 			path = ImageLoader;
 			sourceTree = "<group>";
@@ -263,6 +278,9 @@
 				D98F2DEA13D58AAF005BFC94 /* PDFImageLoader.m in Sources */,
 				D98F2DEB13D58AAF005BFC94 /* BlockingQueue.m in Sources */,
 				D98F2DEC13D58AAF005BFC94 /* InvocationUtil.m in Sources */,
+				D98BE48013D704E500B35FCD /* PDFPageOperation.m in Sources */,
+				D98BE60213D72B7900B35FCD /* CachingTool.m in Sources */,
+				D98BE60513D72F6000B35FCD /* NSFileUtility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +323,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D2CBB79E-3D9D-41E5-B6E1-87539FDD985F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "850EFFA3-E577-461B-8BB6-625F3889EA0F";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
