@@ -1,7 +1,7 @@
 Ttestslider
 v7
-r0
-t332872080.101497
+r3
+t332874001.373861
 cCheck dependencies
 cCpResource build/Debug-iphoneos/testslider.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
 cProcessInfoPlistFile /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/Info.plist testslider-Info.plist
@@ -29,7 +29,6 @@ cCompileC build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/
 cCompileC build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/AppDelegate_iPad.o /Users/Deumeure/Documents/Repository/testSlide/iPad/AppDelegate_iPad.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/SliderViewController.o /Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/PDFLoader.o /Users/Deumeure/Documents/Repository/testSlide/PDFLoader.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider normal armv6
 cCompileC build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/PDFPage.o /Users/Deumeure/Documents/Repository/testSlide/PDFPage.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/GraphicsUtils.o /Users/Deumeure/Documents/Repository/testSlide/GraphicsUtils.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/SliderDelegate.o /Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
@@ -39,6 +38,7 @@ cCompileC build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/
 cCompileC build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/PDFPageOperation.o /Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFPageOperation.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/CachingTool.o /Users/Deumeure/Documents/Repository/testSlide/ImageLoader/CachingTool.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/NSFileUtility.o /Users/Deumeure/Documents/Repository/testSlide/NSFileUtility.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider normal armv6
 cLd /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider normal armv7
 cCreateUniversalBinary /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/testslider normal "armv6 armv7"
 cGenerateDSYMFile /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app.dSYM /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/testslider
@@ -152,9 +152,9 @@ i<Foundation/Foundation.h>
 i"PDFPage.h"
 
 N/Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFPageOperation.m
-c000000004E27018F000000000000065D
-t1311179151
-s1629
+c000000004E2709330000000000000660
+t1311181107
+s1632
 i"PDFPageOperation.h"
 i"CachingTool.h"
 
@@ -256,11 +256,11 @@ s5486
 i"SliderViewController.h"
 
 N/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app
-t1311179280
+t1311181199
 s408
 
 N/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app.dSYM
-t1311179279
+t1311181199
 s102
 
 N/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/Info.plist
@@ -292,8 +292,8 @@ t1311179277
 s70022721
 
 N/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/testslider
-t1311179279
-s206848
+t1311181198
+s196484
 
 N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/AppDelegate_iPad.o
 t1311179278
@@ -336,7 +336,7 @@ t1311179278
 s18204
 
 N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/PDFPageOperation.o
-t1311179278
+t1311181196
 s16092
 
 N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/PDGFPageOperation.o
@@ -356,7 +356,7 @@ t1311179278
 s6476
 
 N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider
-t1311179278
+t1311181198
 s99556
 
 N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider.LinkFileList
@@ -405,7 +405,7 @@ t1311179279
 s17220
 
 N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/PDFPageOperation.o
-t1311179279
+t1311181197
 s15728
 
 N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/PDGFPageOperation.o
@@ -425,7 +425,7 @@ t1311179278
 s6460
 
 N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider
-t1311179279
+t1311181198
 s89988
 
 N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider.LinkFileList
@@ -1041,15 +1041,15 @@ lSLF07#2@72"Analyze /Users/Deumeure/Documents/testslider/iPhone/AppDelegate_iPho
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies332872075#332872075#0(105"[BWARN]warning: iPad only apps should not include an armv6 architecture (current ARCHS = "armv6 armv7").1(22@97"warning: iPad only apps should not include an armv6 architecture (current ARCHS = "armv6 armv7").332872075#18446744073709551615#0#0(1@0"0(0#1#0"8741301152#0"0#
+lSLF07#2@18"Check dependencies332873994#332873994#0(105"[BWARN]warning: iPad only apps should not include an armv6 architecture (current ARCHS = "armv6 armv7").1(22@97"warning: iPad only apps should not include an armv6 architecture (current ARCHS = "armv6 armv7").332873994#18446744073709551615#0#0(1@0"0(0#1#0"8247620834010738688#0"0#
 
 CCodeSign /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app
-s332872079.461351
-e332872080.101443
-r1
+s332873999.825257
+e332874001.373820
+r0
 xCodeSign
 x/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app
-lSLF07#2@44"CodeSign build/Debug-iphoneos/testslider.app332872079#332872080#0(0"0(0#0#82"/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app8738089984#696"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Laurent Morin (BYQ3NDYGQ7)" --resource-rules=/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/ResourceRules.plist --entitlements /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider.xcent /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app0#
+lSLF07#2@44"CodeSign build/Debug-iphoneos/testslider.app332873999#332874001#0(0"0(0#0#82"/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app8606053152#758"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Laurent Morin (BYQ3NDYGQ7)" --resource-rules=/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/ResourceRules.plist --entitlements /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider.xcent /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app2#
 
 CCodeSign /Users/Deumeure/Documents/testslider/build/Debug-iphoneos/testslider.app
 s332779715.711126
@@ -1307,8 +1307,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@54"Compile /Users/Deumeure/Documents/testslider/PDFPage.m332779715#332779715#0(0"0(0#0#46"/Users/Deumeure/Documents/testslider/PDFPage.m8636816192#1768"    cd /Users/Deumeure/Documents/testslider    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/testslider/build/Debug-iphoneos -I/Users/Deumeure/Documents/testslider/build/Debug-iphoneos/include -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/DerivedSources/armv6 -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-gbbuliphewlrrtgvpliaakdheyll/testslider_Prefix.pch -c /Users/Deumeure/Documents/testslider/PDFPage.m -o /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/PDFPage.o0#
 
 CCompileC build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/PDFPageOperation.o /Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFPageOperation.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s332872078.664945
-e332872078.757467
+s332873994.773584
+e332873996.941913
 r1
 xCompileC
 xbuild/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/PDFPageOperation.o
@@ -1317,7 +1317,7 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@85"Compile /Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFPageOperation.m332872078#332872078#0(0"0(0#0#77"/Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFPageOperation.m8747992064#1908"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos -I/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/include -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/DerivedSources/armv6 -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-dgxarhwfgykhyhdzuekxsoudnneh/testslider_Prefix.pch -c /Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFPageOperation.m -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/PDFPageOperation.o0#
+lSLF07#2@85"Compile /Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFPageOperation.m332873994#332873996#0(0"0(0#0#77"/Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFPageOperation.m8319383698887823360#1970"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos -I/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/include -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/DerivedSources/armv6 -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-dgxarhwfgykhyhdzuekxsoudnneh/testslider_Prefix.pch -c /Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFPageOperation.m -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/PDFPageOperation.o0#
 
 CCompileC build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/PDGFPageOperation.o /Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDGFPageOperation.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 s332859510.471927
@@ -1678,8 +1678,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@54"Compile /Users/Deumeure/Documents/testslider/PDFPage.m332779715#332779715#0(0"0(0#0#46"/Users/Deumeure/Documents/testslider/PDFPage.m8643134816#1768"    cd /Users/Deumeure/Documents/testslider    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/testslider/build/Debug-iphoneos -I/Users/Deumeure/Documents/testslider/build/Debug-iphoneos/include -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/DerivedSources/armv7 -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-gmugqwoiunltetggctbzytrzusas/testslider_Prefix.pch -c /Users/Deumeure/Documents/testslider/PDFPage.m -o /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/PDFPage.o0#
 
 CCompileC build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/PDFPageOperation.o /Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFPageOperation.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s332872079.131221
-e332872079.225733
+s332873994.898359
+e332873997.362356
 r1
 xCompileC
 xbuild/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/PDFPageOperation.o
@@ -1688,7 +1688,7 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@85"Compile /Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFPageOperation.m332872079#332872079#0(0"0(0#0#77"/Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFPageOperation.m8751286624#1908"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos -I/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/include -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/DerivedSources/armv7 -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-eknqnavmxqcowlhaynagkpveacrc/testslider_Prefix.pch -c /Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFPageOperation.m -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/PDFPageOperation.o0#
+lSLF07#2@85"Compile /Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFPageOperation.m332873994#332873997#0(0"0(0#0#77"/Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFPageOperation.m8606321056#1970"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos -I/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/include -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/DerivedSources/armv7 -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-eknqnavmxqcowlhaynagkpveacrc/testslider_Prefix.pch -c /Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFPageOperation.m -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/PDFPageOperation.o0#
 
 CCompileC build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/PDGFPageOperation.o /Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDGFPageOperation.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 s332859510.474494
@@ -1852,14 +1852,14 @@ xmobile.pdf
 lSLF07#2@15"Copy mobile.pdf332872075#332872077#0(0"0(0#0#57"/Users/Deumeure/Documents/Repository/testSlide/mobile.pdf8715873920#481"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Deumeure/Documents/Repository/testSlide/mobile.pdf /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app0#
 
 CCreateUniversalBinary /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/testslider normal "armv6 armv7"
-s332872079.339463
-e332872079.360949
+s332873998.674721
+e332873998.803224
 r1
 xCreateUniversalBinary
 x/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/testslider
 xnormal
 xarmv6 armv7
-lSLF07#2@89"CreateUniversalBinary build/Debug-iphoneos/testslider.app/testslider normal "armv6 armv7"332872079#332872079#0(0"0(0#0#58"/Users/Deumeure/Documents/Repository/testSlide/armv6 armv78744015008#574"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider -output /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/testslider0#
+lSLF07#2@89"CreateUniversalBinary build/Debug-iphoneos/testslider.app/testslider normal "armv6 armv7"332873998#332873998#0(0"0(0#0#58"/Users/Deumeure/Documents/Repository/testSlide/armv6 armv78603387552#636"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/lipo -create /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider -output /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/testslider0#
 
 CCreateUniversalBinary /Users/Deumeure/Documents/testslider/build/Debug-iphoneos/testslider.app/testslider normal "armv6 armv7"
 s332779715.670558
@@ -1872,13 +1872,13 @@ xarmv6 armv7
 lSLF07#2@89"CreateUniversalBinary build/Debug-iphoneos/testslider.app/testslider normal "armv6 armv7"332779715#332779715#0(0"0(0#0#48"/Users/Deumeure/Documents/testslider/armv6 armv78680696960#534"    cd /Users/Deumeure/Documents/testslider    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider -output /Users/Deumeure/Documents/testslider/build/Debug-iphoneos/testslider.app/testslider0#
 
 CGenerateDSYMFile /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app.dSYM /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/testslider
-s332872079.361052
-e332872079.412890
+s332873998.803325
+e332873999.699317
 r1
 xGenerateDSYMFile
 x/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app.dSYM
 x/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/testslider
-lSLF07#2@104"GenerateDSYMFile build/Debug-iphoneos/testslider.app.dSYM build/Debug-iphoneos/testslider.app/testslider332872079#332872079#0(0"0(0#0#93"/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/testslider8743116704#395"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/testslider -o /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app.dSYM0#
+lSLF07#2@104"GenerateDSYMFile build/Debug-iphoneos/testslider.app.dSYM build/Debug-iphoneos/testslider.app/testslider332873998#332873999#0(0"0(0#0#93"/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/testslider8606350464#457"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/testslider -o /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app.dSYM0#
 
 CGenerateDSYMFile /Users/Deumeure/Documents/testslider/build/Debug-iphoneos/testslider.app.dSYM /Users/Deumeure/Documents/testslider/build/Debug-iphoneos/testslider.app/testslider
 s332779715.674482
@@ -1890,24 +1890,24 @@ x/Users/Deumeure/Documents/testslider/build/Debug-iphoneos/testslider.app/testsl
 lSLF07#2@104"GenerateDSYMFile build/Debug-iphoneos/testslider.app.dSYM build/Debug-iphoneos/testslider.app/testslider332779715#332779715#0(0"0(0#0#83"/Users/Deumeure/Documents/testslider/build/Debug-iphoneos/testslider.app/testslider8679384032#365"    cd /Users/Deumeure/Documents/testslider    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/Deumeure/Documents/testslider/build/Debug-iphoneos/testslider.app/testslider -o /Users/Deumeure/Documents/testslider/build/Debug-iphoneos/testslider.app.dSYM0#
 
 CLd /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider normal armv6
-s332872078.908891
-e332872078.999405
+s332873996.942078
+e332873998.674042
 r1
 xLd
 x/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider
 xnormal
 xarmv6
-lSLF07#2@138"Link /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider332872078#332872079#0(0"0(0#0#0"8750518912#917"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos -filelist /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider.LinkFileList -dead_strip -miphoneos-version-min=4.2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider0#
+lSLF07#2@138"Link /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider332873996#332873998#0(0"0(0#0#0"8603783296#979"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos -filelist /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider.LinkFileList -dead_strip -miphoneos-version-min=4.2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider0#
 
 CLd /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider normal armv7
-s332872079.309509
-e332872079.339359
+s332873997.362482
+e332873998.674583
 r1
 xLd
 x/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider
 xnormal
 xarmv7
-lSLF07#2@138"Link /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider332872079#332872079#0(0"0(0#0#0"8751274304#917"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos -filelist /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider.LinkFileList -dead_strip -miphoneos-version-min=4.2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider0#
+lSLF07#2@138"Link /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider332873997#332873998#0(0"0(0#0#0"8606067264#979"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos -filelist /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider.LinkFileList -dead_strip -miphoneos-version-min=4.2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider0#
 
 CLd /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider normal armv6
 s332779715.638524
@@ -2065,12 +2065,12 @@ x/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/test
 lSLF07#2@184"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist build/testslider.build/Debug-iphoneos/testslider.build/testslider.xcent332778666#332778666#0(0"0(0#0#108"/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/testslider.xcent8670787488#437"    cd /Users/Deumeure/Documents/testslider    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist -entitlements -format xml -o /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/testslider.xcent0#
 
 CTouch /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app
-s332872079.449372
-e332872079.452236
+s332873999.699487
+e332873999.825107
 r1
 xTouch
 x/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app
-lSLF07#2@88"Touch /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app332872079#332872079#0(0"0(0#0#0"8741001632#283"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app0#
+lSLF07#2@88"Touch /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app332873999#332873999#0(0"0(0#0#0"8606543328#345"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app0#
 
 CTouch /Users/Deumeure/Documents/testslider/build/Debug-iphoneos/testslider.app
 s332779715.708861

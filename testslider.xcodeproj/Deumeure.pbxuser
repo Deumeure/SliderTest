@@ -31,7 +31,7 @@
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = D92EA17213D44BF40026D8B1 /* testslider */;
-		activeSDKPreference = iphoneos4.2;
+		activeSDKPreference = iphonesimulator4.2;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* testslider */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* testslider */,
@@ -134,6 +134,8 @@
 			D99032F413D740AF00E8DA3B /* PBXTextBookmark */ = D99032F413D740AF00E8DA3B /* PBXTextBookmark */;
 			D99032F613D740B800E8DA3B /* PBXTextBookmark */ = D99032F613D740B800E8DA3B /* PBXTextBookmark */;
 			D99032F713D740B800E8DA3B /* PBXTextBookmark */ = D99032F713D740B800E8DA3B /* PBXTextBookmark */;
+			D99032FC13D7411900E8DA3B /* PBXTextBookmark */ = D99032FC13D7411900E8DA3B /* PBXTextBookmark */;
+			D99032FD13D7411900E8DA3B /* PBXTextBookmark */ = D99032FD13D7411900E8DA3B /* PBXTextBookmark */;
 			D9C49FEF13D5C72900ED05BD = D9C49FEF13D5C72900ED05BD /* PBXTextBookmark */;
 			D9C49FF013D5C72900ED05BD = D9C49FF013D5C72900ED05BD /* PBXTextBookmark */;
 			D9C49FF313D5C72900ED05BD = D9C49FF313D5C72900ED05BD /* PBXTextBookmark */;
@@ -231,7 +233,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {936, 2314}}";
 			sepNavSelRange = "{4280, 21}";
-			sepNavVisRange = "{3705, 712}";
+			sepNavVisRange = "{3705, 709}";
 			sepNavWindowFrame = "{{153, 339}, {750, 558}}";
 		};
 	};
@@ -311,8 +313,8 @@
 	D98BE47F13D704E500B35FCD /* PDFPageOperation.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1311, 1365}}";
-			sepNavSelRange = "{1203, 0}";
-			sepNavVisRange = "{398, 809}";
+			sepNavSelRange = "{435, 0}";
+			sepNavVisRange = "{398, 805}";
 			sepNavWindowFrame = "{{84, 402}, {750, 558}}";
 		};
 	};
@@ -735,6 +737,26 @@
 		rLoc = 4280;
 		rType = 0;
 		vrLen = 712;
+		vrLoc = 3705;
+	};
+	D99032FC13D7411900E8DA3B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D98BE47F13D704E500B35FCD /* PDFPageOperation.m */;
+		name = "PDFPageOperation.m: 31";
+		rLen = 0;
+		rLoc = 435;
+		rType = 0;
+		vrLen = 805;
+		vrLoc = 398;
+	};
+	D99032FD13D7411900E8DA3B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D92EA1AC13D470F70026D8B1 /* PDFPage.m */;
+		name = "PDFPage.m: 168";
+		rLen = 21;
+		rLoc = 4280;
+		rType = 0;
+		vrLen = 709;
 		vrLoc = 3705;
 	};
 	D9C49FEF13D5C72900ED05BD /* PBXTextBookmark */ = {
