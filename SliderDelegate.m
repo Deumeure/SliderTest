@@ -39,14 +39,14 @@
 
 
 
--(void)sliderViewController:(SliderViewController*)pController cachePageAtIndex:(uint)pPageIndex andIndex:(uint)pPageIndex2
+-(void)sliderViewController:(SliderViewController*)pController cachePageAtIndex:(uint)pPageIndex andIndex:(uint)pPageIndex2  pageID:(uint)pID;
 {
 	mSliderController =pController;
 	
 	
 	
 	NSLog(@"CACHE PAGE");
-	PDFPage* lPage = [mLoader doublePageAtIndex:pPageIndex andIndex:pPageIndex2];
+	PDFPage* lPage = [mLoader doublePageAtIndex:pPageIndex andIndex:pPageIndex2 pageID:pID];
 	
 	bool lCancel =[self findAndRemoveSameOperation:pController.currentPage page:lPage];
 	
@@ -207,7 +207,7 @@
 -(void)pdfFPageOperationDelegate:(PDFPageOperation*)pOperation image:(UIImage*)pImage fromPage:(PDFPage*)pPage
 {
 	[pImage retain];
-	[mSliderController setImage:pImage forIndex:pPage.pageIndex];
+	[mSliderController setImage:pImage forIndex:pPage.ID];
 	
 
 }

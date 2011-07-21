@@ -20,13 +20,14 @@
 	mPageIndex = pPageIndex;
 
 	mDoublePage =NO;
+	mID = pPageIndex;
 	
 	return self;
 }
 
 
 
--(id)initWithPDFPage:(CGPDFPageRef)pPage pageIndex:(uint)pPageIndex  PDFPage2:(CGPDFPageRef)pPage2 pageIndex2:(uint)pPageIndex2
+-(id)initWithPDFPage:(CGPDFPageRef)pPage pageIndex:(uint)pPageIndex  PDFPage2:(CGPDFPageRef)pPage2 pageIndex2:(uint)pPageIndex2 pageID:(uint)pID
 {	
 	
 	
@@ -50,7 +51,7 @@
 	}
 
 	mDoublePage = YES;
-	
+	mID = pID;
 	return self;
 }
 
@@ -114,6 +115,7 @@ CGRect aspectFit2(CGRect innerRect, CGRect outerRect) {
 {
 	UIImage* lImage = nil;
 	
+		NSLog(@"pImageRect %@",NSStringFromCGRect(pImageRect));
 	if(!self.isSinglePage)
 	{
 	
@@ -124,7 +126,7 @@ CGRect aspectFit2(CGRect innerRect, CGRect outerRect) {
 		
 		
 		//On créé le context
-		CGSize cachePageSize = CGSizeMake(lRect1.size.width, lRect1.size.height);
+		CGSize cachePageSize = CGSizeMake(pImageRect.size.width, pImageRect.size.height);
 		
 		
 		CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
@@ -137,55 +139,91 @@ CGRect aspectFit2(CGRect innerRect, CGRect outerRect) {
 												 kCGImageAlphaPremultipliedLast);
 		CGColorSpaceRelease(colorSpace);
 
-		//Le fond blanc
-		CGContextSetRGBFillColor(ctx, 255, 255, 255, 1);
-		CGContextFillRect(ctx, pImageRect);
+
+
 		
+					CGContextSetRGBFillColor(ctx, 0, 255, 0, 1);
+					CGContextFillRect(ctx, pImageRect);
 		
 		//On dessine la première page si elle existe
 		if(mPageIndex != 0)
 		{
+		
+			CGRect lPageRect = CGPDFPageGetBoxRect(mPDFPage, kCGPDFCropBox);
 			
-			CGPDFPageRef lPage = mPDFPage;
+			lPageRect = CGRectIntegral(lPageRect);
 			
-			CGRect rect = CGPDFPageGetBoxRect(lPage, kCGPDFCropBox);
+			CGRect lAspectRect = aspectFit2(lPageRect, lRect1);
+			lAspectRect = CGRectIntegral(lAspectRect);
 			
-			rect = CGRectIntegral(rect);
-			
-			CGContextSetRGBFillColor(ctx, 255, 255, 255, 1);
-			CGContextFillRect(ctx, aspectFit2(rect, lRect1));
-			
-			CGAffineTransform transform = aspectFit(rect,lRect1);
-			
-			
-			CGContextConcatCTM(ctx, transform);
-			
-			CGContextDrawPDFPage(ctx, lPage);
+			NSLog(@"lAspectRect %@",NSStringFromCGRect(lAspectRect));
+			CGImageRef lImageRef = [self drawPage:mPDFPage onRect:CGRectMake(0,0, lAspectRect.size.width, lAspectRect.size.height)];
+			CGContextDrawImage(ctx, CGRectMake(lRect1.size.width-lAspectRect.size.width, 0, lAspectRect.size.width, lAspectRect.size.height), lImageRef);
+			CGImageRelease(lImageRef);
 			
 			
-			CGContextConcatCTM(ctx, CGAffineTransformIdentity);
+//			CGPDFPageRef lPage = mPDFPage;
+//			
+//			CGRect rect = CGPDFPageGetBoxRect(lPage, kCGPDFCropBox);
+//			
+//			rect = CGRectIntegral(rect);
+//			
+//			CGContextSetRGBFillColor(ctx, 255, 255, 255, 1);
+//			CGContextFillRect(ctx, aspectFit2(rect, lRect1));
+//			
+//			CGAffineTransform transform = aspectFit(rect,lRect1);
+//			
+//			
+//			CGContextConcatCTM(ctx, transform);
+//			
+//			CGContextDrawPDFPage(ctx, lPage);
+//			
+//			
+//			CGContextConcatCTM(ctx, CGAffineTransformIdentity);
 		}
+		
+		NSLog(@"mPageIndex2 %d",mPageIndex2);
 		
 		if(mPageIndex2 != 0)
 		{
 			
-			CGPDFPageRef lPage = mPDFPage;
+//			CGRect lPageRect = CGPDFPageGetBoxRect(mPDFPage2, kCGPDFCropBox);
+//			
+//			lPageRect = CGRectIntegral(lPageRect);
+//			
+//			CGRect lAspectRect = aspectFit2(lPageRect, lRect2);
+//			lAspectRect = CGRectIntegral(lAspectRect);
+//			
+//			NSLog(@"lAspectRect %@",NSStringFromCGRect(lAspectRect));
+//			CGImageRef lImageRef = [self drawPage:mPDFPage2 onRect:CGRectMake(0,0, lAspectRect.size.width, lAspectRect.size.height)];
+//			CGContextDrawImage(ctx, CGRectMake(lRect2.size.width-lAspectRect.size.width, 0, lAspectRect.size.width, lAspectRect.size.height), lImageRef);
+//			CGImageRelease(lImageRef);
+//			
+//			NSLog(@"HJKLM");
 			
-			CGRect rect = CGPDFPageGetBoxRect(lPage, kCGPDFCropBox);
+	//		CGImageRef lImageRef = [self drawPage:mPDFPage2 onRect:CGRectMake(0,0, lRect2.size.width, lRect2.size.height)];
+//			CGContextDrawImage(ctx, lRect2, lImageRef);
+//			CGImageRelease(lImageRef);
+//			
 			
-			rect = CGRectIntegral(rect);
-			
-			CGContextSetRGBFillColor(ctx, 255, 255, 255, 1);
-			CGContextFillRect(ctx, aspectFit2(rect, lRect2));
-			
-			CGAffineTransform transform = aspectFit(rect,lRect2);
-			
-			
-			CGContextConcatCTM(ctx, transform);
-			
-			CGContextDrawPDFPage(ctx, lPage);
-			
-			CGContextDrawPDFPage(ctx, lPage);
+//			CGPDFPageRef lPage = mPDFPage2;
+//			
+//			CGRect rect = CGPDFPageGetBoxRect(lPage, kCGPDFCropBox);
+//			
+//			rect = CGRectIntegral(rect);
+//			
+//			CGContextSetRGBFillColor(ctx, 255, 255, 255, 1);
+//			CGContextFillRect(ctx, aspectFit2(lRect2, pImageRect));
+//			
+//			CGAffineTransform transform = aspectFit(rect,pImageRect);
+//			
+//			
+//			//CGContextConcatCTM(ctx, transform);
+//			
+//			CGContextDrawPDFPage(ctx, lPage);
+//			
+//	CGContextDrawImage(<#CGContextRef c#>, <#CGRect rect#>, <#CGImageRef image#>)
+//	
 			
 			
 		}
@@ -200,57 +238,114 @@ CGRect aspectFit2(CGRect innerRect, CGRect outerRect) {
 		return lImage;
 		
 	}else {
-//		
+
 		CGPDFPageRef lPage = soloPage;
-		
-		CGRect rect = CGPDFPageGetBoxRect(lPage, kCGPDFCropBox);
-		
-		rect = CGRectIntegral(rect);
-		
-		//CGContextRef ctx = [GraphicsUtils newRGBABitmapContextWithSize:CGSizeMake(pImageRect.size.width, pImageRect.size.height)];
-		
-		
-		
-		CGSize cachePageSize = CGSizeMake(pImageRect.size.width, pImageRect.size.height);
-		
-		
-		CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-		CGContextRef ctx = CGBitmapContextCreate(NULL, 
-										cachePageSize.width, 
-										cachePageSize.height, 
-										8,						/* bits per component*/
-										cachePageSize.width * 4, 	/* bytes per row */
-										colorSpace, 
-										kCGImageAlphaPremultipliedLast);
-		CGColorSpaceRelease(colorSpace);
+//		
+//		CGRect rect = CGPDFPageGetBoxRect(lPage, kCGPDFCropBox);
+//		
+//		rect = CGRectIntegral(rect);
+//		
+//		//CGContextRef ctx = [GraphicsUtils newRGBABitmapContextWithSize:CGSizeMake(pImageRect.size.width, pImageRect.size.height)];
+//		
+//		
+//		
+//		CGSize cachePageSize = CGSizeMake(pImageRect.size.width, pImageRect.size.height);
+//		
+//		
+//		CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+//		CGContextRef ctx = CGBitmapContextCreate(NULL, 
+//										cachePageSize.width, 
+//										cachePageSize.height, 
+//										8,						/* bits per component*/
+//										cachePageSize.width * 4, 	/* bytes per row */
+//										colorSpace, 
+//										kCGImageAlphaPremultipliedLast);
+//		CGColorSpaceRelease(colorSpace);
+//
+//	
+//		
+//		CGContextSetRGBFillColor(ctx, 255, 255, 255, 1);
+//		CGContextFillRect(ctx, aspectFit2(rect, pImageRect));
+//	
+//		CGAffineTransform transform = aspectFit(rect,pImageRect);
+//		
+//		
+//		CGContextConcatCTM(ctx, transform);
+//		
+//		CGContextDrawPDFPage(ctx, lPage);
+//		
+//		
+//		CGImageRef lImageRef = CGBitmapContextCreateImage(ctx);
+//		lImage = [UIImage imageWithCGImage:lImageRef] ;
+//		
+//		CGImageRelease(lImageRef);
+//		CGContextRelease(ctx);
 
-	
-		
-		CGContextSetRGBFillColor(ctx, 255, 255, 255, 1);
-		CGContextFillRect(ctx, aspectFit2(rect, pImageRect));
-	
-		CGAffineTransform transform = aspectFit(rect,pImageRect);
-		
-		
-		CGContextConcatCTM(ctx, transform);
-		
-		CGContextDrawPDFPage(ctx, lPage);
-		
-		
-		CGImageRef lImageRef = CGBitmapContextCreateImage(ctx);
+		CGImageRef lImageRef = [self drawPage:lPage onRect:pImageRect];
 		lImage = [UIImage imageWithCGImage:lImageRef] ;
-		
 		CGImageRelease(lImageRef);
-		CGContextRelease(ctx);
-
-
-
 		
 	}
 
 
 		NSLog(@"lImage.retaincount ,%d",[lImage retainCount]);
 	return lImage;
+}
+
+
+
+-(CGImageRef)drawPage:(CGPDFPageRef)pPage onRect:(CGRect)pRect
+{
+	
+	
+	CGRect rect = CGPDFPageGetBoxRect(pPage, kCGPDFCropBox);
+	
+	rect = CGRectIntegral(rect);
+	
+	//CGContextRef ctx = [GraphicsUtils newRGBABitmapContextWithSize:CGSizeMake(pImageRect.size.width, pImageRect.size.height)];
+	
+	
+	
+	CGSize cachePageSize = CGSizeMake(pRect.size.width, pRect.size.height);
+	
+	
+	CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+	CGContextRef ctx = CGBitmapContextCreate(NULL, 
+											 cachePageSize.width, 
+											 cachePageSize.height, 
+											 8,						/* bits per component*/
+											 cachePageSize.width * 4, 	/* bytes per row */
+											 colorSpace, 
+											 kCGImageAlphaPremultipliedLast);
+	CGColorSpaceRelease(colorSpace);
+	
+	
+	CGContextSetRGBFillColor(ctx, 0, 0, 255, 1);
+	CGContextFillRect(ctx, pRect);
+	
+	
+	CGContextSetRGBFillColor(ctx, 255, 255, 255, 1);
+	CGContextFillRect(ctx, aspectFit2(rect, pRect));
+	
+	CGAffineTransform transform = aspectFit(rect,pRect);
+	
+//	CGAffineTransform transform = CGPDFPageGetDrawingTransform(pPage,
+//																  kCGPDFCropBox,
+//																  pRect,
+//																  0, YES);
+	
+	
+	CGContextConcatCTM(ctx, transform);
+	
+	CGContextDrawPDFPage(ctx, pPage);
+	
+	
+	CGImageRef lImageRef = CGBitmapContextCreateImage(ctx);
+	
+	//CGImageRelease(lImageRef);
+	CGContextRelease(ctx);
+	
+	return lImageRef;
 }
 
 -(void)dealloc
@@ -278,6 +373,7 @@ CGRect aspectFit2(CGRect innerRect, CGRect outerRect) {
 
 @synthesize pageIndex = mPageIndex;
 @synthesize pageIndex2 =  mPageIndex2;
+@synthesize ID = mID;
 @dynamic singlePageIndex;
 @dynamic isSinglePage;
 @end

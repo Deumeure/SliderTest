@@ -52,7 +52,7 @@
 
 
 
--(PDFPage*)doublePageAtIndex:(uint)pPageIndex andIndex:(uint)pPageIndex2
+-(PDFPage*)doublePageAtIndex:(uint)pPageIndex andIndex:(uint)pPageIndex2 pageID:(uint)pID
 {
 	
 	uint lIndex1 = 0;
@@ -83,7 +83,7 @@
 	}
 	
 	
-	return [[[PDFPage alloc]initWithPDFPage:lPage1 pageIndex:lIndex1 PDFPage2:lPage2 pageIndex2:lIndex2] autorelease];
+	return [[[PDFPage alloc]initWithPDFPage:lPage1 pageIndex:lIndex1 PDFPage2:lPage2 pageIndex2:lIndex2 pageID:pID] autorelease];
 }
 
 

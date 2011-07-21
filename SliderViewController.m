@@ -139,6 +139,9 @@
 	}
 }
 
+//De landscape à portrait
+#define CONVERT_COORD(X) MAX(((X)-1)*2,1);
+
 -(void)setImage:(UIImage*)lImage forIndex:(uint)pIndex
 {
 		
@@ -206,10 +209,6 @@
 	//On cherche la srollView a l'index
 	
 	UIScrollView* lScrollView  =(UIScrollView*) [mScrollView viewWithTag:pPageIndex];
-	
-	
-	uint lIndexOfPage = pPageIndex;
-	
 
 
 	//Déja cache ?? on quitte
@@ -259,11 +258,23 @@
 		{
 			lIndex1 == 0;
 			lIndex2 = 1;
-		}
+		}else 
 		{
+			lIndex1 = MAX((pPageIndex-1)*2,1);
+			lIndex2 = lIndex1+1;
+			
+		}
+
+		
+	
+		
+		if(lIndex2 == mRealPageCount)
+		{
+			lIndex2 = 0;
 		}
 		
-		[mDataSource sliderViewController:self cachePageAtIndex:pPageIndex andIndex:<#(uint)pPageIndex2#>]
+		NSLog(@"lIndex2 %d",lIndex2);
+		[mDataSource sliderViewController:self cachePageAtIndex:lIndex1 andIndex:lIndex2 pageID:pPageIndex ];
 	}
 
 	

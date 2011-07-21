@@ -69,7 +69,7 @@ typedef enum SliderPresentation
 
 -(CGSize)sliderViewController:(SliderViewController*)pController sizeForOrientation:(uint)pOrientation;
 -(void)sliderViewController:(SliderViewController*)pController cachePageAtIndex:(uint)pPageIndex;
--(void)sliderViewController:(SliderViewController*)pController cachePageAtIndex:(uint)pPageIndex andIndex:(uint)pPageIndex2;
+-(void)sliderViewController:(SliderViewController*)pController cachePageAtIndex:(uint)pPageIndex andIndex:(uint)pPageIndex2 pageID:(uint)pID;
 -(void)sliderViewController:(SliderViewController*)pController renderPageAtIndex:(uint)pPageIndex;
 
 @end
