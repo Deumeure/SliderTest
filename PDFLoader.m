@@ -49,9 +49,41 @@
 	return [[[PDFPage alloc]initWithPDFPage:page pageIndex:pPageIndex] autorelease];
 }
 
--(PDFPage*)doublePageAtIndex:(uint)pPageIndex
+
+
+
+-(PDFPage*)doublePageAtIndex:(uint)pPageIndex andIndex:(uint)pPageIndex2
 {
-	return nil;
+	
+	uint lIndex1 = 0;
+	uint lIndex2 = 0;
+	
+	CGPDFPageRef lPage1;
+	CGPDFPageRef lPage2;
+	
+	if(pPageIndex == 0)
+	{
+		lIndex1 = 0;
+		lPage1 = nil;
+	}else {
+		lIndex1 =pPageIndex;
+		lPage1 = CGPDFDocumentGetPage(mPDF, lIndex1 );
+		
+	}
+	
+	
+	if(pPageIndex2 == 0)
+	{
+		lIndex2 = 0;
+		lPage2 = nil;
+	}else {
+		lIndex2 =pPageIndex;
+		lPage2 = CGPDFDocumentGetPage(mPDF, lIndex2 );
+		
+	}
+	
+	
+	return [[[PDFPage alloc]initWithPDFPage:lPage1 pageIndex:lIndex1 PDFPage2:lPage2 pageIndex2:lIndex2] autorelease];
 }
 
 

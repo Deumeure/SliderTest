@@ -37,6 +37,45 @@
 	return CGSizeMake(768, 1024);
 }
 
+
+
+-(void)sliderViewController:(SliderViewController*)pController cachePageAtIndex:(uint)pPageIndex andIndex:(uint)pPageIndex2
+{
+	mSliderController =pController;
+	
+	
+	
+	NSLog(@"CACHE PAGE");
+	PDFPage* lPage = [mLoader doublePageAtIndex:pPageIndex andIndex:pPageIndex2];
+	
+	bool lCancel =[self findAndRemoveSameOperation:pController.currentPage page:lPage];
+	
+	if(lCancel)
+	{
+		NSLog(@"l'opératipon est déja en cours , je ne fais rien");
+		return;
+		
+	}
+	
+	//Les bordures du mode courant
+	CGRect lBorders = pController.presentation == sliderPresentationSinglePage  ? pController.singlePageBorders : pController.doublePageBorders  ;
+	
+	
+	//Le rectangle de l'image
+	CGRect lRect = CGRectMake(0,0, pController.view.bounds.size.width - (lBorders.origin.x+lBorders.size.width), pController.view.bounds.size.height - (lBorders.origin.y+lBorders.size.height));
+	
+	
+	NSLog(@"%@",NSStringFromCGRect(lRect));
+	NSLog(@"operation count %d",[mPageLoadingQueue operationCount]);
+	
+	PDFPageOperation* lOperation= [[PDFPageOperation alloc]initWithPDFPage:lPage outRect:lRect];
+	lOperation.delegate =self;
+	
+	[mPageLoadingQueue addOperation:lOperation];
+	[lOperation release];
+	
+}
+
 -(void)sliderViewController:(SliderViewController*)pController cachePageAtIndex:(uint)pPageIndex
 {
 	mSliderController =pController;
@@ -54,12 +93,24 @@
 		return;
 	
 	}
+	
+	//Les bordures du mode courant
+	CGRect lBorders = pController.presentation == sliderPresentationSinglePage  ? pController.singlePageBorders : pController.doublePageBorders  ;
+	
+	
+	//Le rectangle de l'image
+	CGRect lRect = CGRectMake(0,0, pController.view.bounds.size.width - (lBorders.origin.x+lBorders.size.width), pController.view.bounds.size.height - (lBorders.origin.y+lBorders.size.height));
+	
+	
+	NSLog(@"%@",NSStringFromCGRect(lRect));
 	NSLog(@"operation count %d",[mPageLoadingQueue operationCount]);
-	PDFPageOperation* lOperation= [[PDFPageOperation alloc]initWithPDFPage:lPage outRect:CGRectMake(0, 0, 768, 1024)];
+	
+	PDFPageOperation* lOperation= [[PDFPageOperation alloc]initWithPDFPage:lPage outRect:lRect];
 	lOperation.delegate =self;
 	
 	[mPageLoadingQueue addOperation:lOperation];
 	[lOperation release];
+	
 }
 
 -(bool)findAndRemoveSameOperation:(uint)pIndex page:(PDFPage*)pPage

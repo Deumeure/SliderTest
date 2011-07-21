@@ -55,7 +55,7 @@
 	
 	[self.window addSubview:lController.view];
 	
-	
+	[lController gotoPage:90];
 	    [self.window makeKeyAndVisible];
     
     return YES;

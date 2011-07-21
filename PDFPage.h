@@ -18,6 +18,7 @@
 	CGPDFPageRef mPDFPage;
 	CGPDFPageRef mPDFPage2;
 	
+	bool mDoublePage;
 }
 
 
@@ -27,8 +28,12 @@
 -(CGSize)originaleSize;
 -(UIImage*)imageForRect:(CGRect)pImageRect;
 
+
 @property(nonatomic,readonly)uint pageIndex;
 @property(nonatomic,readonly)uint pageIndex2;
+
+@property(nonatomic,assign)bool isSinglePage;
+@property(nonatomic,assign) uint singlePageIndex;
 
 
 @end

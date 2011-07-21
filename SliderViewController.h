@@ -11,6 +11,14 @@
 @protocol SliderViewControllerDataSource;
 @protocol SliderViewControllerDelegate;
 
+
+typedef enum SliderPresentation
+{
+	sliderPresentationSinglePage = 0,
+	sliderPresentationDoublePage = 1
+	
+} SliderPresentation;
+
 @interface SliderViewController : UIViewController
 {
 	@private
@@ -27,6 +35,15 @@
 	
 	
 	NSObject* mLockObject;
+	
+	SliderPresentation mPresentation;
+	
+	CGRect mSinglePageBorders;
+	CGRect mDoublePageBorders;
+	
+	
+	uint mRealPageCount;
+	
 }
 
 -(id)initWithPageCount:(uint)pPageCount;
@@ -34,11 +51,17 @@
 
 -(void)setImage:(UIImage*)lImage forIndex:(uint)Index;
 
+
 @property(nonatomic,assign)id<SliderViewControllerDataSource> dataSource;
 @property(nonatomic,assign)id<SliderViewControllerDelegate> delegate;
 
 @property(nonatomic,assign)uint pageCount;
 @property(nonatomic,assign)uint currentPage;
+
+@property(nonatomic,assign)SliderPresentation presentation ;
+@property(nonatomic,assign)CGRect singlePageBorders ;
+@property(nonatomic,assign)CGRect doublePageBorders ;
+
 @end
 
 
@@ -46,7 +69,8 @@
 
 -(CGSize)sliderViewController:(SliderViewController*)pController sizeForOrientation:(uint)pOrientation;
 -(void)sliderViewController:(SliderViewController*)pController cachePageAtIndex:(uint)pPageIndex;
--(void)sliderViewController:(SliderViewController*)pController renderPageAtIndex:(uint)pPageIndex;;
+-(void)sliderViewController:(SliderViewController*)pController cachePageAtIndex:(uint)pPageIndex andIndex:(uint)pPageIndex2;
+-(void)sliderViewController:(SliderViewController*)pController renderPageAtIndex:(uint)pPageIndex;
 
 @end
 

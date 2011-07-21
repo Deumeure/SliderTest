@@ -24,7 +24,7 @@
 -(void)closePDF;
 
 -(PDFPage*)pageAtIndex:(uint)pPageIndex;
--(PDFPage*)doublePageAtIndex:(uint)pPageIndex;
+-(PDFPage*)doublePageAtIndex:(uint)pPageIndex andIndex:(uint)pPageIndex2;
 
 @property(nonatomic,readonly)uint pageCount;
 
