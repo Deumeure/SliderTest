@@ -1,7 +1,7 @@
 Ttestslider
 v7
 r0
-t333045729.474612
+t333049185.906543
 cCheck dependencies
 cCpResource build/Debug-iphoneos/testslider.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
 cProcessInfoPlistFile /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/Info.plist testslider-Info.plist
@@ -38,8 +38,8 @@ cCompileC build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/
 cCompileC build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/PDFPageOperation.o /Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFPageOperation.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/CachingTool.o /Users/Deumeure/Documents/Repository/testSlide/ImageLoader/CachingTool.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/NSFileUtility.o /Users/Deumeure/Documents/Repository/testSlide/NSFileUtility.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider normal armv7
 cLd /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider normal armv6
+cLd /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider normal armv7
 cCreateUniversalBinary /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/testslider normal "armv6 armv7"
 cGenerateDSYMFile /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app.dSYM /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/testslider
 cProcessProductPackaging "/Users/Deumeure/Library/MobileDevice/Provisioning Profiles/850EFFA3-E577-461B-8BB6-625F3889EA0F.mobileprovision" /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/embedded.mobileprovision
@@ -255,17 +255,17 @@ s2168
 i<UIKit/UIKit.h>
 
 N/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m
-c000000004E29A83800000000000035BD
-t1311352888
-s13757
+c000000004E29B5DE0000000000003754
+t1311356382
+s14164
 i"SliderViewController.h"
 
 N/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app
-t1311352929
+t1311356385
 s408
 
 N/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app.dSYM
-t1311352928
+t1311356384
 s102
 
 N/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/Info.plist
@@ -297,8 +297,8 @@ t1311352927
 s70022721
 
 N/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/testslider
-t1311352928
-s221416
+t1311356384
+s221504
 
 N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/AppDelegate_iPad.o
 t1311352849
@@ -353,16 +353,16 @@ t1311352849
 s52964
 
 N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/SliderViewController.o
-t1311352927
-s72756
+t1311356383
+s74024
 
 N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/main.o
 t1311351872
 s6476
 
 N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider
-t1311352928
-s112148
+t1311356384
+s112240
 
 N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider.LinkFileList
 c000000004E29A43F000000000000079A
@@ -422,16 +422,16 @@ t1311352849
 s52424
 
 N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/SliderViewController.o
-t1311352927
-s70904
+t1311356383
+s72156
 
 N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/main.o
 t1311351873
 s6460
 
 N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider
-t1311352928
-s102632
+t1311356384
+s102720
 
 N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider.LinkFileList
 c000000004E29A43F000000000000079A
@@ -1055,15 +1055,15 @@ lSLF07#2@72"Analyze /Users/Deumeure/Documents/testslider/iPhone/AppDelegate_iPho
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies333045726#333045726#0(105"[BWARN]warning: iPad only apps should not include an armv6 architecture (current ARCHS = "armv6 armv7").1(22@97"warning: iPad only apps should not include an armv6 architecture (current ARCHS = "armv6 armv7").333045726#18446744073709551615#0#0(1@0"0(0#1#0"8628342240#0"0#
+lSLF07#2@18"Check dependencies333049182#333049182#0(105"[BWARN]warning: iPad only apps should not include an armv6 architecture (current ARCHS = "armv6 armv7").1(22@97"warning: iPad only apps should not include an armv6 architecture (current ARCHS = "armv6 armv7").333049182#18446744073709551615#0#0(1@0"0(0#1#0"8247620834010738688#0"0#
 
 CCodeSign /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app
-s333045728.686056
-e333045729.474573
+s333049184.619835
+e333049185.906411
 r1
 xCodeSign
 x/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app
-lSLF07#2@44"CodeSign build/Debug-iphoneos/testslider.app333045728#333045729#0(0"0(0#0#82"/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app8637640704#758"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Laurent Morin (BYQ3NDYGQ7)" --resource-rules=/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/ResourceRules.plist --entitlements /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider.xcent /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app0#
+lSLF07#2@44"CodeSign build/Debug-iphoneos/testslider.app333049184#333049185#0(0"0(0#0#82"/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app8613182144#758"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Laurent Morin (BYQ3NDYGQ7)" --resource-rules=/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/ResourceRules.plist --entitlements /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider.xcent /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app0#
 
 CCodeSign /Users/Deumeure/Documents/testslider/build/Debug-iphoneos/testslider.app
 s332779715.711126
@@ -1393,8 +1393,8 @@ o/Users/Deumeure/Documents/testslider/SliderDelegate.m:72: warning: class 'Slide
 lSLF07#2@61"Compile /Users/Deumeure/Documents/testslider/SliderDelegate.m332778665#332778665#0(683"/Users/Deumeure/Documents/testslider/SliderDelegate.m:72: warning: incomplete implementation of class 'SliderDelegate'/Users/Deumeure/Documents/testslider/SliderDelegate.m:72: warning: method definition for '-sliderViewController:pageChanged:' not found/Users/Deumeure/Documents/testslider/SliderDelegate.m:72: warning: method definition for '-sliderViewControllerMoveToRight:' not found/Users/Deumeure/Documents/testslider/SliderDelegate.m:72: warning: method definition for '-sliderViewControllerMoveToLeft:' not found/Users/Deumeure/Documents/testslider/SliderDelegate.m:72: warning: class 'SliderDelegate' does not fully implement the 'SliderViewControllerDelegate' protocol5(22@51"Incomplete implementation of class 'SliderDelegate'332778665#0#119#0(6@53"/Users/Deumeure/Documents/testslider/SliderDelegate.m332778477#72#0#72#0#38"incomplete implementation of class '*'0(22@68"Method definition for '-sliderViewController:pageChanged:' not found332778665#119#136#0(6@53"/Users/Deumeure/Documents/testslider/SliderDelegate.m332778477#72#0#72#0#35"method definition for '*' not found0(22@67"Method definition for '-sliderViewControllerMoveToRight:' not found332778665#255#135#0(6@53"/Users/Deumeure/Documents/testslider/SliderDelegate.m332778477#72#0#72#0#35"method definition for '*' not found0(22@66"Method definition for '-sliderViewControllerMoveToLeft:' not found332778665#390#134#0(6@53"/Users/Deumeure/Documents/testslider/SliderDelegate.m332778477#72#0#72#0#35"method definition for '*' not found0(22@91"Class 'SliderDelegate' does not fully implement the 'SliderViewControllerDelegate' protocol332778665#524#159#0(6@53"/Users/Deumeure/Documents/testslider/SliderDelegate.m332778477#72#0#72#0#51"class '*' does not fully implement the '*' protocol0(0#0#53"/Users/Deumeure/Documents/testslider/SliderDelegate.m8672820800#1782"    cd /Users/Deumeure/Documents/testslider    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/testslider/build/Debug-iphoneos -I/Users/Deumeure/Documents/testslider/build/Debug-iphoneos/include -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/DerivedSources/armv6 -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-gbbuliphewlrrtgvpliaakdheyll/testslider_Prefix.pch -c /Users/Deumeure/Documents/testslider/SliderDelegate.m -o /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/SliderDelegate.o0#
 
 CCompileC build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/SliderViewController.o /Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s333045727.715423
-e333045728.067140
+s333049182.590078
+e333049183.676687
 r1
 xCompileC
 xbuild/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/SliderViewController.o
@@ -1407,7 +1407,9 @@ o/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m: In funct
 o/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m:67: warning: class 'SliderViewController' does not implement the 'UIScrollViewDelegate' protocol
 o/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m: In function '-[SliderViewController gotoPage:]':
 o/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m:165: warning: class 'SliderViewController' does not implement the 'UIScrollViewDelegate' protocol
-lSLF07#2@77"Compile /Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m333045727#333045728#0(577"/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m: In function '-[SliderViewController viewDidLoad]':/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m:67: warning: class 'SliderViewController' does not implement the 'UIScrollViewDelegate' protocol/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m: In function '-[SliderViewController gotoPage:]':/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m:165: warning: class 'SliderViewController' does not implement the 'UIScrollViewDelegate' protocol2(22@83"Class 'SliderViewController' does not implement the 'UIScrollViewDelegate' protocol333045727#122#167#0(6@69"/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m333045688#67#0#67#0#45"class '*' does not implement the '*' protocol0(22@83"Class 'SliderViewController' does not implement the 'UIScrollViewDelegate' protocol333045727#409#168#0(6@69"/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m333045688#165#0#165#0#45"class '*' does not implement the '*' protocol0(0#0#69"/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m8632838592#1966"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos -I/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/include -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/DerivedSources/armv6 -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-busmscwsckmvtudhmqzhhavabkiz/testslider_Prefix.pch -c /Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/SliderViewController.o0#
+o/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m: In function '-[SliderViewController setImage:forIndex:]':
+o/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m:183: warning: incompatible Objective-C types initializing 'struct UIView *', expected 'struct UIActivityIndicatorView *'
+lSLF07#2@77"Compile /Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m333049182#333049183#0(897"/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m: In function '-[SliderViewController viewDidLoad]':/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m:67: warning: class 'SliderViewController' does not implement the 'UIScrollViewDelegate' protocol/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m: In function '-[SliderViewController gotoPage:]':/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m:165: warning: class 'SliderViewController' does not implement the 'UIScrollViewDelegate' protocol/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m: In function '-[SliderViewController setImage:forIndex:]':/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m:183: warning: incompatible Objective-C types initializing 'struct UIView *', expected 'struct UIActivityIndicatorView *'3(22@83"Class 'SliderViewController' does not implement the 'UIScrollViewDelegate' protocol333049183#122#167#0(6@69"/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m333049182#67#0#67#0#45"class '*' does not implement the '*' protocol0(22@83"Class 'SliderViewController' does not implement the 'UIScrollViewDelegate' protocol333049183#409#168#0(6@69"/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m333049182#165#0#165#0#45"class '*' does not implement the '*' protocol0(22@106"Incompatible Objective-C types initializing 'struct UIView *', expected 'struct UIActivityIndicatorView *'333049183#706#191#0(6@69"/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m333049182#183#0#183#0#61"incompatible Objective-C types initializing '*', expected '*'0(0#0#69"/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m8319383698887823360#1966"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos -I/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/include -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/DerivedSources/armv6 -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-busmscwsckmvtudhmqzhhavabkiz/testslider_Prefix.pch -c /Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/SliderViewController.o0#
 
 CCompileC build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/SliderViewController.o /Users/Deumeure/Documents/testslider/SliderViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 s332779144.211230
@@ -1770,8 +1772,8 @@ o/Users/Deumeure/Documents/testslider/SliderDelegate.m:72: warning: class 'Slide
 lSLF07#2@61"Compile /Users/Deumeure/Documents/testslider/SliderDelegate.m332778666#332778666#0(683"/Users/Deumeure/Documents/testslider/SliderDelegate.m:72: warning: incomplete implementation of class 'SliderDelegate'/Users/Deumeure/Documents/testslider/SliderDelegate.m:72: warning: method definition for '-sliderViewController:pageChanged:' not found/Users/Deumeure/Documents/testslider/SliderDelegate.m:72: warning: method definition for '-sliderViewControllerMoveToRight:' not found/Users/Deumeure/Documents/testslider/SliderDelegate.m:72: warning: method definition for '-sliderViewControllerMoveToLeft:' not found/Users/Deumeure/Documents/testslider/SliderDelegate.m:72: warning: class 'SliderDelegate' does not fully implement the 'SliderViewControllerDelegate' protocol5(22@51"Incomplete implementation of class 'SliderDelegate'332778666#0#119#0(6@53"/Users/Deumeure/Documents/testslider/SliderDelegate.m332778477#72#0#72#0#38"incomplete implementation of class '*'0(22@68"Method definition for '-sliderViewController:pageChanged:' not found332778666#119#136#0(6@53"/Users/Deumeure/Documents/testslider/SliderDelegate.m332778477#72#0#72#0#35"method definition for '*' not found0(22@67"Method definition for '-sliderViewControllerMoveToRight:' not found332778666#255#135#0(6@53"/Users/Deumeure/Documents/testslider/SliderDelegate.m332778477#72#0#72#0#35"method definition for '*' not found0(22@66"Method definition for '-sliderViewControllerMoveToLeft:' not found332778666#390#134#0(6@53"/Users/Deumeure/Documents/testslider/SliderDelegate.m332778477#72#0#72#0#35"method definition for '*' not found0(22@91"Class 'SliderDelegate' does not fully implement the 'SliderViewControllerDelegate' protocol332778666#524#159#0(6@53"/Users/Deumeure/Documents/testslider/SliderDelegate.m332778477#72#0#72#0#51"class '*' does not fully implement the '*' protocol0(0#0#53"/Users/Deumeure/Documents/testslider/SliderDelegate.m8676843616#1782"    cd /Users/Deumeure/Documents/testslider    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/testslider/build/Debug-iphoneos -I/Users/Deumeure/Documents/testslider/build/Debug-iphoneos/include -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/DerivedSources/armv7 -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-gmugqwoiunltetggctbzytrzusas/testslider_Prefix.pch -c /Users/Deumeure/Documents/testslider/SliderDelegate.m -o /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/SliderDelegate.o0#
 
 CCompileC build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/SliderViewController.o /Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s333045727.801807
-e333045727.997813
+s333049182.607077
+e333049183.682773
 r1
 xCompileC
 xbuild/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/SliderViewController.o
@@ -1784,7 +1786,9 @@ o/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m: In funct
 o/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m:67: warning: class 'SliderViewController' does not implement the 'UIScrollViewDelegate' protocol
 o/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m: In function '-[SliderViewController gotoPage:]':
 o/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m:165: warning: class 'SliderViewController' does not implement the 'UIScrollViewDelegate' protocol
-lSLF07#2@77"Compile /Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m333045727#333045727#0(577"/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m: In function '-[SliderViewController viewDidLoad]':/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m:67: warning: class 'SliderViewController' does not implement the 'UIScrollViewDelegate' protocol/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m: In function '-[SliderViewController gotoPage:]':/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m:165: warning: class 'SliderViewController' does not implement the 'UIScrollViewDelegate' protocol2(22@83"Class 'SliderViewController' does not implement the 'UIScrollViewDelegate' protocol333045727#122#167#0(6@69"/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m333045688#67#0#67#0#45"class '*' does not implement the '*' protocol0(22@83"Class 'SliderViewController' does not implement the 'UIScrollViewDelegate' protocol333045727#409#168#0(6@69"/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m333045688#165#0#165#0#45"class '*' does not implement the '*' protocol0(0#0#69"/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m8628851904#1966"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos -I/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/include -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/DerivedSources/armv7 -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-drndgbmsiocquzaagtjifzzqbcvj/testslider_Prefix.pch -c /Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/SliderViewController.o0#
+o/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m: In function '-[SliderViewController setImage:forIndex:]':
+o/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m:183: warning: incompatible Objective-C types initializing 'struct UIView *', expected 'struct UIActivityIndicatorView *'
+lSLF07#2@77"Compile /Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m333049182#333049183#0(897"/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m: In function '-[SliderViewController viewDidLoad]':/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m:67: warning: class 'SliderViewController' does not implement the 'UIScrollViewDelegate' protocol/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m: In function '-[SliderViewController gotoPage:]':/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m:165: warning: class 'SliderViewController' does not implement the 'UIScrollViewDelegate' protocol/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m: In function '-[SliderViewController setImage:forIndex:]':/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m:183: warning: incompatible Objective-C types initializing 'struct UIView *', expected 'struct UIActivityIndicatorView *'3(22@83"Class 'SliderViewController' does not implement the 'UIScrollViewDelegate' protocol333049183#122#167#0(6@69"/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m333049182#67#0#67#0#45"class '*' does not implement the '*' protocol0(22@83"Class 'SliderViewController' does not implement the 'UIScrollViewDelegate' protocol333049183#409#168#0(6@69"/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m333049182#165#0#165#0#45"class '*' does not implement the '*' protocol0(22@106"Incompatible Objective-C types initializing 'struct UIView *', expected 'struct UIActivityIndicatorView *'333049183#706#191#0(6@69"/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m333049182#183#0#183#0#61"incompatible Objective-C types initializing '*', expected '*'0(0#0#69"/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m8612555264#1966"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos -I/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/include -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/DerivedSources/armv7 -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-drndgbmsiocquzaagtjifzzqbcvj/testslider_Prefix.pch -c /Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/SliderViewController.o0#
 
 CCompileC build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/SliderViewController.o /Users/Deumeure/Documents/testslider/SliderViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 s332779144.357553
@@ -1878,14 +1882,14 @@ xmobile.pdf
 lSLF07#2@15"Copy mobile.pdf333045726#333045727#0(0"0(0#0#57"/Users/Deumeure/Documents/Repository/testSlide/mobile.pdf8627603584#543"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Deumeure/Documents/Repository/testSlide/mobile.pdf /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app0#
 
 CCreateUniversalBinary /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/testslider normal "armv6 armv7"
-s333045728.202281
-e333045728.213146
+s333049184.321096
+e333049184.380512
 r1
 xCreateUniversalBinary
 x/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/testslider
 xnormal
 xarmv6 armv7
-lSLF07#2@89"CreateUniversalBinary build/Debug-iphoneos/testslider.app/testslider normal "armv6 armv7"333045728#333045728#0(0"0(0#0#58"/Users/Deumeure/Documents/Repository/testSlide/armv6 armv78637523008#636"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/lipo -create /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider -output /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/testslider0#
+lSLF07#2@89"CreateUniversalBinary build/Debug-iphoneos/testslider.app/testslider normal "armv6 armv7"333049184#333049184#0(0"0(0#0#58"/Users/Deumeure/Documents/Repository/testSlide/armv6 armv78613435104#636"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/lipo -create /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider -output /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/testslider0#
 
 CCreateUniversalBinary /Users/Deumeure/Documents/testslider/build/Debug-iphoneos/testslider.app/testslider normal "armv6 armv7"
 s332779715.670558
@@ -1898,13 +1902,13 @@ xarmv6 armv7
 lSLF07#2@89"CreateUniversalBinary build/Debug-iphoneos/testslider.app/testslider normal "armv6 armv7"332779715#332779715#0(0"0(0#0#48"/Users/Deumeure/Documents/testslider/armv6 armv78680696960#534"    cd /Users/Deumeure/Documents/testslider    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider -output /Users/Deumeure/Documents/testslider/build/Debug-iphoneos/testslider.app/testslider0#
 
 CGenerateDSYMFile /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app.dSYM /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/testslider
-s333045728.213219
-e333045728.682975
+s333049184.380618
+e333049184.565738
 r1
 xGenerateDSYMFile
 x/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app.dSYM
 x/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/testslider
-lSLF07#2@104"GenerateDSYMFile build/Debug-iphoneos/testslider.app.dSYM build/Debug-iphoneos/testslider.app/testslider333045728#333045728#0(0"0(0#0#93"/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/testslider8634836960#457"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/testslider -o /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app.dSYM0#
+lSLF07#2@104"GenerateDSYMFile build/Debug-iphoneos/testslider.app.dSYM build/Debug-iphoneos/testslider.app/testslider333049184#333049184#0(0"0(0#0#93"/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/testslider8613164800#457"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app/testslider -o /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app.dSYM0#
 
 CGenerateDSYMFile /Users/Deumeure/Documents/testslider/build/Debug-iphoneos/testslider.app.dSYM /Users/Deumeure/Documents/testslider/build/Debug-iphoneos/testslider.app/testslider
 s332779715.674482
@@ -1916,24 +1920,24 @@ x/Users/Deumeure/Documents/testslider/build/Debug-iphoneos/testslider.app/testsl
 lSLF07#2@104"GenerateDSYMFile build/Debug-iphoneos/testslider.app.dSYM build/Debug-iphoneos/testslider.app/testslider332779715#332779715#0(0"0(0#0#83"/Users/Deumeure/Documents/testslider/build/Debug-iphoneos/testslider.app/testslider8679384032#365"    cd /Users/Deumeure/Documents/testslider    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/Deumeure/Documents/testslider/build/Debug-iphoneos/testslider.app/testslider -o /Users/Deumeure/Documents/testslider/build/Debug-iphoneos/testslider.app.dSYM0#
 
 CLd /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider normal armv6
-s333045728.067249
-e333045728.202107
+s333049183.676806
+e333049184.318742
 r1
 xLd
 x/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider
 xnormal
 xarmv6
-lSLF07#2@138"Link /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider333045728#333045728#0(0"0(0#0#0"8631067104#979"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos -filelist /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider.LinkFileList -dead_strip -miphoneos-version-min=4.2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider0#
+lSLF07#2@138"Link /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider333049183#333049184#0(0"0(0#0#0"8629696864#979"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos -filelist /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider.LinkFileList -dead_strip -miphoneos-version-min=4.2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider0#
 
 CLd /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider normal armv7
-s333045727.997933
-e333045728.187586
+s333049183.682862
+e333049184.321028
 r1
 xLd
 x/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider
 xnormal
 xarmv7
-lSLF07#2@138"Link /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider333045727#333045728#0(0"0(0#0#0"8632196320#979"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos -filelist /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider.LinkFileList -dead_strip -miphoneos-version-min=4.2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider0#
+lSLF07#2@138"Link /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider333049183#333049184#0(0"0(0#0#0"8627504640#979"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos -filelist /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider.LinkFileList -dead_strip -miphoneos-version-min=4.2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv7/testslider0#
 
 CLd /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/Objects-normal/armv6/testslider normal armv6
 s332779715.638524
@@ -2117,12 +2121,12 @@ x/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/test
 lSLF07#2@184"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist build/testslider.build/Debug-iphoneos/testslider.build/testslider.xcent332778666#332778666#0(0"0(0#0#108"/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/testslider.xcent8670787488#437"    cd /Users/Deumeure/Documents/testslider    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist -entitlements -format xml -o /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphoneos/testslider.build/testslider.xcent0#
 
 CTouch /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app
-s333045728.683355
-e333045728.685856
+s333049184.565972
+e333049184.619565
 r1
 xTouch
 x/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app
-lSLF07#2@88"Touch /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app333045728#333045728#0(0"0(0#0#0"8632593312#345"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app0#
+lSLF07#2@88"Touch /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app333049184#333049184#0(0"0(0#0#0"8627398272#345"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphoneos/testslider.app0#
 
 CTouch /Users/Deumeure/Documents/testslider/build/Debug-iphoneos/testslider.app
 s332779715.708861
