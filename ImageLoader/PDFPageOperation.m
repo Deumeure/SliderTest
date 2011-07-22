@@ -42,16 +42,16 @@
 	NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
 	
 	
-//	CachingTool* lCache =[CachingTool cachingToolWithIndex:mPDFPage.pageIndex]; 
-//	
-//	if([lCache isCached])
-//	{
-//	
-//		NSLog(@"**************************   Image en Cache");
-//		mImage =[[[lCache readCache] retain] autorelease];
-//		
-//	}else 
-//	{
+	CachingTool* lCache =[CachingTool cachingToolWithIndex:mPDFPage.pageIndex andTag:NSStringFromCGRect(mOutRect)]; 
+	
+	if([lCache isCached])
+	{
+	
+		NSLog(@"**************************   Image en Cache");
+		mImage =[[[lCache readCache] retain] autorelease];
+		
+	}else 
+	{
 	
 		NSTimeInterval lBeginTime = [NSDate timeIntervalSinceReferenceDate];
 		
@@ -63,21 +63,21 @@
 			NSLog(@"NILLLLL");
 		}
 		
-//		NSTimeInterval lEndTime = [NSDate timeIntervalSinceReferenceDate];
-//		
-//		
-//		if(lEndTime - lBeginTime >1)
-//		{
-//			
-//			NSLog(@"----------------Cache nécessaire %f",lEndTime - lBeginTime);
-//			[lCache writeToCache:mImage];
-//		}
+		NSTimeInterval lEndTime = [NSDate timeIntervalSinceReferenceDate];
+		
+		
+		if(lEndTime - lBeginTime >1)
+		{
+			
+			NSLog(@"----------------Cache nécessaire %f",lEndTime - lBeginTime);
+			[lCache writeToCache:mImage];
+		}
 		
 		
 		
 
 		
-//	}
+	}
 
 	[self performSelectorOnMainThread:@selector(raiseDidFinishEvent:) withObject:nil  waitUntilDone:YES];
 	

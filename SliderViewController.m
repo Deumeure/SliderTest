@@ -180,7 +180,8 @@
 		return;
 	
 	UIImageView* lImageView = (UIImageView*)[lScrollView viewWithTag:1851];
-		
+	UIActivityIndicatorView* lIndicator =[lImageView viewWithTag:1826];
+	[lIndicator stopAnimating];
 	//
 //	if([lImageView class] [])
 //	NSLog(@"set image for page : %d",pIndex);
@@ -265,7 +266,17 @@
 
 	lImageView.frame =lRect;
 
+	
+	UIActivityIndicatorView* lIndicator  =[[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+	lIndicator.tag = 1826;
+	lIndicator.hidesWhenStopped = YES;
+	
+	lIndicator.center = lImageView.center;
+	[lIndicator startAnimating];
+	
+	[lImageView addSubview:lIndicator];
 	[lScrollView addSubview:lImageView];
+	
 	
 	
 	//On l'ajoute

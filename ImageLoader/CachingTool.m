@@ -13,15 +13,15 @@
 
 
 
--(id)initWithIndex:(uint)pIndex
+-(id)initWithIndex:(uint)pIndex andTag:(NSString*)pTag
 {
 	mIndex = pIndex;
-	
+	mTag = [pTag retain];
 	return self;
 }
 
 
-#define PATH [NSString stringWithFormat:@"page%d.png",mIndex]
+#define PATH [NSString stringWithFormat:@"page%d_%@.png",mIndex,mTag]
 
 -(UIImage*)readCache
 {
@@ -34,7 +34,7 @@
 
 -(bool)isCached
 {
-	return  [NSFileUtility verifyIfFileExistInDocument:[NSString stringWithFormat:@"page%d.png",mIndex]];
+	return  [NSFileUtility verifyIfFileExistInDocument:PATH];
 
 }
 
@@ -47,16 +47,16 @@
 	[lImageData writeToFile:[NSFileUtility retourneDocumentPath:PATH] atomically:YES];
 }
 
-+(CachingTool*)cachingToolWithIndex:(uint)pIndex
++(CachingTool*)cachingToolWithIndex:(uint)pIndex andTag:(NSString*)pTag
 {
-	return [[[CachingTool alloc]initWithIndex:pIndex] autorelease];
+	return [[[CachingTool alloc]initWithIndex:pIndex andTag:pTag] autorelease];
 }
 
 
-//-(void)dealloc
-//{
-//
-//	[super dealloc];
-//}
+-(void)dealloc
+{
+	[mTag release];
+	[super dealloc];
+}
 
 @end

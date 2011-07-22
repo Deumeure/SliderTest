@@ -31,7 +31,7 @@
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = D92EA17213D44BF40026D8B1 /* testslider */;
-		activeSDKPreference = iphoneos4.2;
+		activeSDKPreference = iphonesimulator4.2;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* testslider */;
 		addToTargets = (
 		);
@@ -116,16 +116,18 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 333045656;
-			PBXWorkspaceStateSaveDate = 333045656;
+			PBXPerProjectTemplateStateSaveDate = 333048868;
+			PBXWorkspaceStateSaveDate = 333048868;
 		};
 		perUserProjectItems = {
-			D920C06513D9DFBA00A339DC /* PBXTextBookmark */ = D920C06513D9DFBA00A339DC /* PBXTextBookmark */;
-			D920C06613D9DFBA00A339DC /* PBXBookmark */ = D920C06613D9DFBA00A339DC /* PBXBookmark */;
-			D920C06713D9DFBA00A339DC /* PBXTextBookmark */ = D920C06713D9DFBA00A339DC /* PBXTextBookmark */;
+			D920C06513D9DFBA00A339DC = D920C06513D9DFBA00A339DC /* PBXTextBookmark */;
+			D920C06613D9DFBA00A339DC = D920C06613D9DFBA00A339DC /* PBXBookmark */;
+			D920C06713D9DFBA00A339DC = D920C06713D9DFBA00A339DC /* PBXTextBookmark */;
 			D92EA1EB13D487380026D8B1 = D92EA1EB13D487380026D8B1 /* PBXTextBookmark */;
 			D92EA1ED13D487380026D8B1 = D92EA1ED13D487380026D8B1 /* PBXTextBookmark */;
 			D92EA1EF13D487380026D8B1 = D92EA1EF13D487380026D8B1 /* PBXTextBookmark */;
+			D98763EE13D9ED6A0036D8AA /* PBXTextBookmark */ = D98763EE13D9ED6A0036D8AA /* PBXTextBookmark */;
+			D98763EF13D9ED6A0036D8AA /* PBXTextBookmark */ = D98763EF13D9ED6A0036D8AA /* PBXTextBookmark */;
 			D98BE3A113D9619B00DEF407 = D98BE3A113D9619B00DEF407 /* PBXTextBookmark */;
 			D98BE3A313D9619B00DEF407 = D98BE3A313D9619B00DEF407 /* PBXTextBookmark */;
 			D98BE3A513D9619B00DEF407 = D98BE3A513D9619B00DEF407 /* PBXTextBookmark */;
@@ -281,7 +283,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 314";
 		rLen = 0;
-		rLoc = 7281;
+		rLoc = 7688;
 		rType = 0;
 		vrLen = 1295;
 		vrLoc = 6815;
@@ -322,15 +324,15 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1311, 1131}}";
 			sepNavSelRange = "{1846, 73}";
-			sepNavVisRange = "{447, 1716}";
+			sepNavVisRange = "{396, 1766}";
 			sepNavWindowFrame = "{{84, 402}, {750, 558}}";
 		};
 	};
 	D92EA17813D44C110026D8B1 /* SliderViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1496, 7982}}";
-			sepNavSelRange = "{7281, 0}";
-			sepNavVisRange = "{6815, 1295}";
+			sepNavIntBoundsRect = "{{0, 0}, {1496, 8203}}";
+			sepNavSelRange = "{6485, 0}";
+			sepNavVisRange = "{4652, 1874}";
 			sepNavWindowFrame = "{{15, 465}, {750, 558}}";
 		};
 	};
@@ -444,6 +446,26 @@
 		name = CGPDFDocument.h;
 		path = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDocument.h;
 		sourceTree = "<absolute>";
+	};
+	D98763EE13D9ED6A0036D8AA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D92EA17713D44C110026D8B1 /* SliderViewController.h */;
+		name = "SliderViewController.h: 81";
+		rLen = 73;
+		rLoc = 1846;
+		rType = 0;
+		vrLen = 1766;
+		vrLoc = 396;
+	};
+	D98763EF13D9ED6A0036D8AA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
+		name = "SliderViewController.m: 273";
+		rLen = 0;
+		rLoc = 6485;
+		rType = 0;
+		vrLen = 1874;
+		vrLoc = 4652;
 	};
 	D98BE39013D9603500DEF407 /* SliderHeader.h */ = {
 		uiCtxt = {
@@ -813,7 +835,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 260";
 		rLen = 0;
-		rLoc = 6705;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 1669;
 		vrLoc = 4266;
@@ -822,7 +844,7 @@
 		isa = PBXTextBookmark;
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		rLen = 13;
-		rLoc = 7750;
+		rLoc = 8157;
 		rType = 0;
 	};
 	D9B003AC13D985DC00AA3CAA /* PBXTextBookmark */ = {
@@ -830,7 +852,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 306";
 		rLen = 0;
-		rLoc = 7766;
+		rLoc = 8173;
 		rType = 0;
 		vrLen = 725;
 		vrLoc = 6319;
@@ -839,7 +861,7 @@
 		isa = PBXTextBookmark;
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		rLen = 18;
-		rLoc = 13257;
+		rLoc = 13664;
 		rType = 0;
 	};
 	D9B003B213D985DE00AA3CAA /* PBXTextBookmark */ = {
@@ -847,7 +869,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 495";
 		rLen = 18;
-		rLoc = 13257;
+		rLoc = 13664;
 		rType = 0;
 		vrLen = 1076;
 		vrLoc = 9576;
@@ -857,7 +879,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 495";
 		rLen = 18;
-		rLoc = 13257;
+		rLoc = 13664;
 		rType = 0;
 		vrLen = 1106;
 		vrLoc = 9779;
@@ -867,7 +889,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 425";
 		rLen = 347;
-		rLoc = 11116;
+		rLoc = 11523;
 		rType = 0;
 		vrLen = 1213;
 		vrLoc = 8519;
@@ -917,7 +939,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 434";
 		rLen = 0;
-		rLoc = 11567;
+		rLoc = 11974;
 		rType = 0;
 		vrLen = 1226;
 		vrLoc = 8519;
@@ -927,7 +949,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 426";
 		rLen = 0;
-		rLoc = 11463;
+		rLoc = 11870;
 		rType = 0;
 		vrLen = 1214;
 		vrLoc = 8662;
@@ -937,7 +959,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 445";
 		rLen = 0;
-		rLoc = 11816;
+		rLoc = 12223;
 		rType = 0;
 		vrLen = 1230;
 		vrLoc = 8832;
@@ -947,7 +969,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 424";
 		rLen = 0;
-		rLoc = 10962;
+		rLoc = 11369;
 		rType = 0;
 		vrLen = 1212;
 		vrLoc = 8664;
@@ -977,7 +999,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 424";
 		rLen = 0;
-		rLoc = 10962;
+		rLoc = 11369;
 		rType = 0;
 		vrLen = 1394;
 		vrLoc = 0;
@@ -1037,7 +1059,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 398";
 		rLen = 0;
-		rLoc = 10187;
+		rLoc = 10594;
 		rType = 0;
 		vrLen = 960;
 		vrLoc = 8595;
@@ -1133,7 +1155,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 313";
 		rLen = 0;
-		rLoc = 7766;
+		rLoc = 8173;
 		rType = 0;
 		vrLen = 1034;
 		vrLoc = 4972;
@@ -1203,7 +1225,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 436";
 		rLen = 0;
-		rLoc = 10962;
+		rLoc = 11369;
 		rType = 0;
 		vrLen = 1194;
 		vrLoc = 8855;
@@ -1213,7 +1235,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 436";
 		rLen = 0;
-		rLoc = 10962;
+		rLoc = 11369;
 		rType = 0;
 		vrLen = 1209;
 		vrLoc = 8908;
@@ -1223,7 +1245,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 436";
 		rLen = 0;
-		rLoc = 10962;
+		rLoc = 11369;
 		rType = 0;
 		vrLen = 1209;
 		vrLoc = 8908;
@@ -1233,7 +1255,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 436";
 		rLen = 0;
-		rLoc = 10962;
+		rLoc = 11369;
 		rType = 0;
 		vrLen = 1237;
 		vrLoc = 8912;
@@ -1243,7 +1265,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 432";
 		rLen = 0;
-		rLoc = 10962;
+		rLoc = 11369;
 		rType = 0;
 		vrLen = 1272;
 		vrLoc = 8941;
@@ -1253,7 +1275,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 443";
 		rLen = 0;
-		rLoc = 11223;
+		rLoc = 11630;
 		rType = 0;
 		vrLen = 915;
 		vrLoc = 8941;
@@ -1263,7 +1285,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 443";
 		rLen = 0;
-		rLoc = 11223;
+		rLoc = 11630;
 		rType = 0;
 		vrLen = 877;
 		vrLoc = 8981;
@@ -1273,7 +1295,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 357";
 		rLen = 0;
-		rLoc = 8859;
+		rLoc = 9266;
 		rType = 0;
 		vrLen = 857;
 		vrLoc = 7668;
@@ -1282,7 +1304,7 @@
 		isa = PBXTextBookmark;
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		rLen = 1;
-		rLoc = 230;
+		rLoc = 231;
 		rType = 1;
 	};
 	D9B0043313D98FED00AA3CAA /* PBXTextBookmark */ = {
@@ -1290,7 +1312,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 444";
 		rLen = 0;
-		rLoc = 11223;
+		rLoc = 11630;
 		rType = 0;
 		vrLen = 1338;
 		vrLoc = 9079;
@@ -1300,7 +1322,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 445";
 		rLen = 0;
-		rLoc = 11223;
+		rLoc = 11630;
 		rType = 0;
 		vrLen = 1436;
 		vrLoc = 9169;
@@ -1320,7 +1342,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 432";
 		rLen = 0;
-		rLoc = 10783;
+		rLoc = 11190;
 		rType = 0;
 		vrLen = 1425;
 		vrLoc = 8838;
@@ -1340,7 +1362,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 429";
 		rLen = 0;
-		rLoc = 10608;
+		rLoc = 11015;
 		rType = 0;
 		vrLen = 1271;
 		vrLoc = 8838;
@@ -1350,7 +1372,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 359";
 		rLen = 0;
-		rLoc = 8557;
+		rLoc = 8964;
 		rType = 0;
 		vrLen = 1255;
 		vrLoc = 7593;
@@ -1388,7 +1410,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 326";
 		rLen = 0;
-		rLoc = 7766;
+		rLoc = 8173;
 		rType = 0;
 		vrLen = 735;
 		vrLoc = 4788;
@@ -1462,7 +1484,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 472";
 		rLen = 16;
-		rLoc = 10743;
+		rLoc = 11150;
 		rType = 0;
 		vrLen = 1354;
 		vrLoc = 10205;
@@ -1472,7 +1494,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 472";
 		rLen = 0;
-		rLoc = 10759;
+		rLoc = 11166;
 		rType = 0;
 		vrLen = 1323;
 		vrLoc = 10245;
@@ -1482,7 +1504,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 501";
 		rLen = 88;
-		rLoc = 11728;
+		rLoc = 12135;
 		rType = 0;
 		vrLen = 1338;
 		vrLoc = 10289;
@@ -1492,7 +1514,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 499";
 		rLen = 0;
-		rLoc = 11686;
+		rLoc = 12093;
 		rType = 0;
 		vrLen = 1406;
 		vrLoc = 10207;
@@ -1502,7 +1524,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 486";
 		rLen = 0;
-		rLoc = 11514;
+		rLoc = 11921;
 		rType = 0;
 		vrLen = 1382;
 		vrLoc = 10266;
@@ -1512,7 +1534,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 481";
 		rLen = 0;
-		rLoc = 11223;
+		rLoc = 11630;
 		rType = 0;
 		vrLen = 1392;
 		vrLoc = 10289;
@@ -1522,7 +1544,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 479";
 		rLen = 0;
-		rLoc = 11223;
+		rLoc = 11630;
 		rType = 0;
 		vrLen = 1364;
 		vrLoc = 10322;
@@ -1532,7 +1554,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 489";
 		rLen = 0;
-		rLoc = 11485;
+		rLoc = 11892;
 		rType = 0;
 		vrLen = 1587;
 		vrLoc = 10289;
@@ -1542,7 +1564,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 485";
 		rLen = 0;
-		rLoc = 11223;
+		rLoc = 11630;
 		rType = 0;
 		vrLen = 1608;
 		vrLoc = 10325;
@@ -1552,7 +1574,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 483";
 		rLen = 239;
-		rLoc = 11223;
+		rLoc = 11630;
 		rType = 0;
 		vrLen = 1585;
 		vrLoc = 10322;
@@ -1562,7 +1584,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 475";
 		rLen = 0;
-		rLoc = 10910;
+		rLoc = 11317;
 		rType = 0;
 		vrLen = 1632;
 		vrLoc = 10324;
@@ -1572,7 +1594,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 471";
 		rLen = 0;
-		rLoc = 10712;
+		rLoc = 11119;
 		rType = 0;
 		vrLen = 1524;
 		vrLoc = 10119;
@@ -1582,7 +1604,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 509";
 		rLen = 0;
-		rLoc = 11819;
+		rLoc = 12226;
 		rType = 0;
 		vrLen = 1633;
 		vrLoc = 10325;
@@ -1592,7 +1614,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 509";
 		rLen = 0;
-		rLoc = 11819;
+		rLoc = 12226;
 		rType = 0;
 		vrLen = 1590;
 		vrLoc = 10373;
@@ -1602,7 +1624,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 509";
 		rLen = 0;
-		rLoc = 11819;
+		rLoc = 12226;
 		rType = 0;
 		vrLen = 1635;
 		vrLoc = 10374;
@@ -1742,7 +1764,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = "SliderViewController.m: 260";
 		rLen = 0;
-		rLoc = 6705;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 1641;
 		vrLoc = 4294;
@@ -1769,7 +1791,7 @@
 		fRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */;
 		name = setima;
 		rLen = 0;
-		rLoc = 4977;
+		rLoc = 5072;
 		rType = 0;
 		vrLen = 931;
 		vrLoc = 2727;

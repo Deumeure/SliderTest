@@ -12,16 +12,18 @@
 @interface CachingTool : NSObject 
 {
 	uint mIndex;
+	NSString* mTag;
 }
 
 
--(id)initWithIndex:(uint)pIndex;
+-(id)initWithIndex:(uint)pIndex andTag:(NSString*)pTag;
 
 -(bool)isCached;
 -(UIImage*)readCache;
 -(void)writeToCache:(UIImage*)pImage;
 
 
-+(CachingTool*)cachingToolWithIndex:(uint)pIndex;
++(CachingTool*)cachingToolWithIndex:(uint)pIndex andTag:(NSString*)pTag;
+
 
 @end
