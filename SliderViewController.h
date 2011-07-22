@@ -42,7 +42,7 @@ typedef enum SliderPresentation
 	CGRect mDoublePageBorders;
 	
 	
-	uint mRealPageCount;
+	//uint mRealPageCount;
 	
 }
 

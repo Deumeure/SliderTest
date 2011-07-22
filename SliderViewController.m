@@ -17,9 +17,15 @@
 
 -(void)updateDatas;
 
+-(PageIndex)giveDoublePageIndexesFromSinglePageIndex:(uint)pIndex;
+-(uint)giveSingllePageIndexeFromDoublePageIndexes:(PageIndex)pIndexes;
+
 @end
 
 #define CACHE_NUM 2
+
+#define isSinglePage (self.presentation == sliderPresentationSinglePage)
+#define isDoublePage (self.presentation == sliderPresentationDoublePage)
 
 @implementation SliderViewController
 
@@ -31,7 +37,7 @@
 	if(self)
 	{
 		mPageCount = pPageCount;
-		mRealPageCount = pPageCount;
+	//	mRealPageCount = pPageCount;
 		mCurrentPage = 0;
 	
 		mLockObject = [[NSObject alloc]init];
@@ -77,17 +83,6 @@
 	//Le calcul lors du passage a une autre orientation
 	
 	
-	
-	if(self.presentation == sliderPresentationDoublePage)
-	{
-		NSLog(@"3456789045678904567890");
-		mPageCount = floor(mPageCount/2);
-		mCurrentPage =  (mCurrentPage/2 + 1);
-		
-	}else {
-		mPageCount = mRealPageCount;
-		mCurrentPage = MIN(mPageCount,(mCurrentPage*2 -1));
-	}
 
 	
 
@@ -207,13 +202,8 @@
 	
 	UIScrollView* lScrollView  =(UIScrollView*) [mScrollView viewWithTag:pPageIndex];
 	
-	
-	uint lIndexOfPage = pPageIndex;
-	
-
 
 	//Déja cache ?? on quitte
-	
 	if(lScrollView)
 	{
 		NSLog(@"DEJA CACHE");
@@ -221,13 +211,16 @@
 		return;
 		
 	}
+	
 	//On créé la scrollview
 	lScrollView = [[[UIScrollView alloc]initWithFrame:CGRectMake(self.view.bounds.size.width * (pPageIndex-1), 0, self.view.bounds.size.width, self.view.bounds.size.height)] autorelease];
 	lScrollView.tag = pPageIndex;
 	
+	//On créé  l' imageView
 	UIImageView* lImageView = [[[UIImageView alloc]initWithFrame:CGRectMake(0,0, 768, 1024)] autorelease];
 	lImageView.tag = 1851;
 	lImageView.backgroundColor  = [UIColor yellowColor];
+	
 	
 	//On met la frame en fonction des bordures
 	CGRect lBorders = self.presentation == sliderPresentationSinglePage  ? self.singlePageBorders : self.doublePageBorders  ;
@@ -244,26 +237,16 @@
 	NSLog(@"*ADD scrollview %d",lScrollView.tag);
 	
 
-	//On envoi le numéro "portraité" de la page
+
 	//On demande l'image au datasource
-	
 	if(self.presentation == sliderPresentationSinglePage)
 		[mDataSource sliderViewController:self cachePageAtIndex:pPageIndex];
 	else {
 		
+		PageIndex lIndex = [self giveDoublePageIndexesFromSinglePageIndex:pPageIndex];
 		
-		uint lIndex1 = 0;
-		uint lIndex2 = 0;
 		
-		if(pPageIndex == 1)
-		{
-			lIndex1 == 0;
-			lIndex2 = 1;
-		}
-		{
-		}
-		
-		[mDataSource sliderViewController:self cachePageAtIndex:pPageIndex andIndex:<#(uint)pPageIndex2#>]
+		[mDataSource sliderViewController:self cachePageAtIndex:lIndex.index1 andIndex:lIndex.index2];
 	}
 
 	
@@ -271,13 +254,20 @@
 
 
 
+//Passe à la page suivante
 -(void)pagePlus
 {
+	
+	if(mCurrentPage == mPageCount)
+		return;
+	
 	//On decache la page la plus en arriere
 	[self unCachePage:mCurrentPage - CACHE_NUM];
 	
-	//On passe à la page suivant
+	//On passe à la page suivante
+	
 	mCurrentPage++;
+	
 	
 	//On render la page courante
 	[mDataSource sliderViewController:self renderPageAtIndex:mCurrentPage];
@@ -290,9 +280,12 @@
 }
 
 
-
+//Page à la page précédente
 -(void)pageMinus
 {
+	
+	if(mCurrentPage == 0)
+		return;
 	
 	//On decache la page la plus en avant
 	[self unCachePage:mCurrentPage + CACHE_NUM];
@@ -305,8 +298,8 @@
 	
 	//On cache la page avant
 	[self cachePage:mCurrentPage - CACHE_NUM];
-	
-		NSLog(@"page %d",mCurrentPage);
+
+	NSLog(@"page %d",mCurrentPage);
 }
 
 
@@ -330,26 +323,17 @@
 {
 	[super willRotateToInterfaceOrientation:toInterfaceOrientation duration:duration];
 	
-	NSLog(@"willRotateToInterfaceOrientation");
 	[self resetPages];
+	
 	//self.presentation = UIInterfaceOrientationIsPortrait(toInterfaceOrientation) ? sliderPresentationSinglePage	: sliderPresentationDoublePage;
 	
-//    if (UIInterfaceOrientationIsPortrait(toInterfaceOrientation)) {
-//        leavesView.mode = LeavesViewModeSinglePage;
-//    } else {
-//        leavesView.mode = LeavesViewModeFacingPages;
-//    }
-//	
-//	m_scrollView.scrollEnabled = NO;
-	
-	//NSLog(@"ca tourne");
+
 }
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
 {
 	self.presentation = UIInterfaceOrientationIsPortrait(self.interfaceOrientation) ? sliderPresentationSinglePage	: sliderPresentationDoublePage;
 	
-	NSLog(@"rect %@",NSStringFromCGRect(self.view.bounds));
 }
 
 
@@ -359,8 +343,7 @@
 {
 
 	[self updateDatas];
-	NSLog(@"GHJKLMGFHJKLMGHJKLM%HFRTGTXSFTIJKO");
-	//On rset les pages
+	//On reset les pages
 	[self gotoPage:mCurrentPage];
 	
 }
@@ -368,8 +351,8 @@
 -(void)switchToDoublePage
 {
 	[self updateDatas];
-	NSLog(@"GHJKLMGFHJKLMGHJKLM%HFRTGTXSFTIJKO");
-	//On rset les pages
+
+	//On reset les pages
 	[self gotoPage:mCurrentPage];
 	
 }
@@ -385,24 +368,9 @@
 	
 	float lkk =  (scrollView.contentOffset.x  / self.view.bounds.size.width +1.0f) -((int)scrollView.contentOffset.x  / self.view.bounds.size.width  +1);
 	
-	//NSLog(@" ");
-	//NSLog(@"lkk %f",lkk);
-		//NSLog(@"scrollView.contentOffset.x   %f",scrollView.contentOffset.x  );
-	
-	//NSLog(@"lCurrentPage %d",lCurrentPage);
-	
-//	if(lkk<0.5f)
-//		lCurrentPage++;
-//	if(lkk>0.5f)
-//		lCurrentPage--;
-	
 	
 	if (mCurrentPage > lCurrentPage)
 	{
-//		if(lkk >0.5)
-//			return;
-		
-		
 		if(lkk >0.2f)
 			return;
 		
@@ -412,26 +380,49 @@
 	
 	if(mCurrentPage < lCurrentPage)
 	{
-		
-		//if(lkk >0.2f)
-			
+
 		[self pagePlus];
 		NSLog(@"mCurrenPage %d",mCurrentPage);
 	}
 
 }
 
-//- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
-//{
-//
-//}
-//
-//- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
-//{
-//
-//}
-//
 
+#pragma mark -
+#pragma mark Paging util function
+
+//convertie des coordonnées silple page en coordonées double page
+-(PageIndex)giveDoublePageIndexesFromSinglePageIndex:(uint)pIndex
+{
+	
+	//si c'est 1 , c'est spécial
+	if(pIndex == 1)
+	{
+		return PageIndexMake(0, 1);
+	}
+	
+	
+	//uint lFirstPage =  (mCurrentPage/2 + 1);
+	
+	//Si la dernière page est paire, elle est seule
+	if(pIndex == mPageCount && pIndex %2 ==0)
+	{
+		return PageIndexMake(pIndex,0);
+	}
+	
+	return PageIndexMake(pIndex,pIndex +1);
+}
+
+
+//Converti des coordonnées double page en cordonnées sinple page
+-(uint)giveSingllePageIndexeFromDoublePageIndexes:(PageIndex)pIndexes
+{
+	if(pIndexes.index1 ==0)
+		return pIndexes.index2;
+	
+	return pIndexes.index1;
+	//MIN(mPageCount,(pIndexes*2 -1));
+}
 
 
 #pragma mark -

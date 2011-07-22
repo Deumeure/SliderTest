@@ -25,7 +25,7 @@
 -(id)initWithPDFPage:(CGPDFPageRef)pPage pageIndex:(uint)pPageIndex  PDFPage2:(CGPDFPageRef)pPage2 pageIndex2:(uint)pPageIndex2;
 -(id)initWithPDFPage:(CGPDFPageRef)pPage pageIndex:(uint)pPageIndex;
 
--(CGSize)originaleSize;
+//-(CGSize)originaleSize;
 -(UIImage*)imageForRect:(CGRect)pImageRect;
 
 

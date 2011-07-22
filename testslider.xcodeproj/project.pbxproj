@@ -52,6 +52,7 @@
 		D92EA1D413D483530026D8B1 /* GraphicsUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicsUtils.h; sourceTree = "<group>"; };
 		D92EA1D513D483530026D8B1 /* GraphicsUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphicsUtils.m; sourceTree = "<group>"; };
 		D92EA1FB13D487600026D8B1 /* mobile.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = mobile.pdf; sourceTree = "<group>"; };
+		D98BE39013D9603500DEF407 /* SliderHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderHeader.h; sourceTree = "<group>"; };
 		D98BE47E13D704E500B35FCD /* PDFPageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFPageOperation.h; sourceTree = "<group>"; };
 		D98BE47F13D704E500B35FCD /* PDFPageOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFPageOperation.m; sourceTree = "<group>"; };
 		D98BE60013D72B7900B35FCD /* CachingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CachingTool.h; sourceTree = "<group>"; };
@@ -123,6 +124,7 @@
 				D92EA18A13D468480026D8B1 /* PDFLoader.m */,
 				D98F28F613D57078005BFC94 /* SliderDelegate.h */,
 				D98F28F713D57078005BFC94 /* SliderDelegate.m */,
+				D98BE39013D9603500DEF407 /* SliderHeader.h */,
 			);
 			name = Shared;
 			sourceTree = "<group>";

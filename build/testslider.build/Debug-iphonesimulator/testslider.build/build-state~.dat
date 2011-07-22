@@ -1,1254 +1,0 @@
-Ttestslider
-v7
-r0
-t332944067.553925
-cCheck dependencies
-cProcessInfoPlistFile /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app/Info.plist testslider-Info.plist
-cCompileXIB /Users/Deumeure/Documents/Repository/testSlide/iPhone/MainWindow_iPhone.xib
-cCompileXIB /Users/Deumeure/Documents/Repository/testSlide/iPad/MainWindow_iPad.xib
-cCpResource build/Debug-iphonesimulator/testslider.app/mobile.pdf mobile.pdf
-cProcessPCH /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-guzydwssnmodvognxfiuvehmavyv/testslider_Prefix.pch.gch testslider_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/main.o /Users/Deumeure/Documents/Repository/testSlide/Shared/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/AppDelegate_iPhone.o /Users/Deumeure/Documents/Repository/testSlide/iPhone/AppDelegate_iPhone.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/AppDelegate_iPad.o /Users/Deumeure/Documents/Repository/testSlide/iPad/AppDelegate_iPad.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/SliderViewController.o /Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFLoader.o /Users/Deumeure/Documents/Repository/testSlide/PDFLoader.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFPage.o /Users/Deumeure/Documents/Repository/testSlide/PDFPage.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/GraphicsUtils.o /Users/Deumeure/Documents/Repository/testSlide/GraphicsUtils.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/SliderDelegate.o /Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFImageLoader.o /Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFImageLoader.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/BlockingQueue.o /Users/Deumeure/Documents/Repository/testSlide/BlockingQueue/BlockingQueue.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/InvocationUtil.o /Users/Deumeure/Documents/Repository/testSlide/InvocationUtil.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFPageOperation.o /Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFPageOperation.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/CachingTool.o /Users/Deumeure/Documents/Repository/testSlide/ImageLoader/CachingTool.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/NSFileUtility.o /Users/Deumeure/Documents/Repository/testSlide/NSFileUtility.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app/testslider normal i386
-cGenerateDSYMFile /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app.dSYM /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app/testslider
-cTouch /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
-c000000004CC128950000000000000110
-t1287727253
-s272
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004CC12246000000000029B310
-t1287725638
-s2732816
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004CC1226D000000000029D5D0
-t1287725677
-s2741712
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004CC1225F0000000000001466
-t1287725663
-s5222
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
-c000000004CC1233C00000000000000C4
-t1287725884
-s196
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004CC1281F0000000000000AA1
-t1287727135
-s2721
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004CC12883000000000074D7B0
-t1287727235
-s7657392
-
-N/Users/Deumeure/Documents/Repository/testSlide/BlockingQueue/BlockingQueue.h
-c000000004D505DDC000000000000019F
-t1297112540
-s415
-i<Foundation/Foundation.h>
-
-N/Users/Deumeure/Documents/Repository/testSlide/BlockingQueue/BlockingQueue.m
-c000000004E2594B8000000000000050E
-t1311085752
-s1294
-i"BlockingQueue.h"
-
-N/Users/Deumeure/Documents/Repository/testSlide/GraphicsUtils.h
-c000000004E1C441F0000000000000A1E
-t1310475295
-s2590
-i<QuartzCore/QuartzCore.h>
-i<Foundation/Foundation.h>
-
-N/Users/Deumeure/Documents/Repository/testSlide/GraphicsUtils.m
-c000000004E258CF40000000000008CC6
-t1311083764
-s36038
-i"GraphicsUtils.h"
-
-N/Users/Deumeure/Documents/Repository/testSlide/ImageLoader/CachingTool.h
-c000000004E26FA77000000000000019A
-t1311177335
-s410
-i<Foundation/Foundation.h>
-
-N/Users/Deumeure/Documents/Repository/testSlide/ImageLoader/CachingTool.m
-c000000004E26FF210000000000000429
-t1311178529
-s1065
-i"CachingTool.h"
-i"NSFileUtility.h"
-
-N/Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFImageLoader.h
-c000000004E2556D90000000000000316
-t1311069913
-s790
-i<Foundation/Foundation.h>
-i"BlockingQueue.h"
-i"PDFPage.h"
-
-N/Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFImageLoader.m
-c000000004E26B5A400000000000009CE
-t1311159716
-s2510
-i"PDFImageLoader.h"
-
-N/Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFPageOperation.h
-c000000004E26EB9700000000000002E0
-t1311173527
-s736
-i<Foundation/Foundation.h>
-i"PDFPage.h"
-
-N/Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFPageOperation.m
-c000000004E27F2B80000000000000660
-t1311240888
-s1632
-i"PDFPageOperation.h"
-i"CachingTool.h"
-
-N/Users/Deumeure/Documents/Repository/testSlide/InvocationUtil.h
-c000000004D505DDC000000000000099F
-t1297112540
-s2463
-i<Foundation/Foundation.h>
-
-N/Users/Deumeure/Documents/Repository/testSlide/InvocationUtil.m
-c000000004D505DDC000000000000024A
-t1297112540
-s586
-i"InvocationUtil.h"
-
-N/Users/Deumeure/Documents/Repository/testSlide/NSFileUtility.h
-c000000004E1C441F000000000000085D
-t1310475295
-s2141
-i<Foundation/Foundation.h>
-
-N/Users/Deumeure/Documents/Repository/testSlide/NSFileUtility.m
-c000000004E1C441F0000000000002B58
-t1310475295
-s11096
-i"NSFileUtility.h"
-
-N/Users/Deumeure/Documents/Repository/testSlide/PDFLoader.h
-c000000004E2450D700000000000001F1
-t1311002839
-s497
-i<Foundation/Foundation.h>
-i"PDFPage.h"
-
-N/Users/Deumeure/Documents/Repository/testSlide/PDFLoader.m
-c000000004E26B64900000000000003D4
-t1311159881
-s980
-i"PDFLoader.h"
-
-N/Users/Deumeure/Documents/Repository/testSlide/PDFPage.h
-c000000004E27FD7D0000000000000319
-t1311243645
-s793
-i<Foundation/Foundation.h>
-
-N/Users/Deumeure/Documents/Repository/testSlide/PDFPage.m
-c000000004E281A160000000000001940
-t1311250966
-s6464
-i"PDFPage.h"
-i"GraphicsUtils.h"
-
-N/Users/Deumeure/Documents/Repository/testSlide/Shared/main.m
-c000000004E2414740000000000000174
-t1310987380
-s372
-i<UIKit/UIKit.h>
-
-N/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.h
-c000000004E26D2550000000000000232
-t1311167061
-s562
-i<Foundation/Foundation.h>
-i"SliderViewController.h"
-i"PDFLoader.h"
-i"PDFPageOperation.h"
-i"SliderViewController.h"
-
-N/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m
-c000000004E28031A0000000000000F16
-t1311245082
-s3862
-i"SliderDelegate.h"
-
-N/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.h
-c000000004E27FEAE000000000000079A
-t1311243950
-s1946
-i<UIKit/UIKit.h>
-
-N/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m
-c000000004E281A9A0000000000001EDE
-t1311251098
-s7902
-i"SliderViewController.h"
-
-N/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app
-t1311251267
-s272
-
-N/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app.dSYM
-t1311251267
-s102
-
-N/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app/Info.plist
-t1311251263
-s942
-
-N/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app/MainWindow_iPad.nib
-t1311251265
-s982
-
-N/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app/MainWindow_iPhone.nib
-t1311251265
-s984
-
-N/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app/PkgInfo
-t1311251263
-s8
-
-N/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app/mobile.pdf
-t1311251265
-s70022721
-
-N/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app/testslider
-t1311251267
-s108848
-
-N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/AppDelegate_iPad.o
-t1311251267
-s51324
-
-N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/AppDelegate_iPhone.o
-t1311251267
-s49312
-
-N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/BlockingQueue.o
-t1311251267
-s12532
-
-N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/CachingTool.o
-t1311251267
-s11784
-
-N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/GraphicsUtils.o
-t1311251267
-s53176
-
-N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/InvocationUtil.o
-t1311251267
-s7832
-
-N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/NSFileUtility.o
-t1311251267
-s38660
-
-N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFImageLoader.o
-t1311251267
-s14812
-
-N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFLoader.o
-t1311251267
-s11920
-
-N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFPage.o
-t1311251267
-s22892
-
-N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFPageOperation.o
-t1311251267
-s16116
-
-N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/SliderDelegate.o
-t1311251267
-s50580
-
-N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/SliderViewController.o
-t1311251267
-s66576
-
-N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/main.o
-t1311251267
-s6332
-
-N/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/testslider.LinkFileList
-c000000004E281B3F00000000000007EE
-t1311251263
-s2030
-
-N/Users/Deumeure/Documents/Repository/testSlide/iPad/AppDelegate_iPad.h
-c000000004E241474000000000000014E
-t1310987380
-s334
-i<UIKit/UIKit.h>
-
-N/Users/Deumeure/Documents/Repository/testSlide/iPad/AppDelegate_iPad.m
-c000000004E27EC060000000000000A25
-t1311239174
-s2597
-i"AppDelegate_iPad.h"
-i"PDFLoader.h"
-i"PDFPage.h"
-i"SliderViewController.h"
-i"SliderDelegate.h"
-
-N/Users/Deumeure/Documents/Repository/testSlide/iPad/MainWindow_iPad.xib
-c000000004E24147400000000000036DE
-t1310987380
-s14046
-
-N/Users/Deumeure/Documents/Repository/testSlide/iPhone/AppDelegate_iPhone.h
-c000000004E2414740000000000000152
-t1310987380
-s338
-i<UIKit/UIKit.h>
-
-N/Users/Deumeure/Documents/Repository/testSlide/iPhone/AppDelegate_iPhone.m
-c000000004E24147400000000000009D9
-t1310987380
-s2521
-i"AppDelegate_iPhone.h"
-
-N/Users/Deumeure/Documents/Repository/testSlide/iPhone/MainWindow_iPhone.xib
-c000000004E241474000000000000390D
-t1310987380
-s14605
-
-N/Users/Deumeure/Documents/Repository/testSlide/mobile.pdf
-c000000004DAD613600000000042C7641
-t1303208246
-s70022721
-
-N/Users/Deumeure/Documents/Repository/testSlide/testslider_Prefix.pch
-c000000004E24147400000000000000BD
-t1310987380
-s189
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/Users/Deumeure/Documents/testslider/BlockingQueue/BlockingQueue.h
-c000000004D505DDC000000000000019F
-t1297112540
-s415
-i<Foundation/Foundation.h>
-
-N/Users/Deumeure/Documents/testslider/BlockingQueue/BlockingQueue.m
-c000000004E2594B8000000000000050E
-t1311085752
-s1294
-i"BlockingQueue.h"
-
-N/Users/Deumeure/Documents/testslider/GraphicsUtils.h
-c000000004E1C441F0000000000000A1E
-t1310475295
-s2590
-i<QuartzCore/QuartzCore.h>
-i<Foundation/Foundation.h>
-
-N/Users/Deumeure/Documents/testslider/GraphicsUtils.m
-c000000004E258CF40000000000008CC6
-t1311083764
-s36038
-i"GraphicsUtils.h"
-
-N/Users/Deumeure/Documents/testslider/ImageLoader/PDFImageLoader.h
-c000000004E2556D90000000000000316
-t1311069913
-s790
-i<Foundation/Foundation.h>
-i"BlockingQueue.h"
-i"PDFPage.h"
-
-N/Users/Deumeure/Documents/testslider/ImageLoader/PDFImageLoader.m
-c000000004E25947B000000000000072F
-t1311085691
-s1839
-i"PDFImageLoader.h"
-
-N/Users/Deumeure/Documents/testslider/InvocationUtil.h
-c000000004D505DDC000000000000099F
-t1297112540
-s2463
-i<Foundation/Foundation.h>
-
-N/Users/Deumeure/Documents/testslider/InvocationUtil.m
-c000000004D505DDC000000000000024A
-t1297112540
-s586
-i"InvocationUtil.h"
-
-N/Users/Deumeure/Documents/testslider/PDFLoader.h
-c000000004E2450D700000000000001F1
-t1311002839
-s497
-i<Foundation/Foundation.h>
-i"PDFPage.h"
-
-N/Users/Deumeure/Documents/testslider/PDFLoader.m
-c000000004E255DFE000000000000039C
-t1311071742
-s924
-i"PDFLoader.h"
-
-N/Users/Deumeure/Documents/testslider/PDFPage.h
-c000000004E24475600000000000002A4
-t1311000406
-s676
-i<Foundation/Foundation.h>
-
-N/Users/Deumeure/Documents/testslider/PDFPage.m
-c000000004E2593C10000000000000F54
-t1311085505
-s3924
-i"PDFPage.h"
-i"GraphicsUtils.h"
-
-N/Users/Deumeure/Documents/testslider/Shared/main.m
-c000000004E2414740000000000000174
-t1310987380
-s372
-i<UIKit/UIKit.h>
-
-N/Users/Deumeure/Documents/testslider/SliderDelegate.h
-c000000004E2581760000000000000227
-t1311080822
-s551
-i<Foundation/Foundation.h>
-i"SliderViewController.h"
-i"PDFLoader.h"
-i"PDFImageLoader.h"
-i"SliderViewController.h"
-
-N/Users/Deumeure/Documents/testslider/SliderDelegate.m
-c000000004E25946D0000000000000583
-t1311085677
-s1411
-i"SliderDelegate.h"
-
-N/Users/Deumeure/Documents/testslider/SliderViewController.h
-c000000004E2532BF00000000000005C2
-t1311060671
-s1474
-i<UIKit/UIKit.h>
-
-N/Users/Deumeure/Documents/testslider/SliderViewController.m
-c000000004E258BA3000000000000164D
-t1311083427
-s5709
-i"SliderViewController.h"
-
-N/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app
-t1311085753
-s272
-
-N/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app.dSYM
-t1311085753
-s102
-
-N/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app/Info.plist
-t1311085732
-s915
-
-N/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app/MainWindow_iPad.nib
-t1311085732
-s982
-
-N/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app/MainWindow_iPhone.nib
-t1311085732
-s984
-
-N/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app/PkgInfo
-t1311085732
-s8
-
-N/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app/mobile.pdf
-t1311085732
-s2708379
-
-N/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app/testslider
-t1311085753
-s76460
-
-N/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/AppDelegate_iPad.o
-t1311085733
-s51276
-
-N/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/AppDelegate_iPhone.o
-t1311085733
-s49292
-
-N/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/BlockingQueue.o
-t1311085753
-s12512
-
-N/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/GraphicsUtils.o
-t1311085733
-s53144
-
-N/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/InvocationUtil.o
-t1311085733
-s7812
-
-N/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFImageLoader.o
-t1311085733
-s17280
-
-N/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFLoader.o
-t1311085733
-s11856
-
-N/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFPage.o
-t1311085733
-s17032
-
-N/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/SliderDelegate.o
-t1311085733
-s46044
-
-N/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/SliderViewController.o
-t1311085733
-s56352
-
-N/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/main.o
-t1311085733
-s6312
-
-N/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/testslider.LinkFileList
-c000000004E2594A400000000000005CC
-t1311085732
-s1484
-
-N/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/StaticAnalyzer/normal/i386/AppDelegate_iPad.plist
-t1311084462
-s4737
-
-N/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/StaticAnalyzer/normal/i386/AppDelegate_iPhone.plist
-t1311084462
-s276
-
-N/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/StaticAnalyzer/normal/i386/BlockingQueue.plist
-t1311084462
-s276
-
-N/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/StaticAnalyzer/normal/i386/GraphicsUtils.plist
-t2
-s0
-
-N/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/StaticAnalyzer/normal/i386/InvocationUtil.plist
-t1311084462
-s276
-
-N/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/StaticAnalyzer/normal/i386/PDFImageLoader.plist
-t1311084462
-s276
-
-N/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/StaticAnalyzer/normal/i386/PDFLoader.plist
-t1311084462
-s276
-
-N/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/StaticAnalyzer/normal/i386/PDFPage.plist
-t1311084462
-s276
-
-N/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/StaticAnalyzer/normal/i386/SliderDelegate.plist
-t1311084462
-s276
-
-N/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/StaticAnalyzer/normal/i386/SliderViewController.plist
-t1311084462
-s276
-
-N/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/StaticAnalyzer/normal/i386/main.plist
-t1311084462
-s276
-
-N/Users/Deumeure/Documents/testslider/iPad/AppDelegate_iPad.h
-c000000004E241474000000000000014E
-t1310987380
-s334
-i<UIKit/UIKit.h>
-
-N/Users/Deumeure/Documents/testslider/iPad/AppDelegate_iPad.m
-c000000004E2592C90000000000000A0A
-t1311085257
-s2570
-i"AppDelegate_iPad.h"
-i"PDFLoader.h"
-i"PDFPage.h"
-i"SliderViewController.h"
-i"SliderDelegate.h"
-
-N/Users/Deumeure/Documents/testslider/iPad/MainWindow_iPad.xib
-c000000004E24147400000000000036DE
-t1310987380
-s14046
-
-N/Users/Deumeure/Documents/testslider/iPhone/AppDelegate_iPhone.h
-c000000004E2414740000000000000152
-t1310987380
-s338
-i<UIKit/UIKit.h>
-
-N/Users/Deumeure/Documents/testslider/iPhone/AppDelegate_iPhone.m
-c000000004E24147400000000000009D9
-t1310987380
-s2521
-i"AppDelegate_iPhone.h"
-
-N/Users/Deumeure/Documents/testslider/iPhone/MainWindow_iPhone.xib
-c000000004E241474000000000000390D
-t1310987380
-s14605
-
-N/Users/Deumeure/Documents/testslider/mobile.pdf
-c000000004E1DC63E000000000029539B
-t1310574142
-s2708379
-
-N/Users/Deumeure/Documents/testslider/testslider_Prefix.pch
-c000000004E24147400000000000000BD
-t1310987380
-s189
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-ajmiaqwbkpfoojeyaeoohkvuzhfc/testslider_Prefix.pch.gch
-t1311085733
-s15453392
-
-N/var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-bjegjkibezbcmxeziemhyfdueoqn/testslider_Prefix.pch.pth
-t1311084462
-s2784012
-
-N/var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-guzydwssnmodvognxfiuvehmavyv/testslider_Prefix.pch.gch
-t1311251266
-s15453392
-
-Ntestslider-Info.plist
-c000000004E281B3B0000000000000593
-t1311251259
-s1427
-
-CAnalyze /Users/Deumeure/Documents/testslider/BlockingQueue/BlockingQueue.m
-s332777262.572975
-e332777262.626210
-r1
-xAnalyze
-x/Users/Deumeure/Documents/testslider/BlockingQueue/BlockingQueue.m
-lSLF07#2@74"Analyze /Users/Deumeure/Documents/testslider/BlockingQueue/BlockingQueue.m332777262#332777262#0(0"0(0#0#66"/Users/Deumeure/Documents/testslider/BlockingQueue/BlockingQueue.m8671949792#1993"    cd /Users/Deumeure/Documents/testslider    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-bjegjkibezbcmxeziemhyfdueoqn/testslider_Prefix.pch --analyze /Users/Deumeure/Documents/testslider/BlockingQueue/BlockingQueue.m -o /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/StaticAnalyzer/normal/i386/BlockingQueue.plist0#
-
-CAnalyze /Users/Deumeure/Documents/testslider/GraphicsUtils.m
-s332777262.508192
-e332777265.015141
-r0
-xAnalyze
-x/Users/Deumeure/Documents/testslider/GraphicsUtils.m
-lSLF07#2@60"Analyze /Users/Deumeure/Documents/testslider/GraphicsUtils.m332777262#332777265#0(0"0(0#0#52"/Users/Deumeure/Documents/testslider/GraphicsUtils.m8672466304#1979"    cd /Users/Deumeure/Documents/testslider    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-bjegjkibezbcmxeziemhyfdueoqn/testslider_Prefix.pch --analyze /Users/Deumeure/Documents/testslider/GraphicsUtils.m -o /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/StaticAnalyzer/normal/i386/GraphicsUtils.plist2#
-
-CAnalyze /Users/Deumeure/Documents/testslider/ImageLoader/PDFImageLoader.m
-s332777262.553728
-e332777262.627609
-r1
-xAnalyze
-x/Users/Deumeure/Documents/testslider/ImageLoader/PDFImageLoader.m
-lSLF07#2@73"Analyze /Users/Deumeure/Documents/testslider/ImageLoader/PDFImageLoader.m332777262#332777262#0(0"0(0#0#65"/Users/Deumeure/Documents/testslider/ImageLoader/PDFImageLoader.m8672194976#1993"    cd /Users/Deumeure/Documents/testslider    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-bjegjkibezbcmxeziemhyfdueoqn/testslider_Prefix.pch --analyze /Users/Deumeure/Documents/testslider/ImageLoader/PDFImageLoader.m -o /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/StaticAnalyzer/normal/i386/PDFImageLoader.plist0#
-
-CAnalyze /Users/Deumeure/Documents/testslider/InvocationUtil.m
-s332777262.574296
-e332777262.636167
-r1
-xAnalyze
-x/Users/Deumeure/Documents/testslider/InvocationUtil.m
-lSLF07#2@61"Analyze /Users/Deumeure/Documents/testslider/InvocationUtil.m332777262#332777262#0(0"0(0#0#53"/Users/Deumeure/Documents/testslider/InvocationUtil.m8671793248#1981"    cd /Users/Deumeure/Documents/testslider    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-bjegjkibezbcmxeziemhyfdueoqn/testslider_Prefix.pch --analyze /Users/Deumeure/Documents/testslider/InvocationUtil.m -o /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/StaticAnalyzer/normal/i386/InvocationUtil.plist0#
-
-CAnalyze /Users/Deumeure/Documents/testslider/PDFLoader.m
-s332777262.499896
-e332777262.551668
-r1
-xAnalyze
-x/Users/Deumeure/Documents/testslider/PDFLoader.m
-lSLF07#2@56"Analyze /Users/Deumeure/Documents/testslider/PDFLoader.m332777262#332777262#0(0"0(0#0#48"/Users/Deumeure/Documents/testslider/PDFLoader.m8673151392#1971"    cd /Users/Deumeure/Documents/testslider    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-bjegjkibezbcmxeziemhyfdueoqn/testslider_Prefix.pch --analyze /Users/Deumeure/Documents/testslider/PDFLoader.m -o /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/StaticAnalyzer/normal/i386/PDFLoader.plist0#
-
-CAnalyze /Users/Deumeure/Documents/testslider/PDFPage.m
-s332777262.506398
-e332777262.572171
-r1
-xAnalyze
-x/Users/Deumeure/Documents/testslider/PDFPage.m
-lSLF07#2@54"Analyze /Users/Deumeure/Documents/testslider/PDFPage.m332777262#332777262#0(0"0(0#0#46"/Users/Deumeure/Documents/testslider/PDFPage.m8672769952#1967"    cd /Users/Deumeure/Documents/testslider    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-bjegjkibezbcmxeziemhyfdueoqn/testslider_Prefix.pch --analyze /Users/Deumeure/Documents/testslider/PDFPage.m -o /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/StaticAnalyzer/normal/i386/PDFPage.plist0#
-
-CAnalyze /Users/Deumeure/Documents/testslider/Shared/main.m
-s332777262.450291
-e332777262.499769
-r1
-xAnalyze
-x/Users/Deumeure/Documents/testslider/Shared/main.m
-lSLF07#2@58"Analyze /Users/Deumeure/Documents/testslider/Shared/main.m332777262#332777262#0(0"0(0#0#50"/Users/Deumeure/Documents/testslider/Shared/main.m8673794240#1968"    cd /Users/Deumeure/Documents/testslider    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-bjegjkibezbcmxeziemhyfdueoqn/testslider_Prefix.pch --analyze /Users/Deumeure/Documents/testslider/Shared/main.m -o /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/StaticAnalyzer/normal/i386/main.plist0#
-
-CAnalyze /Users/Deumeure/Documents/testslider/SliderDelegate.m
-s332777262.516940
-e332777262.572714
-r1
-xAnalyze
-x/Users/Deumeure/Documents/testslider/SliderDelegate.m
-lSLF07#2@61"Analyze /Users/Deumeure/Documents/testslider/SliderDelegate.m332777262#332777262#0(0"0(0#0#53"/Users/Deumeure/Documents/testslider/SliderDelegate.m8672291552#1981"    cd /Users/Deumeure/Documents/testslider    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-bjegjkibezbcmxeziemhyfdueoqn/testslider_Prefix.pch --analyze /Users/Deumeure/Documents/testslider/SliderDelegate.m -o /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/StaticAnalyzer/normal/i386/SliderDelegate.plist0#
-
-CAnalyze /Users/Deumeure/Documents/testslider/SliderViewController.m
-s332777262.452805
-e332777262.516800
-r1
-xAnalyze
-x/Users/Deumeure/Documents/testslider/SliderViewController.m
-lSLF07#2@67"Analyze /Users/Deumeure/Documents/testslider/SliderViewController.m332777262#332777262#0(0"0(0#0#59"/Users/Deumeure/Documents/testslider/SliderViewController.m8673444864#1993"    cd /Users/Deumeure/Documents/testslider    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-bjegjkibezbcmxeziemhyfdueoqn/testslider_Prefix.pch --analyze /Users/Deumeure/Documents/testslider/SliderViewController.m -o /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/StaticAnalyzer/normal/i386/SliderViewController.plist0#
-
-CAnalyze /Users/Deumeure/Documents/testslider/iPad/AppDelegate_iPad.m
-s332777262.451956
-e332777262.506271
-r1
-xAnalyze
-x/Users/Deumeure/Documents/testslider/iPad/AppDelegate_iPad.m
-o/Users/Deumeure/Documents/testslider/iPad/AppDelegate_iPad.m:44:38: warning: Potential leak of an object allocated on line 44 and stored into 'lController'
-o         SliderViewController *lController = [[SliderViewController alloc]initWithPageCount:24];
-o                                             ^
-o1 warning generated.
-lSLF07#2@68"Analyze /Users/Deumeure/Documents/testslider/iPad/AppDelegate_iPad.m332777262#332777262#0(321"/Users/Deumeure/Documents/testslider/iPad/AppDelegate_iPad.m:44:38: warning: Potential leak of an object allocated on line 44 and stored into 'lController'         SliderViewController *lController = [[SliderViewController alloc]initWithPageCount:24];                                             ^1 warning generated.1(0@78"Potential leak of an object allocated on line 44 and stored into 'lController'332777262#18446744073709551615#0#4(17@0"332777262#18446744073709551615#0#0(6@60"/Users/Deumeure/Documents/testslider/iPad/AppDelegate_iPad.m332757243#0#0#0#0#0"0(6@60"/Users/Deumeure/Documents/testslider/iPad/AppDelegate_iPad.m332757243#0#0#0#0#1(3@6@60"/Users/Deumeure/Documents/testslider/iPad/AppDelegate_iPad.m332757243#44#2#44#2#6@60"/Users/Deumeure/Documents/testslider/iPad/AppDelegate_iPad.m332757243#44#38#44#87#21@78"Method returns an Objective-C object with a +1 retain count (owning reference)332777262#18446744073709551615#0#0(6@60"/Users/Deumeure/Documents/testslider/iPad/AppDelegate_iPad.m332757243#44#38#0#0#0"1(6@60"/Users/Deumeure/Documents/testslider/iPad/AppDelegate_iPad.m332757243#44#38#44#87#78"Method returns an Objective-C object with a +1 retain count (owning reference)17@0"332777262#18446744073709551615#0#0(6@60"/Users/Deumeure/Documents/testslider/iPad/AppDelegate_iPad.m332757243#0#0#0#0#0"0(6@60"/Users/Deumeure/Documents/testslider/iPad/AppDelegate_iPad.m332757243#0#0#0#0#1(3@6@60"/Users/Deumeure/Documents/testslider/iPad/AppDelegate_iPad.m332757243#44#38#44#87#6@60"/Users/Deumeure/Documents/testslider/iPad/AppDelegate_iPad.m332757243#57#5#57#5#21@143"Object allocated on line 44 and stored into 'lController' is no longer referenced after this point and has a retain count of +1 (object leaked)332777262#18446744073709551615#0#0(6@60"/Users/Deumeure/Documents/testslider/iPad/AppDelegate_iPad.m332757243#57#5#0#0#0"1(6@60"/Users/Deumeure/Documents/testslider/iPad/AppDelegate_iPad.m332757243#57#5#57#5#143"Object allocated on line 44 and stored into 'lController' is no longer referenced after this point and has a retain count of +1 (object leaked)6@60"/Users/Deumeure/Documents/testslider/iPad/AppDelegate_iPad.m332757243#57#5#0#0#36"Memory (Core Foundation/Objective-C)0(4"Leak0#0#60"/Users/Deumeure/Documents/testslider/iPad/AppDelegate_iPad.m8673512064#1990"    cd /Users/Deumeure/Documents/testslider    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-bjegjkibezbcmxeziemhyfdueoqn/testslider_Prefix.pch --analyze /Users/Deumeure/Documents/testslider/iPad/AppDelegate_iPad.m -o /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/StaticAnalyzer/normal/i386/AppDelegate_iPad.plist0#
-
-CAnalyze /Users/Deumeure/Documents/testslider/iPhone/AppDelegate_iPhone.m
-s332777262.451236
-e332777262.508078
-r1
-xAnalyze
-x/Users/Deumeure/Documents/testslider/iPhone/AppDelegate_iPhone.m
-lSLF07#2@72"Analyze /Users/Deumeure/Documents/testslider/iPhone/AppDelegate_iPhone.m332777262#332777262#0(0"0(0#0#64"/Users/Deumeure/Documents/testslider/iPhone/AppDelegate_iPhone.m8673728000#1996"    cd /Users/Deumeure/Documents/testslider    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-bjegjkibezbcmxeziemhyfdueoqn/testslider_Prefix.pch --analyze /Users/Deumeure/Documents/testslider/iPhone/AppDelegate_iPhone.m -o /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/StaticAnalyzer/normal/i386/AppDelegate_iPhone.plist0#
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies332944063#332944063#0(0"0(0#1#0"8695609952#0"0#
-
-CCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/AppDelegate_iPad.o /Users/Deumeure/Documents/Repository/testSlide/iPad/AppDelegate_iPad.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s332944066.966558
-e332944067.089536
-r1
-xCompileC
-xbuild/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/AppDelegate_iPad.o
-x/Users/Deumeure/Documents/Repository/testSlide/iPad/AppDelegate_iPad.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@78"Compile /Users/Deumeure/Documents/Repository/testSlide/iPad/AppDelegate_iPad.m332944066#332944067#0(0"0(0#0#70"/Users/Deumeure/Documents/Repository/testSlide/iPad/AppDelegate_iPad.m8697553376#2153"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-guzydwssnmodvognxfiuvehmavyv/testslider_Prefix.pch -c /Users/Deumeure/Documents/Repository/testSlide/iPad/AppDelegate_iPad.m -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/AppDelegate_iPad.o0#
-
-CCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/AppDelegate_iPad.o /Users/Deumeure/Documents/testslider/iPad/AppDelegate_iPad.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s332778533.373927
-e332778533.472223
-r1
-xCompileC
-xbuild/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/AppDelegate_iPad.o
-x/Users/Deumeure/Documents/testslider/iPad/AppDelegate_iPad.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@68"Compile /Users/Deumeure/Documents/testslider/iPad/AppDelegate_iPad.m332778533#332778533#0(0"0(0#0#60"/Users/Deumeure/Documents/testslider/iPad/AppDelegate_iPad.m8670954400#1981"    cd /Users/Deumeure/Documents/testslider    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-ajmiaqwbkpfoojeyaeoohkvuzhfc/testslider_Prefix.pch -c /Users/Deumeure/Documents/testslider/iPad/AppDelegate_iPad.m -o /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/AppDelegate_iPad.o0#
-
-CCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/AppDelegate_iPhone.o /Users/Deumeure/Documents/Repository/testSlide/iPhone/AppDelegate_iPhone.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s332944066.965436
-e332944067.067663
-r1
-xCompileC
-xbuild/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/AppDelegate_iPhone.o
-x/Users/Deumeure/Documents/Repository/testSlide/iPhone/AppDelegate_iPhone.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@82"Compile /Users/Deumeure/Documents/Repository/testSlide/iPhone/AppDelegate_iPhone.m332944066#332944067#0(0"0(0#0#74"/Users/Deumeure/Documents/Repository/testSlide/iPhone/AppDelegate_iPhone.m8698160704#2159"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-guzydwssnmodvognxfiuvehmavyv/testslider_Prefix.pch -c /Users/Deumeure/Documents/Repository/testSlide/iPhone/AppDelegate_iPhone.m -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/AppDelegate_iPhone.o0#
-
-CCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/AppDelegate_iPhone.o /Users/Deumeure/Documents/testslider/iPhone/AppDelegate_iPhone.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s332778533.372987
-e332778533.470556
-r1
-xCompileC
-xbuild/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/AppDelegate_iPhone.o
-x/Users/Deumeure/Documents/testslider/iPhone/AppDelegate_iPhone.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@72"Compile /Users/Deumeure/Documents/testslider/iPhone/AppDelegate_iPhone.m332778533#332778533#0(0"0(0#0#64"/Users/Deumeure/Documents/testslider/iPhone/AppDelegate_iPhone.m8669687744#1987"    cd /Users/Deumeure/Documents/testslider    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-ajmiaqwbkpfoojeyaeoohkvuzhfc/testslider_Prefix.pch -c /Users/Deumeure/Documents/testslider/iPhone/AppDelegate_iPhone.m -o /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/AppDelegate_iPhone.o0#
-
-CCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/BlockingQueue.o /Users/Deumeure/Documents/Repository/testSlide/BlockingQueue/BlockingQueue.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s332944067.243235
-e332944067.342935
-r1
-xCompileC
-xbuild/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/BlockingQueue.o
-x/Users/Deumeure/Documents/Repository/testSlide/BlockingQueue/BlockingQueue.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@84"Compile /Users/Deumeure/Documents/Repository/testSlide/BlockingQueue/BlockingQueue.m332944067#332944067#0(0"0(0#0#76"/Users/Deumeure/Documents/Repository/testSlide/BlockingQueue/BlockingQueue.m8695453568#2156"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-guzydwssnmodvognxfiuvehmavyv/testslider_Prefix.pch -c /Users/Deumeure/Documents/Repository/testSlide/BlockingQueue/BlockingQueue.m -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/BlockingQueue.o0#
-
-CCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/BlockingQueue.o /Users/Deumeure/Documents/testslider/BlockingQueue/BlockingQueue.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s332778553.038406
-e332778553.228643
-r1
-xCompileC
-xbuild/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/BlockingQueue.o
-x/Users/Deumeure/Documents/testslider/BlockingQueue/BlockingQueue.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@74"Compile /Users/Deumeure/Documents/testslider/BlockingQueue/BlockingQueue.m332778553#332778553#0(0"0(0#0#66"/Users/Deumeure/Documents/testslider/BlockingQueue/BlockingQueue.m8677191520#1984"    cd /Users/Deumeure/Documents/testslider    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-ajmiaqwbkpfoojeyaeoohkvuzhfc/testslider_Prefix.pch -c /Users/Deumeure/Documents/testslider/BlockingQueue/BlockingQueue.m -o /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/BlockingQueue.o0#
-
-CCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/CachingTool.o /Users/Deumeure/Documents/Repository/testSlide/ImageLoader/CachingTool.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s332944067.326984
-e332944067.395854
-r1
-xCompileC
-xbuild/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/CachingTool.o
-x/Users/Deumeure/Documents/Repository/testSlide/ImageLoader/CachingTool.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@80"Compile /Users/Deumeure/Documents/Repository/testSlide/ImageLoader/CachingTool.m332944067#332944067#0(0"0(0#0#72"/Users/Deumeure/Documents/Repository/testSlide/ImageLoader/CachingTool.m8693807264#2150"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-guzydwssnmodvognxfiuvehmavyv/testslider_Prefix.pch -c /Users/Deumeure/Documents/Repository/testSlide/ImageLoader/CachingTool.m -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/CachingTool.o0#
-
-CCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/GraphicsUtils.o /Users/Deumeure/Documents/Repository/testSlide/GraphicsUtils.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s332944067.089680
-e332944067.402817
-r1
-xCompileC
-xbuild/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/GraphicsUtils.o
-x/Users/Deumeure/Documents/Repository/testSlide/GraphicsUtils.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@70"Compile /Users/Deumeure/Documents/Repository/testSlide/GraphicsUtils.m332944067#332944067#0(0"0(0#0#62"/Users/Deumeure/Documents/Repository/testSlide/GraphicsUtils.m8695501728#2142"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-guzydwssnmodvognxfiuvehmavyv/testslider_Prefix.pch -c /Users/Deumeure/Documents/Repository/testSlide/GraphicsUtils.m -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/GraphicsUtils.o0#
-
-CCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/GraphicsUtils.o /Users/Deumeure/Documents/testslider/GraphicsUtils.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s332778533.472346
-e332778533.713863
-r1
-xCompileC
-xbuild/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/GraphicsUtils.o
-x/Users/Deumeure/Documents/testslider/GraphicsUtils.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@60"Compile /Users/Deumeure/Documents/testslider/GraphicsUtils.m332778533#332778533#0(0"0(0#0#52"/Users/Deumeure/Documents/testslider/GraphicsUtils.m8675993248#1970"    cd /Users/Deumeure/Documents/testslider    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-ajmiaqwbkpfoojeyaeoohkvuzhfc/testslider_Prefix.pch -c /Users/Deumeure/Documents/testslider/GraphicsUtils.m -o /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/GraphicsUtils.o0#
-
-CCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/InvocationUtil.o /Users/Deumeure/Documents/Repository/testSlide/InvocationUtil.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s332944067.254320
-e332944067.326837
-r1
-xCompileC
-xbuild/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/InvocationUtil.o
-x/Users/Deumeure/Documents/Repository/testSlide/InvocationUtil.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@71"Compile /Users/Deumeure/Documents/Repository/testSlide/InvocationUtil.m332944067#332944067#0(0"0(0#0#63"/Users/Deumeure/Documents/Repository/testSlide/InvocationUtil.m8695101152#2144"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-guzydwssnmodvognxfiuvehmavyv/testslider_Prefix.pch -c /Users/Deumeure/Documents/Repository/testSlide/InvocationUtil.m -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/InvocationUtil.o0#
-
-CCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/InvocationUtil.o /Users/Deumeure/Documents/testslider/InvocationUtil.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s332778533.612870
-e332778533.671550
-r1
-xCompileC
-xbuild/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/InvocationUtil.o
-x/Users/Deumeure/Documents/testslider/InvocationUtil.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@61"Compile /Users/Deumeure/Documents/testslider/InvocationUtil.m332778533#332778533#0(0"0(0#0#53"/Users/Deumeure/Documents/testslider/InvocationUtil.m8672942688#1972"    cd /Users/Deumeure/Documents/testslider    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-ajmiaqwbkpfoojeyaeoohkvuzhfc/testslider_Prefix.pch -c /Users/Deumeure/Documents/testslider/InvocationUtil.m -o /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/InvocationUtil.o0#
-
-CCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/NSFileUtility.o /Users/Deumeure/Documents/Repository/testSlide/NSFileUtility.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s332944067.343087
-e332944067.476554
-r1
-xCompileC
-xbuild/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/NSFileUtility.o
-x/Users/Deumeure/Documents/Repository/testSlide/NSFileUtility.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@70"Compile /Users/Deumeure/Documents/Repository/testSlide/NSFileUtility.m332944067#332944067#0(0"0(0#0#62"/Users/Deumeure/Documents/Repository/testSlide/NSFileUtility.m8693387232#2142"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-guzydwssnmodvognxfiuvehmavyv/testslider_Prefix.pch -c /Users/Deumeure/Documents/Repository/testSlide/NSFileUtility.m -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/NSFileUtility.o0#
-
-CCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFImageLoader.o /Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFImageLoader.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s332944067.154287
-e332944067.243007
-r1
-xCompileC
-xbuild/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFImageLoader.o
-x/Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFImageLoader.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@83"Compile /Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFImageLoader.m332944067#332944067#0(0"0(0#0#75"/Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFImageLoader.m8695507392#2156"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-guzydwssnmodvognxfiuvehmavyv/testslider_Prefix.pch -c /Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFImageLoader.m -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFImageLoader.o0#
-
-CCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFImageLoader.o /Users/Deumeure/Documents/testslider/ImageLoader/PDFImageLoader.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s332778533.519633
-e332778533.633235
-r1
-xCompileC
-xbuild/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFImageLoader.o
-x/Users/Deumeure/Documents/testslider/ImageLoader/PDFImageLoader.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@73"Compile /Users/Deumeure/Documents/testslider/ImageLoader/PDFImageLoader.m332778533#332778533#0(0"0(0#0#65"/Users/Deumeure/Documents/testslider/ImageLoader/PDFImageLoader.m8675050112#1984"    cd /Users/Deumeure/Documents/testslider    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-ajmiaqwbkpfoojeyaeoohkvuzhfc/testslider_Prefix.pch -c /Users/Deumeure/Documents/testslider/ImageLoader/PDFImageLoader.m -o /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFImageLoader.o0#
-
-CCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFLoader.o /Users/Deumeure/Documents/Repository/testSlide/PDFLoader.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s332944067.049259
-e332944067.133594
-r1
-xCompileC
-xbuild/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFLoader.o
-x/Users/Deumeure/Documents/Repository/testSlide/PDFLoader.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@66"Compile /Users/Deumeure/Documents/Repository/testSlide/PDFLoader.m332944067#332944067#0(0"0(0#0#58"/Users/Deumeure/Documents/Repository/testSlide/PDFLoader.m8696190016#2134"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-guzydwssnmodvognxfiuvehmavyv/testslider_Prefix.pch -c /Users/Deumeure/Documents/Repository/testSlide/PDFLoader.m -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFLoader.o0#
-
-CCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFLoader.o /Users/Deumeure/Documents/testslider/PDFLoader.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s332778533.440483
-e332778533.513631
-r1
-xCompileC
-xbuild/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFLoader.o
-x/Users/Deumeure/Documents/testslider/PDFLoader.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@56"Compile /Users/Deumeure/Documents/testslider/PDFLoader.m332778533#332778533#0(0"0(0#0#48"/Users/Deumeure/Documents/testslider/PDFLoader.m8676793408#1962"    cd /Users/Deumeure/Documents/testslider    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-ajmiaqwbkpfoojeyaeoohkvuzhfc/testslider_Prefix.pch -c /Users/Deumeure/Documents/testslider/PDFLoader.m -o /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFLoader.o0#
-
-CCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFPage.o /Users/Deumeure/Documents/Repository/testSlide/PDFPage.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s332944067.067793
-e332944067.254194
-r1
-xCompileC
-xbuild/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFPage.o
-x/Users/Deumeure/Documents/Repository/testSlide/PDFPage.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/Deumeure/Documents/Repository/testSlide/PDFPage.m: In function '-[PDFPage imageForRect:]':
-o/Users/Deumeure/Documents/Repository/testSlide/PDFPage.m:122: warning: unused variable 'lRect2'
-lSLF07#2@64"Compile /Users/Deumeure/Documents/Repository/testSlide/PDFPage.m332944067#332944067#0(194"/Users/Deumeure/Documents/Repository/testSlide/PDFPage.m: In function '-[PDFPage imageForRect:]':/Users/Deumeure/Documents/Repository/testSlide/PDFPage.m:122: warning: unused variable 'lRect2'1(22@24"Unused variable 'lRect2'332944067#98#96#0(6@56"/Users/Deumeure/Documents/Repository/testSlide/PDFPage.m332943766#122#0#122#0#19"unused variable '*'0(0#0#56"/Users/Deumeure/Documents/Repository/testSlide/PDFPage.m8701071392#2130"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-guzydwssnmodvognxfiuvehmavyv/testslider_Prefix.pch -c /Users/Deumeure/Documents/Repository/testSlide/PDFPage.m -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFPage.o0#
-
-CCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFPage.o /Users/Deumeure/Documents/testslider/PDFPage.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s332778533.470700
-e332778533.574774
-r1
-xCompileC
-xbuild/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFPage.o
-x/Users/Deumeure/Documents/testslider/PDFPage.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@54"Compile /Users/Deumeure/Documents/testslider/PDFPage.m332778533#332778533#0(0"0(0#0#46"/Users/Deumeure/Documents/testslider/PDFPage.m8676313664#1958"    cd /Users/Deumeure/Documents/testslider    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-ajmiaqwbkpfoojeyaeoohkvuzhfc/testslider_Prefix.pch -c /Users/Deumeure/Documents/testslider/PDFPage.m -o /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFPage.o0#
-
-CCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFPageOperation.o /Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFPageOperation.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s332944067.257298
-e332944067.355268
-r1
-xCompileC
-xbuild/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFPageOperation.o
-x/Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFPageOperation.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@85"Compile /Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFPageOperation.m332944067#332944067#0(0"0(0#0#77"/Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFPageOperation.m8694593280#2160"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-guzydwssnmodvognxfiuvehmavyv/testslider_Prefix.pch -c /Users/Deumeure/Documents/Repository/testSlide/ImageLoader/PDFPageOperation.m -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/PDFPageOperation.o0#
-
-CCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/SliderDelegate.o /Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s332944067.133738
-e332944067.257151
-r1
-xCompileC
-xbuild/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/SliderDelegate.o
-x/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m: In function '-[SliderDelegate sliderViewController:cachePageAtIndex:]':
-o/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m:49: warning: 'SliderDelegate' may not respond to '-findAndRemoveSameOperation:page:'
-o/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m:49: warning: (Messages without a matching method signature
-o/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m:49: warning: will be assumed to return 'id' and accept
-o/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m:49: warning: '...' as arguments.)
-o/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m: At top level:
-o/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m:178: warning: incomplete implementation of class 'SliderDelegate'
-o/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m:178: warning: method definition for '-sliderViewController:pageChanged:' not found
-o/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m:178: warning: method definition for '-sliderViewControllerMoveToRight:' not found
-o/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m:178: warning: method definition for '-sliderViewControllerMoveToLeft:' not found
-o/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m:178: warning: class 'SliderDelegate' does not fully implement the 'SliderViewControllerDelegate' protocol
-lSLF07#2@71"Compile /Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m332944067#332944067#0(1443"/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m: In function '-[SliderDelegate sliderViewController:cachePageAtIndex:]':/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m:49: warning: 'SliderDelegate' may not respond to '-findAndRemoveSameOperation:page:'/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m:49: warning: (Messages without a matching method signature/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m:49: warning: will be assumed to return 'id' and accept/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m:49: warning: '...' as arguments.)/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m: At top level:/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m:178: warning: incomplete implementation of class 'SliderDelegate'/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m:178: warning: method definition for '-sliderViewController:pageChanged:' not found/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m:178: warning: method definition for '-sliderViewControllerMoveToRight:' not found/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m:178: warning: method definition for '-sliderViewControllerMoveToLeft:' not found/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m:178: warning: class 'SliderDelegate' does not fully implement the 'SliderViewControllerDelegate' protocol8(22@71"'SliderDelegate' may not respond to '-findAndRemoveSameOperation:page:'332944067#137#149#0(6@63"/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m332937882#49#0#49#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)332944067#286#123#0(6@63"/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m332937882#49#0#49#0#0"0(23@13"At top level:332944067#626#79#0(6@63"/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m332937882#0#0#0#0#0"0(22@51"Incomplete implementation of class 'SliderDelegate'332944067#705#130#0(6@63"/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m332937882#178#0#178#0#38"incomplete implementation of class '*'0(22@68"Method definition for '-sliderViewController:pageChanged:' not found332944067#835#147#0(6@63"/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m332937882#178#0#178#0#35"method definition for '*' not found0(22@67"Method definition for '-sliderViewControllerMoveToRight:' not found332944067#982#146#0(6@63"/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m332937882#178#0#178#0#35"method definition for '*' not found0(22@66"Method definition for '-sliderViewControllerMoveToLeft:' not found332944067#1128#145#0(6@63"/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m332937882#178#0#178#0#35"method definition for '*' not found0(22@91"Class 'SliderDelegate' does not fully implement the 'SliderViewControllerDelegate' protocol332944067#1273#170#0(6@63"/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m332937882#178#0#178#0#51"class '*' does not fully implement the '*' protocol0(0#0#63"/Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m8656145472#2144"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-guzydwssnmodvognxfiuvehmavyv/testslider_Prefix.pch -c /Users/Deumeure/Documents/Repository/testSlide/SliderDelegate.m -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/SliderDelegate.o0#
-
-CCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/SliderDelegate.o /Users/Deumeure/Documents/testslider/SliderDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s332778533.513776
-e332778533.612718
-r1
-xCompileC
-xbuild/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/SliderDelegate.o
-x/Users/Deumeure/Documents/testslider/SliderDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/Deumeure/Documents/testslider/SliderDelegate.m:72: warning: incomplete implementation of class 'SliderDelegate'
-o/Users/Deumeure/Documents/testslider/SliderDelegate.m:72: warning: method definition for '-sliderViewController:pageChanged:' not found
-o/Users/Deumeure/Documents/testslider/SliderDelegate.m:72: warning: method definition for '-sliderViewControllerMoveToRight:' not found
-o/Users/Deumeure/Documents/testslider/SliderDelegate.m:72: warning: method definition for '-sliderViewControllerMoveToLeft:' not found
-o/Users/Deumeure/Documents/testslider/SliderDelegate.m:72: warning: class 'SliderDelegate' does not fully implement the 'SliderViewControllerDelegate' protocol
-lSLF07#2@61"Compile /Users/Deumeure/Documents/testslider/SliderDelegate.m332778533#332778533#0(683"/Users/Deumeure/Documents/testslider/SliderDelegate.m:72: warning: incomplete implementation of class 'SliderDelegate'/Users/Deumeure/Documents/testslider/SliderDelegate.m:72: warning: method definition for '-sliderViewController:pageChanged:' not found/Users/Deumeure/Documents/testslider/SliderDelegate.m:72: warning: method definition for '-sliderViewControllerMoveToRight:' not found/Users/Deumeure/Documents/testslider/SliderDelegate.m:72: warning: method definition for '-sliderViewControllerMoveToLeft:' not found/Users/Deumeure/Documents/testslider/SliderDelegate.m:72: warning: class 'SliderDelegate' does not fully implement the 'SliderViewControllerDelegate' protocol5(22@51"Incomplete implementation of class 'SliderDelegate'332778533#0#119#0(6@53"/Users/Deumeure/Documents/testslider/SliderDelegate.m332778477#72#0#72#0#38"incomplete implementation of class '*'0(22@68"Method definition for '-sliderViewController:pageChanged:' not found332778533#119#136#0(6@53"/Users/Deumeure/Documents/testslider/SliderDelegate.m332778477#72#0#72#0#35"method definition for '*' not found0(22@67"Method definition for '-sliderViewControllerMoveToRight:' not found332778533#255#135#0(6@53"/Users/Deumeure/Documents/testslider/SliderDelegate.m332778477#72#0#72#0#35"method definition for '*' not found0(22@66"Method definition for '-sliderViewControllerMoveToLeft:' not found332778533#390#134#0(6@53"/Users/Deumeure/Documents/testslider/SliderDelegate.m332778477#72#0#72#0#35"method definition for '*' not found0(22@91"Class 'SliderDelegate' does not fully implement the 'SliderViewControllerDelegate' protocol332778533#524#159#0(6@53"/Users/Deumeure/Documents/testslider/SliderDelegate.m332778477#72#0#72#0#51"class '*' does not fully implement the '*' protocol0(0#0#53"/Users/Deumeure/Documents/testslider/SliderDelegate.m8675312448#1972"    cd /Users/Deumeure/Documents/testslider    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-ajmiaqwbkpfoojeyaeoohkvuzhfc/testslider_Prefix.pch -c /Users/Deumeure/Documents/testslider/SliderDelegate.m -o /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/SliderDelegate.o0#
-
-CCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/SliderViewController.o /Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s332944066.967701
-e332944067.154141
-r1
-xCompileC
-xbuild/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/SliderViewController.o
-x/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m: In function '-[SliderViewController viewDidLoad]':
-o/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m:48: warning: class 'SliderViewController' does not implement the 'UIScrollViewDelegate' protocol
-lSLF07#2@77"Compile /Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m332944066#332944067#0(289"/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m: In function '-[SliderViewController viewDidLoad]':/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m:48: warning: class 'SliderViewController' does not implement the 'UIScrollViewDelegate' protocol1(22@83"Class 'SliderViewController' does not implement the 'UIScrollViewDelegate' protocol332944067#122#167#0(6@69"/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m332943898#48#0#48#0#45"class '*' does not implement the '*' protocol0(0#0#69"/Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m8696571008#2156"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-guzydwssnmodvognxfiuvehmavyv/testslider_Prefix.pch -c /Users/Deumeure/Documents/Repository/testSlide/SliderViewController.m -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/SliderViewController.o0#
-
-CCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/SliderViewController.o /Users/Deumeure/Documents/testslider/SliderViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s332778533.374907
-e332778533.519485
-r1
-xCompileC
-xbuild/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/SliderViewController.o
-x/Users/Deumeure/Documents/testslider/SliderViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/Deumeure/Documents/testslider/SliderViewController.m: In function '-[SliderViewController viewDidLoad]':
-o/Users/Deumeure/Documents/testslider/SliderViewController.m:47: warning: class 'SliderViewController' does not implement the 'UIScrollViewDelegate' protocol
-lSLF07#2@67"Compile /Users/Deumeure/Documents/testslider/SliderViewController.m332778533#332778533#0(269"/Users/Deumeure/Documents/testslider/SliderViewController.m: In function '-[SliderViewController viewDidLoad]':/Users/Deumeure/Documents/testslider/SliderViewController.m:47: warning: class 'SliderViewController' does not implement the 'UIScrollViewDelegate' protocol1(22@83"Class 'SliderViewController' does not implement the 'UIScrollViewDelegate' protocol332778533#112#157#0(6@59"/Users/Deumeure/Documents/testslider/SliderViewController.m332776227#47#0#47#0#45"class '*' does not implement the '*' protocol0(0#0#59"/Users/Deumeure/Documents/testslider/SliderViewController.m8668745152#1984"    cd /Users/Deumeure/Documents/testslider    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-ajmiaqwbkpfoojeyaeoohkvuzhfc/testslider_Prefix.pch -c /Users/Deumeure/Documents/testslider/SliderViewController.m -o /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/SliderViewController.o0#
-
-CCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/main.o /Users/Deumeure/Documents/Repository/testSlide/Shared/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s332944066.964380
-e332944067.049118
-r1
-xCompileC
-xbuild/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/main.o
-x/Users/Deumeure/Documents/Repository/testSlide/Shared/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@68"Compile /Users/Deumeure/Documents/Repository/testSlide/Shared/main.m332944066#332944067#0(0"0(0#0#60"/Users/Deumeure/Documents/Repository/testSlide/Shared/main.m8698765568#2131"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-guzydwssnmodvognxfiuvehmavyv/testslider_Prefix.pch -c /Users/Deumeure/Documents/Repository/testSlide/Shared/main.m -o /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/main.o0#
-
-CCompileC build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/main.o /Users/Deumeure/Documents/testslider/Shared/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s332778533.371995
-e332778533.440338
-r1
-xCompileC
-xbuild/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/main.o
-x/Users/Deumeure/Documents/testslider/Shared/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@58"Compile /Users/Deumeure/Documents/testslider/Shared/main.m332778533#332778533#0(0"0(0#0#50"/Users/Deumeure/Documents/testslider/Shared/main.m8674170144#1959"    cd /Users/Deumeure/Documents/testslider    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -include /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-ajmiaqwbkpfoojeyaeoohkvuzhfc/testslider_Prefix.pch -c /Users/Deumeure/Documents/testslider/Shared/main.m -o /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/main.o0#
-
-CCompileXIB /Users/Deumeure/Documents/Repository/testSlide/iPad/MainWindow_iPad.xib
-s332944063.275466
-e332944065.685550
-r1
-xCompileXIB
-x/Users/Deumeure/Documents/Repository/testSlide/iPad/MainWindow_iPad.xib
-lSLF07#2@35"CompileXIB iPad/MainWindow_iPad.xib332944063#332944065#0(0"0(0#0#71"/Users/Deumeure/Documents/Repository/testSlide/iPad/MainWindow_iPad.xib8692783808#674"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app/MainWindow_iPad.nib /Users/Deumeure/Documents/Repository/testSlide/iPad/MainWindow_iPad.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
-
-CCompileXIB /Users/Deumeure/Documents/Repository/testSlide/iPhone/MainWindow_iPhone.xib
-s332944063.274542
-e332944065.724976
-r1
-xCompileXIB
-x/Users/Deumeure/Documents/Repository/testSlide/iPhone/MainWindow_iPhone.xib
-lSLF07#2@39"CompileXIB iPhone/MainWindow_iPhone.xib332944063#332944065#0(0"0(0#0#75"/Users/Deumeure/Documents/Repository/testSlide/iPhone/MainWindow_iPhone.xib8693047232#680"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app/MainWindow_iPhone.nib /Users/Deumeure/Documents/Repository/testSlide/iPhone/MainWindow_iPhone.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
-
-CCompileXIB /Users/Deumeure/Documents/testslider/iPad/MainWindow_iPad.xib
-s332778532.469143
-e332778532.814100
-r1
-xCompileXIB
-x/Users/Deumeure/Documents/testslider/iPad/MainWindow_iPad.xib
-lSLF07#2@35"CompileXIB iPad/MainWindow_iPad.xib332778532#332778532#0(0"0(0#0#61"/Users/Deumeure/Documents/testslider/iPad/MainWindow_iPad.xib8673277952#582"    cd /Users/Deumeure/Documents/testslider    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app/MainWindow_iPad.nib /Users/Deumeure/Documents/testslider/iPad/MainWindow_iPad.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
-
-CCompileXIB /Users/Deumeure/Documents/testslider/iPhone/MainWindow_iPhone.xib
-s332778532.468481
-e332778532.813924
-r1
-xCompileXIB
-x/Users/Deumeure/Documents/testslider/iPhone/MainWindow_iPhone.xib
-lSLF07#2@39"CompileXIB iPhone/MainWindow_iPhone.xib332778532#332778532#0(0"0(0#0#65"/Users/Deumeure/Documents/testslider/iPhone/MainWindow_iPhone.xib8673438656#588"    cd /Users/Deumeure/Documents/testslider    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app/MainWindow_iPhone.nib /Users/Deumeure/Documents/testslider/iPhone/MainWindow_iPhone.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
-
-CCpResource build/Debug-iphonesimulator/testslider.app/mobile.pdf mobile.pdf
-s332944063.276270
-e332944065.998098
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/testslider.app/mobile.pdf
-xmobile.pdf
-lSLF07#2@15"Copy mobile.pdf332944063#332944065#0(0"0(0#0#57"/Users/Deumeure/Documents/Repository/testSlide/mobile.pdf8692616576#557"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Deumeure/Documents/Repository/testSlide/mobile.pdf /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app0#
-
-CGenerateDSYMFile /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app.dSYM /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app/testslider
-s332944067.512588
-e332944067.550356
-r1
-xGenerateDSYMFile
-x/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app.dSYM
-x/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app/testslider
-lSLF07#2@118"GenerateDSYMFile build/Debug-iphonesimulator/testslider.app.dSYM build/Debug-iphonesimulator/testslider.app/testslider332944067#332944067#0(0"0(0#0#100"/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app/testslider8694109248#478"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app/testslider -o /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app.dSYM0#
-
-CGenerateDSYMFile /Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app.dSYM /Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app/testslider
-s332778553.252456
-e332778553.272484
-r1
-xGenerateDSYMFile
-x/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app.dSYM
-x/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app/testslider
-lSLF07#2@118"GenerateDSYMFile build/Debug-iphonesimulator/testslider.app.dSYM build/Debug-iphonesimulator/testslider.app/testslider332778553#332778553#0(0"0(0#0#90"/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app/testslider8675827712#386"    cd /Users/Deumeure/Documents/testslider    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app/testslider -o /Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app.dSYM0#
-
-CLd /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app/testslider normal i386
-s332944067.476647
-e332944067.512499
-r1
-xLd
-x/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app/testslider
-xnormal
-xi386
-lSLF07#2@105"Link /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app/testslider332944067#332944067#0(0"0(0#0#0"8698589408#1017"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator -filelist /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/testslider.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app/testslider0#
-
-CLd /Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app/testslider normal i386
-s332778553.228728
-e332778553.252355
-r1
-xLd
-x/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app/testslider
-xnormal
-xi386
-lSLF07#2@95"Link /Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app/testslider332778553#332778553#0(0"0(0#0#0"8676395200#905"    cd /Users/Deumeure/Documents/testslider    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator -F/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator -filelist /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/Objects-normal/i386/testslider.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app/testslider0#
-
-CProcessInfoPlistFile /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app/Info.plist testslider-Info.plist
-s332944063.270219
-e332944063.274439
-r1
-xProcessInfoPlistFile
-x/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app/Info.plist
-xtestslider-Info.plist
-lSLF07#2@29"Process testslider-Info.plist332944063#332944063#0(0"0(0#0#68"/Users/Deumeure/Documents/Repository/testSlide/testslider-Info.plist8693455296#574"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    builtin-infoPlistUtility testslider-Info.plist -genpkginfo /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app/Info.plist0#
-
-CProcessInfoPlistFile /Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app/Info.plist testslider-Info.plist
-s332778532.464932
-e332778532.468413
-r1
-xProcessInfoPlistFile
-x/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app/Info.plist
-xtestslider-Info.plist
-lSLF07#2@29"Process testslider-Info.plist332778532#332778532#0(0"0(0#0#58"/Users/Deumeure/Documents/testslider/testslider-Info.plist8674446272#482"    cd /Users/Deumeure/Documents/testslider    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility testslider-Info.plist -genpkginfo /Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app/Info.plist0#
-
-CProcessPCH /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-ajmiaqwbkpfoojeyaeoohkvuzhfc/testslider_Prefix.pch.gch testslider_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s332778532.814218
-e332778533.371896
-r1
-xProcessPCH
-x/var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-ajmiaqwbkpfoojeyaeoohkvuzhfc/testslider_Prefix.pch.gch
-xtestslider_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@32"Precompile testslider_Prefix.pch332778532#332778533#0(0"0(0#0#58"/Users/Deumeure/Documents/testslider/testslider_Prefix.pch8676348224#1843"    cd /Users/Deumeure/Documents/testslider    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -c /Users/Deumeure/Documents/testslider/testslider_Prefix.pch -o /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-ajmiaqwbkpfoojeyaeoohkvuzhfc/testslider_Prefix.pch.gch0#
-
-CProcessPCH /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-bjegjkibezbcmxeziemhyfdueoqn/testslider_Prefix.pch.pth testslider_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
-s332777262.227142
-e332777262.449094
-r1
-xProcessPCH
-x/var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-bjegjkibezbcmxeziemhyfdueoqn/testslider_Prefix.pch.pth
-xtestslider_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.analyzer
-lSLF07#2@32"Precompile testslider_Prefix.pch332777262#332777262#0(0"0(0#0#58"/Users/Deumeure/Documents/testslider/testslider_Prefix.pch8673435776#1834"    cd /Users/Deumeure/Documents/testslider    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/testslider/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -c /Users/Deumeure/Documents/testslider/testslider_Prefix.pch -o /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-bjegjkibezbcmxeziemhyfdueoqn/testslider_Prefix.pch.pth0#
-
-CProcessPCH /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-guzydwssnmodvognxfiuvehmavyv/testslider_Prefix.pch.gch testslider_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s332944065.998268
-e332944066.964047
-r1
-xProcessPCH
-x/var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-guzydwssnmodvognxfiuvehmavyv/testslider_Prefix.pch.gch
-xtestslider_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@32"Precompile testslider_Prefix.pch332944065#332944066#0(0"0(0#0#68"/Users/Deumeure/Documents/Repository/testSlide/testslider_Prefix.pch8696133024#2005"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-generated-files.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-own-target-headers.hmap -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-all-target-headers.hmap -iquote /Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/testslider-project-headers.hmap -F/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator -I/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/include -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources/i386 -I/Users/Deumeure/Documents/Repository/testSlide/build/testslider.build/Debug-iphonesimulator/testslider.build/DerivedSources -c /Users/Deumeure/Documents/Repository/testSlide/testslider_Prefix.pch -o /var/folders/uK/uKpFbk+PEuCxoe6qoSGStk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/testslider_Prefix-guzydwssnmodvognxfiuvehmavyv/testslider_Prefix.pch.gch0#
-
-CTouch /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app
-s332944067.550465
-e332944067.553870
-r1
-xTouch
-x/Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app
-lSLF07#2@95"Touch /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app332944067#332944067#0(0"0(0#0#0"8693887744#359"    cd /Users/Deumeure/Documents/Repository/testSlide    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/Deumeure/Documents/Repository/testSlide/build/Debug-iphonesimulator/testslider.app0#
-
-CTouch /Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app
-s332778553.272574
-e332778553.274962
-r1
-xTouch
-x/Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app
-lSLF07#2@85"Touch /Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app332778553#332778553#0(0"0(0#0#0"8673539584#277"    cd /Users/Deumeure/Documents/testslider    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/Deumeure/Documents/testslider/build/Debug-iphonesimulator/testslider.app0#
-

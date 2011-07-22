@@ -30,9 +30,9 @@
 {	
 	
 	
-	//La page 1 est toujours PAIR
-	if(PAIR(pPageIndex))
-	{
+//	//La page 1 est toujours PAIR
+//	if(PAIR(pPageIndex))
+//	{
 		mPageIndex= pPageIndex;
 		mPDFPage = 	CGPDFPageRetain(pPage);
 
@@ -40,14 +40,14 @@
 		mPageIndex2= pPageIndex2;
 		mPDFPage2 = 	CGPDFPageRetain(pPage2);
 		
-	}else {
-		mPageIndex2= pPageIndex;
-		mPDFPage2 = 	CGPDFPageRetain(pPage);
-		
-		
-		mPageIndex= pPageIndex2;
-		mPDFPage = 	CGPDFPageRetain(pPage2);
-	}
+//	}else {
+//		mPageIndex2= pPageIndex;
+//		mPDFPage2 = 	CGPDFPageRetain(pPage);
+//		
+//		
+//		mPageIndex= pPageIndex2;
+//		mPDFPage = 	CGPDFPageRetain(pPage2);
+//	}
 
 	mDoublePage = YES;
 	
@@ -62,28 +62,27 @@
 //Renvoi l'index valide en cas de solopage
 #define soloIndex (mPageIndex ==0 ? mPageIndex2	: mPageIndex)
 
--(CGSize)originaleSize
-{
-	CGSize lSize = CGSizeZero;
-	
-	if(!self.isSinglePage)
-	{
-		CGRect lRect  = CGPDFPageGetBoxRect(mPDFPage, kCGPDFCropBox);
-		
-		lSize = CGSizeMake(lRect.size.width*2, lRect.size.height*2);
-		
-	}else {
-		
-		CGRect lRect  = CGPDFPageGetBoxRect(soloPage, kCGPDFCropBox);
-		
-		lSize = CGSizeMake(lRect.size.width, lRect.size.height);
-		
-	}
-
-	
-		
-	return lSize;
-}
+//-(CGSize)originaleSize
+//{
+//	CGSize lSize = CGSizeZero;
+//	
+//	if(!self.isSinglePage)
+//	{
+//		CGRect lRect  = CGPDFPageGetBoxRect(mPDFPage, kCGPDFCropBox);
+//		
+//		lSize = CGSizeMake(lRect.size.width*2, lRect.size.height*2);
+//		
+//	}else {
+//		
+//		CGRect lRect  = CGPDFPageGetBoxRect(soloPage, kCGPDFCropBox);
+//		
+//		lSize = CGSizeMake(lRect.size.width, lRect.size.height);
+//		
+//	}
+//
+//	
+//	return lSize;
+//}
 
 
 CGAffineTransform aspectFit(CGRect innerRect, CGRect outerRect) {
@@ -110,6 +109,55 @@ CGRect aspectFit2(CGRect innerRect, CGRect outerRect) {
 	
 }
 
+//Renvoi le rectangle du fond de la page de gauche
+CGRect leftPageFitRect(CGRect innerRect, CGRect outerRect) {
+	CGFloat scaleFactor = MIN(outerRect.size.width/innerRect.size.width, outerRect.size.height/innerRect.size.height);
+	CGAffineTransform scale = CGAffineTransformMakeScale(scaleFactor, scaleFactor);
+	CGRect scaledInnerRect = CGRectApplyAffineTransform(innerRect, scale);
+	
+	CGAffineTransform translation = 
+	CGAffineTransformMakeTranslation((outerRect.size.width - scaledInnerRect.size.width) ,  0 );
+
+	return CGRectApplyAffineTransform(scaledInnerRect,translation);
+	
+}
+
+//Renvoi la transformation de la page degauche
+CGAffineTransform leftPageFit(CGRect innerRect, CGRect outerRect) {
+	CGFloat scaleFactor = MIN(outerRect.size.width/innerRect.size.width, outerRect.size.height/innerRect.size.height);
+	CGAffineTransform scale = CGAffineTransformMakeScale(scaleFactor, scaleFactor);
+	CGRect scaledInnerRect = CGRectApplyAffineTransform(innerRect, scale);
+	
+	CGAffineTransform translation = 
+	CGAffineTransformMakeTranslation((outerRect.size.width - scaledInnerRect.size.width) ,  0 );
+
+	return CGAffineTransformConcat(scale, translation);
+}
+
+CGRect rightPageFitRect(CGRect innerRect, CGRect outerRect) {
+	CGFloat scaleFactor = MIN(outerRect.size.width/innerRect.size.width, outerRect.size.height/innerRect.size.height);
+	CGAffineTransform scale = CGAffineTransformMakeScale(scaleFactor, scaleFactor);
+	CGRect scaledInnerRect = CGRectApplyAffineTransform(innerRect, scale);
+	
+	CGAffineTransform translation = 
+	CGAffineTransformMakeTranslation(outerRect.size.width  ,  0 );
+	
+	return CGRectApplyAffineTransform(scaledInnerRect,translation);
+	
+}
+
+
+CGAffineTransform rightPageFit(CGRect innerRect, CGRect outerRect) {
+	CGFloat scaleFactor = MIN(outerRect.size.width/innerRect.size.width, outerRect.size.height/innerRect.size.height);
+	CGAffineTransform scale = CGAffineTransformMakeScale(scaleFactor, scaleFactor);
+	CGRect scaledInnerRect = CGRectApplyAffineTransform(innerRect, scale);
+	
+	CGAffineTransform translation = 
+	CGAffineTransformMakeTranslation(outerRect.size.width ,  0 );
+	
+	return CGAffineTransformConcat(scale, translation);
+}
+
 -(UIImage*)imageForRect:(CGRect)pImageRect
 {
 	UIImage* lImage = nil;
@@ -124,7 +172,7 @@ CGRect aspectFit2(CGRect innerRect, CGRect outerRect) {
 		
 		
 		//On créé le context
-		CGSize cachePageSize = CGSizeMake(lRect1.size.width, lRect1.size.height);
+		CGSize cachePageSize = CGSizeMake(pImageRect.size.width, pImageRect.size.height);
 		
 		
 		CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
@@ -137,55 +185,49 @@ CGRect aspectFit2(CGRect innerRect, CGRect outerRect) {
 												 kCGImageAlphaPremultipliedLast);
 		CGColorSpaceRelease(colorSpace);
 
-		//Le fond blanc
-		CGContextSetRGBFillColor(ctx, 255, 255, 255, 1);
-		CGContextFillRect(ctx, pImageRect);
 		
 		
 		//On dessine la première page si elle existe
 		if(mPageIndex != 0)
 		{
 			
-			CGPDFPageRef lPage = mPDFPage;
+			CGPDFPageRef lPage = mPDFPage2;
 			
 			CGRect rect = CGPDFPageGetBoxRect(lPage, kCGPDFCropBox);
 			
 			rect = CGRectIntegral(rect);
 			
 			CGContextSetRGBFillColor(ctx, 255, 255, 255, 1);
-			CGContextFillRect(ctx, aspectFit2(rect, lRect1));
+			CGContextFillRect(ctx, rightPageFitRect(rect, lRect1));
 			
-			CGAffineTransform transform = aspectFit(rect,lRect1);
+			CGAffineTransform transform = rightPageFit(rect,lRect1);
 			
 			
 			CGContextConcatCTM(ctx, transform);
 			
-			CGContextDrawPDFPage(ctx, lPage);
-			
-			
+			CGContextDrawPDFPage(ctx, lPage);			
 			CGContextConcatCTM(ctx, CGAffineTransformIdentity);
 		}
 		
 		if(mPageIndex2 != 0)
 		{
-			
-			CGPDFPageRef lPage = mPDFPage;
+		
+			CGPDFPageRef lPage = mPDFPage2;
 			
 			CGRect rect = CGPDFPageGetBoxRect(lPage, kCGPDFCropBox);
 			
 			rect = CGRectIntegral(rect);
 			
 			CGContextSetRGBFillColor(ctx, 255, 255, 255, 1);
-			CGContextFillRect(ctx, aspectFit2(rect, lRect2));
+			CGContextFillRect(ctx, leftPageFitRect(rect, lRect2));
 			
-			CGAffineTransform transform = aspectFit(rect,lRect2);
+			CGAffineTransform transform = leftPageFit(rect,lRect2);
 			
 			
 			CGContextConcatCTM(ctx, transform);
 			
 			CGContextDrawPDFPage(ctx, lPage);
 			
-			CGContextDrawPDFPage(ctx, lPage);
 			
 			
 		}
@@ -200,16 +242,12 @@ CGRect aspectFit2(CGRect innerRect, CGRect outerRect) {
 		return lImage;
 		
 	}else {
-//		
+
 		CGPDFPageRef lPage = soloPage;
 		
 		CGRect rect = CGPDFPageGetBoxRect(lPage, kCGPDFCropBox);
-		
+	
 		rect = CGRectIntegral(rect);
-		
-		//CGContextRef ctx = [GraphicsUtils newRGBABitmapContextWithSize:CGSizeMake(pImageRect.size.width, pImageRect.size.height)];
-		
-		
 		
 		CGSize cachePageSize = CGSizeMake(pImageRect.size.width, pImageRect.size.height);
 		
@@ -249,14 +287,12 @@ CGRect aspectFit2(CGRect innerRect, CGRect outerRect) {
 	}
 
 
-		NSLog(@"lImage.retaincount ,%d",[lImage retainCount]);
 	return lImage;
 }
 
 -(void)dealloc
 {
 	
-//	NSLog(@"mPDFPage retain count %d",CFGetRetainCount(mPDFPage));
 	CGPDFPageRelease(mPDFPage);
 	CGPDFPageRelease(mPDFPage2);
 	
