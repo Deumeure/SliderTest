@@ -305,13 +305,13 @@
 	//On decache la page la plus en arriere
 	if(self.presentation == sliderPresentationSinglePage)
 	{
-		[self cachePage:mCurrentPage - CACHE_NUM];
+		[self unCachePage:mCurrentPage - CACHE_NUM];
 	}else {
 		//Si on est a la derniere double page
 		if(mCurrentPage - 2*CACHE_NUM <1)
-			[self cachePage:mCurrentPage-CACHE_NUM];
+			[self unCachePage:mCurrentPage-CACHE_NUM];
 		else
-			[self cachePage:mCurrentPage - 2*CACHE_NUM];
+			[self unCachePage:mCurrentPage - 2*CACHE_NUM];
 	}
 
 	
@@ -364,13 +364,13 @@
 	//On decache la page la plus en avant
 	if(self.presentation == sliderPresentationSinglePage)
 	{
-		[self cachePage:mCurrentPage + CACHE_NUM];
+		[self unCachePage:mCurrentPage + CACHE_NUM];
 	}else {
 		//Si on est a la derniere double page
 		if(mCurrentPage + 2*CACHE_NUM <1)
-			[self cachePage:mCurrentPage + CACHE_NUM];
+			[self unCachePage:mCurrentPage + CACHE_NUM];
 		else
-			[self cachePage:mCurrentPage + 2 *CACHE_NUM];
+			[self unCachePage:mCurrentPage + 2 *CACHE_NUM];
 	}
 	
 	
