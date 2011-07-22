@@ -52,7 +52,7 @@
 	
 	
 	lController.dataSource = lDelegate;
-	
+	lController.delegate =lDelegate;
 	[self.window addSubview:lController.view];
 	
 	[lController gotoPage:90];

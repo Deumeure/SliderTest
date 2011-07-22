@@ -150,7 +150,7 @@ CGRect rightPageFitRect(CGRect innerRect, CGRect outerRect) {
 CGAffineTransform rightPageFit(CGRect innerRect, CGRect outerRect) {
 	CGFloat scaleFactor = MIN(outerRect.size.width/innerRect.size.width, outerRect.size.height/innerRect.size.height);
 	CGAffineTransform scale = CGAffineTransformMakeScale(scaleFactor, scaleFactor);
-	CGRect scaledInnerRect = CGRectApplyAffineTransform(innerRect, scale);
+	//CGRect scaledInnerRect = CGRectApplyAffineTransform(innerRect, scale);
 	
 	CGAffineTransform translation = 
 	CGAffineTransformMakeTranslation(outerRect.size.width ,  0 );
@@ -185,30 +185,35 @@ CGAffineTransform rightPageFit(CGRect innerRect, CGRect outerRect) {
 												 kCGImageAlphaPremultipliedLast);
 		CGColorSpaceRelease(colorSpace);
 
+		//CGContextGetCTM(<#CGContextRef c#>)
 		
+		CGContextSaveGState(ctx);
 		
+		NSLog(@"je vais dessinner la %d",mPageIndex);
 		//On dessine la première page si elle existe
 		if(mPageIndex != 0)
 		{
 			
-			CGPDFPageRef lPage = mPDFPage2;
+			CGPDFPageRef lPage = mPDFPage;
 			
 			CGRect rect = CGPDFPageGetBoxRect(lPage, kCGPDFCropBox);
 			
 			rect = CGRectIntegral(rect);
 			
 			CGContextSetRGBFillColor(ctx, 255, 255, 255, 1);
-			CGContextFillRect(ctx, rightPageFitRect(rect, lRect1));
+			CGContextFillRect(ctx, leftPageFitRect(rect, lRect1));
 			
-			CGAffineTransform transform = rightPageFit(rect,lRect1);
+			CGAffineTransform transform = leftPageFit(rect,lRect1);
 			
 			
 			CGContextConcatCTM(ctx, transform);
 			
 			CGContextDrawPDFPage(ctx, lPage);			
-			CGContextConcatCTM(ctx, CGAffineTransformIdentity);
+
 		}
 		
+		CGContextRestoreGState(ctx);
+		//On dessine la deuxième page si elle existe
 		if(mPageIndex2 != 0)
 		{
 		
@@ -219,9 +224,9 @@ CGAffineTransform rightPageFit(CGRect innerRect, CGRect outerRect) {
 			rect = CGRectIntegral(rect);
 			
 			CGContextSetRGBFillColor(ctx, 255, 255, 255, 1);
-			CGContextFillRect(ctx, leftPageFitRect(rect, lRect2));
+			CGContextFillRect(ctx, rightPageFitRect(rect, lRect2));
 			
-			CGAffineTransform transform = leftPageFit(rect,lRect2);
+			CGAffineTransform transform = rightPageFit(rect,lRect2);
 			
 			
 			CGContextConcatCTM(ctx, transform);

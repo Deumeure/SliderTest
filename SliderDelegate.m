@@ -204,6 +204,16 @@
 }
 
 
+-(void)sliderViewControllerFreeMemory:(SliderViewController*)pController
+{
+
+	NSLog(@"***********RTHJK");
+	[mLoader closePDF];
+	[mLoader openPDF];
+}
+ 
+ 
+
 -(void)pdfFPageOperationDelegate:(PDFPageOperation*)pOperation image:(UIImage*)pImage fromPage:(PDFPage*)pPage
 {
 	[pImage retain];
@@ -211,6 +221,8 @@
 	
 
 }
+
+
 
 
 

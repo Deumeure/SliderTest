@@ -77,9 +77,10 @@ typedef enum SliderPresentation
 
 @protocol SliderViewControllerDelegate
 
+
+-(void)sliderViewControllerFreeMemory:(SliderViewController*)pController;
 -(void)sliderViewControllerMoveToLeft:(SliderViewController*)pController;
 -(void)sliderViewControllerMoveToRight:(SliderViewController*)pController;
-
 -(void)sliderViewController:(SliderViewController*)pController pageChanged:(uint)pPageIndex;
 
 

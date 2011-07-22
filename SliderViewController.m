@@ -20,9 +20,12 @@
 -(PageIndex)giveDoublePageIndexesFromSinglePageIndex:(uint)pIndex;
 -(uint)giveSingllePageIndexeFromDoublePageIndexes:(PageIndex)pIndexes;
 
+-(uint)convertDoublePageIndexToSinglePageIndex:(uint)pIndex;
+-(uint)convertSinglePageIndexToDoublePageIndex:(uint)pIndex;
+-(uint)getRealPageIndex:(uint)pIndex;
 @end
 
-#define CACHE_NUM 2
+#define CACHE_NUM 1
 
 #define isSinglePage (self.presentation == sliderPresentationSinglePage)
 #define isDoublePage (self.presentation == sliderPresentationDoublePage)
@@ -41,6 +44,8 @@
 		mCurrentPage = 0;
 	
 		mLockObject = [[NSObject alloc]init];
+		
+
 	}
 	
 		
@@ -73,6 +78,8 @@
 	
 	//[self gotoPage:1];
 	
+	self.presentation = UIInterfaceOrientationIsPortrait(self.interfaceOrientation) ? sliderPresentationSinglePage	: sliderPresentationDoublePage;
+	
 }
 
 -(void)updateDatas
@@ -83,17 +90,30 @@
 	//Le calcul lors du passage a une autre orientation
 	
 	
-
+	uint lPageCount = mPageCount;
 	
+	if(self.presentation == sliderPresentationDoublePage)
+	{
+		lPageCount = [self convertSinglePageIndexToDoublePageIndex:mPageCount];
+		
+		NSLog(@"je passe de la page %d a la page %d",mPageCount,lPageCount);
+	}
 
-	mScrollView.contentSize = CGSizeMake(mPageCount* mScrollView.bounds.size.width, mScrollView.bounds.size.height);
-
+	mScrollView.contentSize = CGSizeMake(lPageCount* mScrollView.bounds.size.width, mScrollView.bounds.size.height);
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
     
+	mScrollView.scrollEnabled=NO;
+	
+	[mDelegate sliderViewControllerFreeMemory:self];
+	mScrollView.scrollEnabled=YES;
+	
+	
     // Release any cached data, images, etc. that aren't in use.
 }
 
@@ -122,21 +142,37 @@
 
 -(void)gotoPage:(uint)pPageIndex
 {
-	mScrollView.contentOffset =CGPointMake((self.view.bounds.size.width *(pPageIndex-1)), 0) ;
+	
+	NSLog(@"------- GOTOPAGE");
 	
 	mCurrentPage = pPageIndex;
-	int lLimitInf = pPageIndex- CACHE_NUM;
-	int lLimitSup = pPageIndex+ CACHE_NUM;
 	
-	for(int i = lLimitInf	; i<= lLimitSup ;i++)
+	int lLimitInf = pPageIndex - (isDoublePage ? 2*  CACHE_NUM: CACHE_NUM);
+	int lLimitSup = pPageIndex + (isDoublePage ? 2*  CACHE_NUM: CACHE_NUM);
+	
+	uint lIncement = (isDoublePage) ? 2 : 1 ;
+	for(int i = lLimitInf	; i<= lLimitSup ; i+=lIncement)
 	{
 		[self cachePage:i];
 	}
+	
+	
+	//On cherche le "vrai" index de page pour placer la scrollbar
+	uint lRealPageIndex = [self getRealPageIndex:pPageIndex];
+	
+	mScrollView.delegate = nil;
+	mScrollView.contentOffset =CGPointMake((self.view.bounds.size.width *(lRealPageIndex-1)), 0) ;
+	mScrollView.delegate = self;
+	[self cachePage:pPageIndex];
+	
+	
 }
 
 -(void)setImage:(UIImage*)lImage forIndex:(uint)pIndex
 {
 		
+	NSLog(@"Je recois l'image pour la %d",pIndex);
+	
 	UIScrollView* lScrollView  =(UIScrollView*) [mScrollView viewWithTag:pIndex];
 		
 		
@@ -199,7 +235,6 @@
 		return;
 	
 	//On cherche la srollView a l'index
-	
 	UIScrollView* lScrollView  =(UIScrollView*) [mScrollView viewWithTag:pPageIndex];
 	
 
@@ -209,11 +244,13 @@
 		NSLog(@"DEJA CACHE");
 		
 		return;
-		
 	}
 	
+	//On cherche le "vrai" index de page pour placer la scrollbar
+	uint lRealPageIndex = [self getRealPageIndex:pPageIndex];
+		
 	//On créé la scrollview
-	lScrollView = [[[UIScrollView alloc]initWithFrame:CGRectMake(self.view.bounds.size.width * (pPageIndex-1), 0, self.view.bounds.size.width, self.view.bounds.size.height)] autorelease];
+	lScrollView = [[[UIScrollView alloc]initWithFrame:CGRectMake(self.view.bounds.size.width * (lRealPageIndex-1), 0, self.view.bounds.size.width, self.view.bounds.size.height)] autorelease];
 	lScrollView.tag = pPageIndex;
 	
 	//On créé  l' imageView
@@ -227,7 +264,7 @@
 	CGRect lRect = CGRectMake(lBorders.origin.x,lBorders.origin.y , self.view.bounds.size.width - (lBorders.origin.x+lBorders.size.width), self.view.bounds.size.height - (lBorders.origin.y+lBorders.size.height));
 
 	lImageView.frame =lRect;
-	
+
 	[lScrollView addSubview:lImageView];
 	
 	
@@ -243,8 +280,11 @@
 		[mDataSource sliderViewController:self cachePageAtIndex:pPageIndex];
 	else {
 		
+		
 		PageIndex lIndex = [self giveDoublePageIndexesFromSinglePageIndex:pPageIndex];
 		
+		NSLog(@"Je doit cache la page %d",pPageIndex);
+		NSLog(@"Je recoi %d   %d",lIndex.index1,lIndex.index2);
 		
 		[mDataSource sliderViewController:self cachePageAtIndex:lIndex.index1 andIndex:lIndex.index2];
 	}
@@ -261,20 +301,53 @@
 	if(mCurrentPage == mPageCount)
 		return;
 	
+	//TODO Ce code est assez pourri mais il fonctionne correctement....
 	//On decache la page la plus en arriere
-	[self unCachePage:mCurrentPage - CACHE_NUM];
+	if(self.presentation == sliderPresentationSinglePage)
+	{
+		[self cachePage:mCurrentPage - CACHE_NUM];
+	}else {
+		//Si on est a la derniere double page
+		if(mCurrentPage - 2*CACHE_NUM <1)
+			[self cachePage:mCurrentPage-CACHE_NUM];
+		else
+			[self cachePage:mCurrentPage - 2*CACHE_NUM];
+	}
+
 	
 	//On passe à la page suivante
 	
-	mCurrentPage++;
+	//Si c'est double page on augnment de deux
+	if(self.presentation == sliderPresentationDoublePage)
+	{
+		
+		//Si on est en page 1 , on rajoute que 1
+		if(mCurrentPage == 1)
+			mCurrentPage++;
+		else
+			mCurrentPage +=2;
+		
+		
+	}else
+		mCurrentPage++;
 	
 	
 	//On render la page courante
-	[mDataSource sliderViewController:self renderPageAtIndex:mCurrentPage];
+	//[mDataSource sliderViewController:self renderPageAtIndex:mCurrentPage];
+	
 	
 	//On cache la page suivante
-	[self cachePage:mCurrentPage + CACHE_NUM];
-	
+	if(self.presentation == sliderPresentationSinglePage)
+	{
+		[self cachePage:mCurrentPage + CACHE_NUM];
+	}else {
+		//Si on est a la derniere double page
+		if(mCurrentPage + 2*CACHE_NUM > mPageCount)
+			[self cachePage:mCurrentPage+CACHE_NUM];
+		else
+			[self cachePage:mCurrentPage + 2*CACHE_NUM];
+	}
+
 	
 	NSLog(@"page %d",mCurrentPage);
 }
@@ -287,17 +360,50 @@
 	if(mCurrentPage == 0)
 		return;
 	
+	//TODO Ce code est assez pourri mais il fonctionne correctement....
 	//On decache la page la plus en avant
-	[self unCachePage:mCurrentPage + CACHE_NUM];
+	if(self.presentation == sliderPresentationSinglePage)
+	{
+		[self cachePage:mCurrentPage + CACHE_NUM];
+	}else {
+		//Si on est a la derniere double page
+		if(mCurrentPage + 2*CACHE_NUM <1)
+			[self cachePage:mCurrentPage + CACHE_NUM];
+		else
+			[self cachePage:mCurrentPage + 2 *CACHE_NUM];
+	}
+	
+	
 	
 	//On passe à la page précédente
-	mCurrentPage--;
+	
+	//Si c'est une double page
+	if(self.presentation == sliderPresentationDoublePage)
+	{
+		//Si on était en page 2
+		if(mCurrentPage == 2)
+			mCurrentPage--;
+		else
+			mCurrentPage-=2;
+		
+	}else
+		mCurrentPage--;
 	
 	//On render la page courante
-	[mDataSource sliderViewController:self renderPageAtIndex:mCurrentPage];
+	//[mDataSource sliderViewController:self renderPageAtIndex:mCurrentPage];
 	
-	//On cache la page avant
-	[self cachePage:mCurrentPage - CACHE_NUM];
+	//On cache la page précédente
+	if(self.presentation == sliderPresentationSinglePage)
+	{
+		[self cachePage:mCurrentPage - CACHE_NUM];
+	}else {
+		//Si on est a la derniere double page
+		if(mCurrentPage - 2*CACHE_NUM > mPageCount)
+			[self cachePage:mCurrentPage-CACHE_NUM];
+		else
+			[self cachePage:mCurrentPage - 2*CACHE_NUM];
+	}
+	
 
 	NSLog(@"page %d",mCurrentPage);
 }
@@ -342,6 +448,7 @@
 -(void)switchToSinglePage
 {
 
+	NSLog(@"++++++ switchToSinglePage");
 	[self updateDatas];
 	//On reset les pages
 	[self gotoPage:mCurrentPage];
@@ -350,6 +457,8 @@
 
 -(void)switchToDoublePage
 {
+	
+	NSLog(@"++++++ switchToDoublePage");
 	[self updateDatas];
 
 	//On reset les pages
@@ -363,33 +472,50 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
 	
-
-	uint lCurrentPage = (uint) scrollView.contentOffset.x  /self.view.bounds.size.width  +1;
+	//On trouve le num de la page correspondant
+	uint lCalculatedCurrentPage = (uint) scrollView.contentOffset.x  /self.view.bounds.size.width  +1;
+	//lCalculatedCurrentPage = [self getRealPageIndex:lCalculatedCurrentPage];
+	
+	uint lRealCurrentPage = [self getRealPageIndex:mCurrentPage];
+	
+	NSLog(@"lCalculatedCurrentPage %d",lCalculatedCurrentPage);
+	NSLog(@"lRealurrentPage %d",lRealCurrentPage);
 	
 	float lkk =  (scrollView.contentOffset.x  / self.view.bounds.size.width +1.0f) -((int)scrollView.contentOffset.x  / self.view.bounds.size.width  +1);
 	
+
 	
-	if (mCurrentPage > lCurrentPage)
+	//Verifier que la page correspond a l'index de la double page histroire de pas faire tourner pour rien
+//	if(lCalculatedCurrentPage != lRealCurrentPage && isDoublePage)
+//	{
+//		if([self convertSinglePageIndexToDoublePageIndex:lCalculatedCurrentPage] == [self convertSinglePageIndexToDoublePageIndex:lCalculatedCurrentPage])
+//			return;
+//	}
+
+	if (lRealCurrentPage > lCalculatedCurrentPage)
 	{
 		if(lkk >0.2f)
 			return;
 		
 		[self pageMinus];
+		
 		NSLog(@"mCurrenPage %d",mCurrentPage);
 	}
 	
-	if(mCurrentPage < lCurrentPage)
+	if(lRealCurrentPage < lCalculatedCurrentPage)
 	{
 
 		[self pagePlus];
 		NSLog(@"mCurrenPage %d",mCurrentPage);
 	}
-
+//
+//	NSLog(@"lCurrentPage %d",lCurrentPage);
+//	NSLog(@"mCurrentPage %d",mCurrentPage);
 }
 
 
 #pragma mark -
-#pragma mark Paging util function
+#pragma mark Paging utils functions
 
 //convertie des coordonnées silple page en coordonées double page
 -(PageIndex)giveDoublePageIndexesFromSinglePageIndex:(uint)pIndex
@@ -424,6 +550,33 @@
 	//MIN(mPageCount,(pIndexes*2 -1));
 }
 
+-(uint)convertDoublePageIndexToSinglePageIndex:(uint)pIndex
+{
+	if(pIndex == 1)
+		return 1;
+	
+	return (pIndex-1 )*2;
+}
+
+//TODO Gerer le cop de la derniere page
+-(uint)convertSinglePageIndexToDoublePageIndex:(uint)pIndex
+{
+	if(pIndex == 1)
+		return 1;
+	
+	
+	return pIndex/2+1;
+}
+
+
+//Donne la numéro de page (pour la scroll Bar) en fonction du mode
+-(uint)getRealPageIndex:(uint)pIndex
+{
+	if(isDoublePage)
+		return [self convertSinglePageIndexToDoublePageIndex:pIndex];
+
+	return pIndex;
+}
 
 #pragma mark -
 #pragma mark Properties
