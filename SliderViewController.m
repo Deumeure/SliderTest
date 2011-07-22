@@ -25,7 +25,7 @@
 -(uint)getRealPageIndex:(uint)pIndex;
 @end
 
-#define CACHE_NUM 1
+#define CACHE_NUM 2
 
 #define isSinglePage (self.presentation == sliderPresentationSinglePage)
 #define isDoublePage (self.presentation == sliderPresentationDoublePage)
@@ -66,7 +66,7 @@
 	mScrollView.pagingEnabled = YES;
 	mScrollView.delegate =self;
 	mScrollView.backgroundColor = [UIColor redColor];
-//	self.view.backgroundColor  = [UIColor blueColor];
+	//	self.view.backgroundColor  = [UIColor blueColor];
 
 	mPresentation = sliderPresentationSinglePage;
 	[self.view addSubview:mScrollView];
@@ -108,10 +108,10 @@
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
     
-	mScrollView.scrollEnabled=NO;
+
 	
 	[mDelegate sliderViewControllerFreeMemory:self];
-	mScrollView.scrollEnabled=YES;
+	
 	
 	
     // Release any cached data, images, etc. that aren't in use.
@@ -180,7 +180,10 @@
 		return;
 	
 	UIImageView* lImageView = (UIImageView*)[lScrollView viewWithTag:1851];
-		
+	
+//	UIActivityIndicatorView* lIndicator  = [lImageView viewWithTag:1852];
+//	[lIndicator ]
+//	
 	//
 //	if([lImageView class] [])
 //	NSLog(@"set image for page : %d",pIndex);
@@ -241,7 +244,7 @@
 	//Déja cache ?? on quitte
 	if(lScrollView)
 	{
-		NSLog(@"DEJA CACHE");
+		NSLog(@"DEJA CACHE %d",lScrollView.tag);
 		
 		return;
 	}
@@ -256,7 +259,7 @@
 	//On créé  l' imageView
 	UIImageView* lImageView = [[[UIImageView alloc]initWithFrame:CGRectMake(0,0, 768, 1024)] autorelease];
 	lImageView.tag = 1851;
-	lImageView.backgroundColor  = [UIColor yellowColor];
+//	lImageView.backgroundColor  = [UIColor yellowColor];
 	
 	
 	//On met la frame en fonction des bordures
@@ -267,6 +270,10 @@
 
 	[lScrollView addSubview:lImageView];
 	
+//	UIActivityIndicatorView* lIndicator = [[[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray] autorelease];
+//	lIndicator.tag = 1852;
+//	
+//	[lImageView addSubview:lIndicator];
 	
 	//On l'ajoute
 	[mScrollView addSubview:lScrollView];
@@ -305,13 +312,13 @@
 	//On decache la page la plus en arriere
 	if(self.presentation == sliderPresentationSinglePage)
 	{
-		[self cachePage:mCurrentPage - CACHE_NUM];
+		[self unCachePage:mCurrentPage - CACHE_NUM];
 	}else {
 		//Si on est a la derniere double page
 		if(mCurrentPage - 2*CACHE_NUM <1)
-			[self cachePage:mCurrentPage-CACHE_NUM];
+			[self unCachePage:mCurrentPage-CACHE_NUM];
 		else
-			[self cachePage:mCurrentPage - 2*CACHE_NUM];
+			[self unCachePage:mCurrentPage - 2*CACHE_NUM];
 	}
 
 	
@@ -364,13 +371,13 @@
 	//On decache la page la plus en avant
 	if(self.presentation == sliderPresentationSinglePage)
 	{
-		[self cachePage:mCurrentPage + CACHE_NUM];
+		[self unCachePage:mCurrentPage + CACHE_NUM];
 	}else {
 		//Si on est a la derniere double page
 		if(mCurrentPage + 2*CACHE_NUM <1)
-			[self cachePage:mCurrentPage + CACHE_NUM];
+			[self unCachePage:mCurrentPage + CACHE_NUM];
 		else
-			[self cachePage:mCurrentPage + 2 *CACHE_NUM];
+			[self unCachePage:mCurrentPage + 2 *CACHE_NUM];
 	}
 	
 	
@@ -478,8 +485,8 @@
 	
 	uint lRealCurrentPage = [self getRealPageIndex:mCurrentPage];
 	
-	NSLog(@"lCalculatedCurrentPage %d",lCalculatedCurrentPage);
-	NSLog(@"lRealurrentPage %d",lRealCurrentPage);
+	//NSLog(@"lCalculatedCurrentPage %d",lCalculatedCurrentPage);
+//	NSLog(@"lRealurrentPage %d",lRealCurrentPage);
 	
 	float lkk =  (scrollView.contentOffset.x  / self.view.bounds.size.width +1.0f) -((int)scrollView.contentOffset.x  / self.view.bounds.size.width  +1);
 	
@@ -512,6 +519,8 @@
 //	NSLog(@"lCurrentPage %d",lCurrentPage);
 //	NSLog(@"mCurrentPage %d",mCurrentPage);
 }
+
+
 
 
 #pragma mark -
@@ -577,6 +586,21 @@
 
 	return pIndex;
 }
+
+#pragma mark -
+#pragma mark Properties
+
+
+-(void)suspendUI
+{
+	mScrollView.scrollEnabled=NO;
+}
+
+-(void)unsuspendUI
+{
+	mScrollView.scrollEnabled=YES;
+}
+
 
 #pragma mark -
 #pragma mark Properties

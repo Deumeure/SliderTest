@@ -206,10 +206,21 @@
 
 -(void)sliderViewControllerFreeMemory:(SliderViewController*)pController
 {
-
+	
 	NSLog(@"***********RTHJK");
+	
+	[pController suspendUI];
+	
+	[mPageLoadingQueue cancelAllOperations];
+	[mPageLoadingQueue waitUntilAllOperationsAreFinished];
+	
+
+	
+	
 	[mLoader closePDF];
 	[mLoader openPDF];
+	
+		[pController unsuspendUI];
 }
  
  

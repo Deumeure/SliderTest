@@ -52,6 +52,9 @@ typedef enum SliderPresentation
 -(void)setImage:(UIImage*)lImage forIndex:(uint)Index;
 
 
+-(void)suspendUI;
+-(void)unsuspendUI;
+
 @property(nonatomic,assign)id<SliderViewControllerDataSource> dataSource;
 @property(nonatomic,assign)id<SliderViewControllerDelegate> delegate;
 
@@ -61,6 +64,7 @@ typedef enum SliderPresentation
 @property(nonatomic,assign)SliderPresentation presentation ;
 @property(nonatomic,assign)CGRect singlePageBorders ;
 @property(nonatomic,assign)CGRect doublePageBorders ;
+
 
 @end
 

@@ -43,7 +43,7 @@
 	
 	
 	
-	SliderViewController *lController = [[SliderViewController alloc]initWithPageCount:556];
+	SliderViewController *lController = [[SliderViewController alloc]initWithPageCount:24];
 	lController.view.frame = window.bounds;
 	
 	
@@ -55,7 +55,7 @@
 	lController.delegate =lDelegate;
 	[self.window addSubview:lController.view];
 	
-	[lController gotoPage:90];
+	[lController gotoPage:1];
 	    [self.window makeKeyAndVisible];
     
     return YES;

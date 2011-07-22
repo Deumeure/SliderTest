@@ -79,8 +79,12 @@
 		
 //	}
 
-	[self performSelectorOnMainThread:@selector(raiseDidFinishEvent:) withObject:nil  waitUntilDone:YES];
+	if(![self isCancelled])
+		[self performSelectorOnMainThread:@selector(raiseDidFinishEvent:) withObject:nil  waitUntilDone:YES];
+	else 
+		mImage =nil;
 	
+
 	[pool release];
 	
 
@@ -98,8 +102,11 @@
 -(void)dealloc
 {
 
+	
 	[mPDFPage release];
-	[mImage release];
+	
+	if(![self isCancelled])
+		[mImage release];
 	
 	[super dealloc];
 	
