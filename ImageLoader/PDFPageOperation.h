@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PDFPage.h"
+#import "PDFPageRenderer.h"
 
 @protocol PDFPageOperationDelegate;
 
@@ -15,26 +15,29 @@
 @interface PDFPageOperation : NSOperation
 {
 
-	PDFPage* mPDFPage;
+	PDFPageRenderer* mPDFPage;
 	CGRect mOutRect;
 	UIImage* mImage;
 	
-	id<PDFPageOperationDelegate> mDelegate;
-	
+//	id<PDFPageOperationDelegate> mDelegate;
+//	
+	id mTarget;
+	SEL mSelector;
 }
 
--(id)initWithPDFPage:(PDFPage*)pPage outRect:(CGRect)pRect;
+-(id)initWithPDFPage:(PDFPageRenderer*)pPage outRect:(CGRect)pRect;
 
 
-@property(nonatomic,readonly)PDFPage* pdfPage;
-@property(nonatomic,assign)id<PDFPageOperationDelegate> delegate;
-
-@end
-
-
-
-@protocol PDFPageOperationDelegate
-
--(void)pdfFPageOperationDelegate:(PDFPageOperation*)pOperation image:(UIImage*)pImage fromPage:(PDFPage*)pPage;
+@property(nonatomic,readonly)PDFPageRenderer* pdfPage;
+@property(nonatomic,assign)id target;
+@property(nonatomic,assign)SEL selector;
 
 @end
+
+
+
+//@protocol PDFPageOperationDelegate
+//
+//-(void)pdfFPageOperationDelegate:(PDFPageOperation*)pOperation image:(UIImage*)pImage fromPage:(PDFPageRenderer*)pPage;
+//
+//@end

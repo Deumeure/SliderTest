@@ -9,16 +9,22 @@
 #import <UIKit/UIKit.h>
 
 
-@interface LinkVIew : UIButton 
+@interface LinkVIew : UIView 
 {
-	NSDictionary* mLinkInfos;
+    uint mLinkType;
+	NSDictionary* mLinkDatas;
 }
 
 - (id)initWithLinkInfos:(NSDictionary*)pLinkInfos ;
 
+
+-(void)show;
+-(void)hide;
 -(void)animate;
 
-@property(nonatomic,retain)NSDictionary* linkInfos;
 
+
+@property(nonatomic,retain)NSDictionary* linkDatas;
+@property(nonatomic,assign)uint linkType;
 
 @end

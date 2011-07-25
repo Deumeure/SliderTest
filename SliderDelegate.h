@@ -12,7 +12,7 @@
 #import "PDFPageOperation.h"
 #import "SliderViewController.h"
 
-@interface SliderDelegate : NSObject <SliderViewControllerDelegate,SliderViewControllerDataSource,PDFPageOperationDelegate>
+@interface SliderDelegate : NSObject <SliderViewControllerDelegate,SliderViewControllerDataSource>
 {
 
 	PDFLoader* mLoader;
@@ -20,7 +20,7 @@
 	
 	SliderViewController* mSliderController;
 	
-
+	
 }
 
 -(void)start;

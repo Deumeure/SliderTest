@@ -40,7 +40,6 @@
 	if(self)
 	{
 		mPageCount = pPageCount;
-	//	mRealPageCount = pPageCount;
 		mCurrentPage = 0;
 	
 		mLockObject = [[NSObject alloc]init];
@@ -79,6 +78,7 @@
 	//[self gotoPage:1];
 	
 	self.presentation = UIInterfaceOrientationIsPortrait(self.interfaceOrientation) ? sliderPresentationSinglePage	: sliderPresentationDoublePage;
+	
 	
 }
 
@@ -142,7 +142,7 @@
 
 -(void)gotoPage:(uint)pPageIndex
 {
-	
+
 	NSLog(@"------- GOTOPAGE");
 	
 	mCurrentPage = pPageIndex;
@@ -174,7 +174,7 @@
 	NSLog(@"Je recois l'image pour la %d",pIndex);
 	
 	UIScrollView* lScrollView  =(UIScrollView*) [mScrollView viewWithTag:pIndex];
-		
+    lScrollView.contentSize = CGSizeMake(lScrollView.frame.size.width, lScrollView.frame.size.height);
 		
 	if(lScrollView == nil)
 		return;
@@ -190,6 +190,14 @@
 //	
 //	NSLog(@"lImageView = %@",lImageView);
 	
+//   
+    lImageView.frame = CGRectMake(0, 0, lImage.size.width, lImage.size.height);
+    lImageView.center = lScrollView.superview.center;
+//    
+    lImageView.contentMode = UIViewContentModeCenter;
+    
+    NSLog(@"lImage.size %@",NSStringFromCGSize(lImage.size));
+    
 	lImageView.image = lImage;
 
 	
@@ -286,9 +294,12 @@
 	
 
 
+	//Le rectangle de l'image
+	CGSize lSize = CGSizeMake( self.view.bounds.size.width - (lBorders.origin.x+lBorders.size.width), self.view.bounds.size.height - (lBorders.origin.y+lBorders.size.height));
+	
 	//On demande l'image au datasource
 	if(self.presentation == sliderPresentationSinglePage)
-		[mDataSource sliderViewController:self cachePageAtIndex:pPageIndex];
+		[mDataSource sliderViewController:self renderPageAtIndex:pPageIndex size:lSize];
 	else {
 		
 		
@@ -297,7 +308,7 @@
 		NSLog(@"Je doit cache la page %d",pPageIndex);
 		NSLog(@"Je recoi %d   %d",lIndex.index1,lIndex.index2);
 		
-		[mDataSource sliderViewController:self cachePageAtIndex:lIndex.index1 andIndex:lIndex.index2];
+		[mDataSource sliderViewController:self renderDoublePageAtIndex:lIndex.index1 andIndex:lIndex.index2 size:lSize];
 	}
 
 	
@@ -468,7 +479,17 @@
 
 -(void)switchToDoublePage
 {
-	
+	//Toujours une page paire aest toujours a gauche
+    
+    PageIndex lIndexes = [self giveDoublePageIndexesFromSinglePageIndex:mCurrentPage];
+    
+    if(lIndexes.index1 %2 !=0 && lIndexes.index2!=1)
+    {
+        
+        mCurrentPage--;
+    }
+    
+    
 	NSLog(@"++++++ switchToDoublePage");
 	[self updateDatas];
 
@@ -546,7 +567,16 @@
 	{
 		return PageIndexMake(pIndex,0);
 	}
-	
+    
+//    //Si la page est impaire
+//    if(pIndex %2 == 0)
+//    {
+//        
+//        
+//        NSLog(@"******pIndex %d",pIndex);
+//        return PageIndexMake(pIndex-1, pIndex);
+//    }
+//    
 	return PageIndexMake(pIndex,pIndex +1);
 }
 

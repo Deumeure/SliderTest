@@ -8,12 +8,13 @@
 
 #import "PDFPageOperation.h"
 #import "CachingTool.h"
+#import "InvocationUtil.h"
 
 @implementation PDFPageOperation
 
 
 
--(id)initWithPDFPage:(PDFPage*)pPage outRect:(CGRect)pRect
+-(id)initWithPDFPage:(PDFPageRenderer*)pPage outRect:(CGRect)pRect
 {
 	
 	self = [super init];
@@ -90,8 +91,11 @@
 -(void)raiseDidFinishEvent:(NSMutableArray*)lArgs
 {
 
+	NSInvocation* lInvoke = createInvocation(mTarget,mSelector);
 	
-	[mDelegate pdfFPageOperationDelegate:self image:mImage fromPage:mPDFPage];
+	invoke3(lInvoke,self,mImage,mPDFPage);
+	
+	//[mDelegate pdfFPageOperationDelegate:self image:mImage fromPage:mPDFPage];
 	
 }
 
@@ -105,6 +109,7 @@
 	
 }
 
-@synthesize delegate = mDelegate;
+@synthesize target = mTarget;
+@synthesize selector = mSelector;
 @synthesize pdfPage  = mPDFPage;
 @end
