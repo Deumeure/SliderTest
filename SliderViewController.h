@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 @protocol SliderViewControllerDataSource;
 @protocol SliderViewControllerDelegate;
 
@@ -68,9 +69,10 @@ typedef enum SliderPresentation
 @protocol SliderViewControllerDataSource
 
 -(CGSize)sliderViewController:(SliderViewController*)pController sizeForOrientation:(uint)pOrientation;
--(void)sliderViewController:(SliderViewController*)pController cachePageAtIndex:(uint)pPageIndex;
--(void)sliderViewController:(SliderViewController*)pController cachePageAtIndex:(uint)pPageIndex andIndex:(uint)pPageIndex2;
--(void)sliderViewController:(SliderViewController*)pController renderPageAtIndex:(uint)pPageIndex;
+-(void)sliderViewController:(SliderViewController*)pController renderPageAtIndex:(uint)pPageIndex size:(CGSize)pSize;
+-(void)sliderViewController:(SliderViewController*)pController renderDoublePageAtIndex:(uint)pPageIndex andIndex:(uint)pPageIndex2 size:(CGSize)pSize;
+-(NSDictionary*)sliderViewController:(SliderViewController*)pController loadLinkInfoForPageAtIndex:(uint)pPageIndex;
+-(NSDictionary*)sliderViewController:(SliderViewController*)pController loadLinkInfoForDoublePageAtIndex:(uint)pPageIndex;
 
 @end
 

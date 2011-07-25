@@ -8,7 +8,7 @@
 
 #import "AppDelegate_iPad.h"
 #import "PDFLoader.h"
-#import "PDFPage.h"
+#import "PDFPageRenderer.h"
 #import "SliderViewController.h"
 #import "SliderDelegate.h"
 

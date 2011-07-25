@@ -17,7 +17,7 @@
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		D92EA17913D44C110026D8B1 /* SliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D92EA17813D44C110026D8B1 /* SliderViewController.m */; };
 		D92EA18B13D468480026D8B1 /* PDFLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D92EA18A13D468480026D8B1 /* PDFLoader.m */; };
-		D92EA1AD13D470F70026D8B1 /* PDFPage.m in Sources */ = {isa = PBXBuildFile; fileRef = D92EA1AC13D470F70026D8B1 /* PDFPage.m */; };
+		D92EA1AD13D470F70026D8B1 /* PDFPageRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = D92EA1AC13D470F70026D8B1 /* PDFPageRenderer.m */; };
 		D92EA1D613D483530026D8B1 /* GraphicsUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D92EA1D513D483530026D8B1 /* GraphicsUtils.m */; };
 		D92EA1FC13D487600026D8B1 /* mobile.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D92EA1FB13D487600026D8B1 /* mobile.pdf */; };
 		D98BE48013D704E500B35FCD /* PDFPageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D98BE47F13D704E500B35FCD /* PDFPageOperation.m */; };
@@ -27,6 +27,8 @@
 		D98F2DEA13D58AAF005BFC94 /* PDFImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D98F2DE413D58AAF005BFC94 /* PDFImageLoader.m */; };
 		D98F2DEB13D58AAF005BFC94 /* BlockingQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D98F2DE713D58AAF005BFC94 /* BlockingQueue.m */; };
 		D98F2DEC13D58AAF005BFC94 /* InvocationUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D98F2DE913D58AAF005BFC94 /* InvocationUtil.m */; };
+		D9B9C1D613DB228A00F9D700 /* PDFPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B9C1D513DB228A00F9D700 /* PDFPageView.m */; };
+		D9B9C1F813DB28BC00F9D700 /* LinkVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B9C1F713DB28BC00F9D700 /* LinkVIew.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,8 +49,8 @@
 		D92EA17813D44C110026D8B1 /* SliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderViewController.m; sourceTree = "<group>"; };
 		D92EA18913D468480026D8B1 /* PDFLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFLoader.h; sourceTree = "<group>"; };
 		D92EA18A13D468480026D8B1 /* PDFLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFLoader.m; sourceTree = "<group>"; };
-		D92EA1AB13D470F70026D8B1 /* PDFPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFPage.h; sourceTree = "<group>"; };
-		D92EA1AC13D470F70026D8B1 /* PDFPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFPage.m; sourceTree = "<group>"; };
+		D92EA1AB13D470F70026D8B1 /* PDFPageRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFPageRenderer.h; sourceTree = "<group>"; };
+		D92EA1AC13D470F70026D8B1 /* PDFPageRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFPageRenderer.m; sourceTree = "<group>"; };
 		D92EA1D413D483530026D8B1 /* GraphicsUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicsUtils.h; sourceTree = "<group>"; };
 		D92EA1D513D483530026D8B1 /* GraphicsUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphicsUtils.m; sourceTree = "<group>"; };
 		D92EA1FB13D487600026D8B1 /* mobile.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = mobile.pdf; sourceTree = "<group>"; };
@@ -67,6 +69,10 @@
 		D98F2DE713D58AAF005BFC94 /* BlockingQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockingQueue.m; sourceTree = "<group>"; };
 		D98F2DE813D58AAF005BFC94 /* InvocationUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvocationUtil.h; sourceTree = "<group>"; };
 		D98F2DE913D58AAF005BFC94 /* InvocationUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvocationUtil.m; sourceTree = "<group>"; };
+		D9B9C1D413DB228A00F9D700 /* PDFPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFPageView.h; sourceTree = "<group>"; };
+		D9B9C1D513DB228A00F9D700 /* PDFPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFPageView.m; sourceTree = "<group>"; };
+		D9B9C1F613DB28BC00F9D700 /* LinkVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; path = LinkVIew.h; sourceTree = "<group>"; };
+		D9B9C1F713DB28BC00F9D700 /* LinkVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkVIew.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +122,7 @@
 			children = (
 				D98F2DE213D58AAF005BFC94 /* ImageLoader */,
 				D92EA1D313D483460026D8B1 /* Utilities */,
-				D92EA1AE13D472430026D8B1 /* PDFPage */,
+				D92EA1AE13D472430026D8B1 /* PDF */,
 				8D1107310486CEB800E47090 /* testslider-Info.plist */,
 				D92EA17713D44C110026D8B1 /* SliderViewController.h */,
 				D92EA17813D44C110026D8B1 /* SliderViewController.m */,
@@ -162,13 +168,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D92EA1AE13D472430026D8B1 /* PDFPage */ = {
+		D92EA1AE13D472430026D8B1 /* PDF */ = {
 			isa = PBXGroup;
 			children = (
-				D92EA1AB13D470F70026D8B1 /* PDFPage.h */,
-				D92EA1AC13D470F70026D8B1 /* PDFPage.m */,
+				D92EA1AB13D470F70026D8B1 /* PDFPageRenderer.h */,
+				D92EA1AC13D470F70026D8B1 /* PDFPageRenderer.m */,
+				D9B9C1D413DB228A00F9D700 /* PDFPageView.h */,
+				D9B9C1D513DB228A00F9D700 /* PDFPageView.m */,
+				D9B9C1F613DB28BC00F9D700 /* LinkVIew.h */,
+				D9B9C1F713DB28BC00F9D700 /* LinkVIew.m */,
 			);
-			name = PDFPage;
+			name = PDF;
 			sourceTree = "<group>";
 		};
 		D92EA1D313D483460026D8B1 /* Utilities */ = {
@@ -274,7 +284,7 @@
 				2860E32E111B888700E27156 /* AppDelegate_iPad.m in Sources */,
 				D92EA17913D44C110026D8B1 /* SliderViewController.m in Sources */,
 				D92EA18B13D468480026D8B1 /* PDFLoader.m in Sources */,
-				D92EA1AD13D470F70026D8B1 /* PDFPage.m in Sources */,
+				D92EA1AD13D470F70026D8B1 /* PDFPageRenderer.m in Sources */,
 				D92EA1D613D483530026D8B1 /* GraphicsUtils.m in Sources */,
 				D98F28F813D57078005BFC94 /* SliderDelegate.m in Sources */,
 				D98F2DEA13D58AAF005BFC94 /* PDFImageLoader.m in Sources */,
@@ -283,6 +293,8 @@
 				D98BE48013D704E500B35FCD /* PDFPageOperation.m in Sources */,
 				D98BE60213D72B7900B35FCD /* CachingTool.m in Sources */,
 				D98BE60513D72F6000B35FCD /* NSFileUtility.m in Sources */,
+				D9B9C1D613DB228A00F9D700 /* PDFPageView.m in Sources */,
+				D9B9C1F813DB28BC00F9D700 /* LinkVIew.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

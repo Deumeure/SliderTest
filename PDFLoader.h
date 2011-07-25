@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PDFPage.h"
+#import "PDFPageRenderer.h"
 
 @interface PDFLoader : NSObject
 {
@@ -23,8 +23,8 @@
 -(void)openPDF;
 -(void)closePDF;
 
--(PDFPage*)pageAtIndex:(uint)pPageIndex;
--(PDFPage*)doublePageAtIndex:(uint)pPageIndex andIndex:(uint)pPageIndex2;
+-(PDFPageRenderer*)pageAtIndex:(uint)pPageIndex;
+-(PDFPageRenderer*)doublePageAtIndex:(uint)pPageIndex andIndex:(uint)pPageIndex2;
 
 @property(nonatomic,readonly)uint pageCount;
 

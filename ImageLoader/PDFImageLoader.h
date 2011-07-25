@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "BlockingQueue.h"
-#import "PDFPage.h"
+#import "PDFPageRenderer.h"
 
 
 @protocol PDFImageLoaderDelegate;
@@ -30,7 +30,7 @@
 -(void)start;
 
 //Ajoute une image à la file d'attente
--(void)loadImageForPage:(PDFPage*)pPage outRect:(CGRect)pRect;
+-(void)loadImageForPage:(PDFPageRenderer*)pPage outRect:(CGRect)pRect;
 
 
 @property(assign)id<PDFImageLoaderDelegate> delegate;
@@ -40,6 +40,6 @@
 
 @protocol PDFImageLoaderDelegate
 
--(void)pdfImageLoader:(PDFImageLoader*)pLoader image:(UIImage*)pImage fromPage:(PDFPage*)pPage;
+-(void)pdfImageLoader:(PDFImageLoader*)pLoader image:(UIImage*)pImage fromPage:(PDFPageRenderer*)pPage;
 
 @end

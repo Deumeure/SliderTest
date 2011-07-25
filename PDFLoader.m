@@ -41,18 +41,18 @@
 	[super dealloc];
 }
 
--(PDFPage*)pageAtIndex:(uint)pPageIndex
+-(PDFPageRenderer*)pageAtIndex:(uint)pPageIndex
 {
 	CGPDFPageRef page = CGPDFDocumentGetPage(mPDF, pPageIndex );
 	
 	//[(id)page autorelease];
-	return [[[PDFPage alloc]initWithPDFPage:page pageIndex:pPageIndex] autorelease];
+	return [[[PDFPageRenderer alloc]initWithPDFPage:page pageIndex:pPageIndex] autorelease];
 }
 
 
 
 
--(PDFPage*)doublePageAtIndex:(uint)pPageIndex andIndex:(uint)pPageIndex2
+-(PDFPageRenderer*)doublePageAtIndex:(uint)pPageIndex andIndex:(uint)pPageIndex2
 {
 	
 //	uint lIndex1 = 0;
@@ -90,7 +90,7 @@
 	
 	
 	
-	return [[[PDFPage alloc]initWithPDFPage:lPage1 pageIndex:pPageIndex PDFPage2:lPage2 pageIndex2:pPageIndex2] autorelease];
+	return [[[PDFPageRenderer alloc]initWithPDFPage:lPage1 pageIndex:pPageIndex PDFPage2:lPage2 pageIndex2:pPageIndex2] autorelease];
 }
 
 

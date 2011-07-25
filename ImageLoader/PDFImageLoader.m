@@ -56,7 +56,7 @@
 {
 	
 	UIImage* lImage =(UIImage*)[lArgs objectAtIndex:1];
-	PDFPage* lPage =(PDFPage*)[lArgs objectAtIndex:0];
+	PDFPageRenderer* lPage =(PDFPageRenderer*)[lArgs objectAtIndex:0];
 	
 	//[lArgs removeAllObjects];
 	
@@ -74,7 +74,7 @@
 
 	//On récupère les arguments
 		
-	PDFPage* lPage =(PDFPage*)[pArgs objectAtIndex:0];
+	PDFPageRenderer* lPage =(PDFPageRenderer*)[pArgs objectAtIndex:0];
 	NSString* lKey =(NSString*)[pArgs objectAtIndex:1];
 		
 	CGRect lRect = CGRectFromString(lKey);
@@ -106,7 +106,7 @@
 }
 
 //Ajoute une image à la file d'attente
--(void)loadImageForPage:(PDFPage*)pPage outRect:(CGRect)pRect
+-(void)loadImageForPage:(PDFPageRenderer*)pPage outRect:(CGRect)pRect
 {
 
 		NSArray* lArray =[NSArray arrayWithObjects:pPage,NSStringFromCGRect(pRect),nil];

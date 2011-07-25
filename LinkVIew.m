@@ -18,7 +18,9 @@
     self = [super init];
     if (self) 
 	{
-        self.linkInfos = pLinkInfos;
+       
+        mLinkType  = [[pLinkInfos objectForKey:@"type"]intValue];
+        mLinkDatas =[pLinkInfos retain];
     }
     return self;
 }
@@ -31,15 +33,59 @@
 }
 */
 
-- (void)dealloc {
+- (void)dealloc 
+{
+    [mLinkDatas release];
     [super dealloc];
 }
 
+#pragma mark -
+#pragma mark Animation functions
+
+-(void)show
+{
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:1.0f];
+
+    self.alpha = 1.0f;
+    
+    [UIView commitAnimations];
+}
+
+
+-(void)hide
+{
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:1.0f];
+ 
+    self.alpha = 0.0f;
+    
+    [UIView commitAnimations];
+}
 
 -(void)animate
 {
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:1.0f];
+
+    self.alpha = 1.0f;
+    
+    [UIView commitAnimations];
+    
+    
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:1.0f];
+    [UIView setAnimationDelay:1.0f];
+    self.alpha = 0.0f;
+    
+    [UIView commitAnimations];
 }
 
-@synthesize linkInfos = mLinkInfos;
+
+
+
+@synthesize linkDatas = mLinkDatas;
+@synthesize linkType = mLinkType;
 
 @end
+
