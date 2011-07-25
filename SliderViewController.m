@@ -7,7 +7,7 @@
 //
 
 #import "SliderViewController.h"
-
+#import "PDFPageView.h"
 
 @interface SliderViewController (Private)
 
@@ -173,15 +173,15 @@
 		
 	NSLog(@"Je recois l'image pour la %d",pIndex);
 	
-	UIScrollView* lScrollView  =(UIScrollView*) [mScrollView viewWithTag:pIndex];
+	PDFPageView* lScrollView  =(PDFPageView*) [mScrollView viewWithTag:pIndex];
     lScrollView.contentSize = CGSizeMake(lScrollView.frame.size.width, lScrollView.frame.size.height);
 		
 	if(lScrollView == nil)
 		return;
 	
-	UIImageView* lImageView = (UIImageView*)[lScrollView viewWithTag:1851];
-	UIActivityIndicatorView* lIndicator =[lImageView viewWithTag:1826];
-	[lIndicator stopAnimating];
+//	UIImageView* lImageView = (UIImageView*)[lScrollView viewWithTag:1851];
+//	UIActivityIndicatorView* lIndicator =[lImageView viewWithTag:1826];
+//	[lIndicator stopAnimating];
 	//
 //	if([lImageView class] [])
 //	NSLog(@"set image for page : %d",pIndex);
@@ -191,14 +191,16 @@
 //	NSLog(@"lImageView = %@",lImageView);
 	
 //   
-    lImageView.frame = CGRectMake(0, 0, lImage.size.width, lImage.size.height);
-    lImageView.center = lScrollView.superview.center;
+//    lImageView.frame = CGRectMake(0, 0, lImage.size.width, lImage.size.height);
+//    lImageView.center = lScrollView.superview.center;
+////    
+//    lImageView.contentMode = UIViewContentModeCenter;
 //    
-    lImageView.contentMode = UIViewContentModeCenter;
+//    NSLog(@"lImage.size %@",NSStringFromCGSize(lImage.size));
     
-    NSLog(@"lImage.size %@",NSStringFromCGSize(lImage.size));
+	
     
-	lImageView.image = lImage;
+    lScrollView.image = lImage;
 
 	
 }
@@ -219,7 +221,7 @@
 		
 		//On cherche la srollView a l'index
 		
-		UIScrollView* lScrollView  =(UIScrollView*) [mScrollView viewWithTag:pPageIndex];
+		PDFPageView* lScrollView  =(PDFPageView*) [mScrollView viewWithTag:pPageIndex];
 		
 		//Déja uncache ?? on quitte
 		
@@ -244,7 +246,7 @@
 		return;
 	
 	//On cherche la srollView a l'index
-	UIScrollView* lScrollView  =(UIScrollView*) [mScrollView viewWithTag:pPageIndex];
+	PDFPageView* lScrollView  =(PDFPageView*) [mScrollView viewWithTag:pPageIndex];
 	
 
 	//Déja cache ?? on quitte
@@ -259,41 +261,51 @@
 	uint lRealPageIndex = [self getRealPageIndex:pPageIndex];
 		
 	//On créé la scrollview
-	lScrollView = [[[UIScrollView alloc]initWithFrame:CGRectMake(self.view.bounds.size.width * (lRealPageIndex-1), 0, self.view.bounds.size.width, self.view.bounds.size.height)] autorelease];
-	lScrollView.tag = pPageIndex;
+//	lScrollView = [[[UIScrollView alloc]initWithFrame:CGRectMake(self.view.bounds.size.width * (lRealPageIndex-1), 0, self.view.bounds.size.width, self.view.bounds.size.height)] autorelease];
+//	lScrollView.tag = pPageIndex;
+//	
+//	//On créé  l' imageView
+//	UIImageView* lImageView = [[[UIImageView alloc]initWithFrame:CGRectMake(0,0, 768, 1024)] autorelease];
+//	lImageView.tag = 1851;
+//	lImageView.backgroundColor  = [UIColor yellowColor];
+//	
+//	
+//	//On met la frame en fonction des bordures
+//	CGRect lBorders = self.presentation == sliderPresentationSinglePage  ? self.singlePageBorders : self.doublePageBorders  ;
+//	CGRect lRect = CGRectMake(lBorders.origin.x,lBorders.origin.y , self.view.bounds.size.width - (lBorders.origin.x+lBorders.size.width), self.view.bounds.size.height - (lBorders.origin.y+lBorders.size.height));
+//
+//	lImageView.frame =lRect;
+//
+//	
+//	UIActivityIndicatorView* lIndicator  =[[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+//	lIndicator.tag = 1826;
+//	lIndicator.hidesWhenStopped = YES;
+//	
+//	lIndicator.center = lImageView.center;
+//	[lIndicator startAnimating];
+//	
+//	[lImageView addSubview:lIndicator];
+//	[lScrollView addSubview:lImageView];
 	
-	//On créé  l' imageView
-	UIImageView* lImageView = [[[UIImageView alloc]initWithFrame:CGRectMake(0,0, 768, 1024)] autorelease];
-	lImageView.tag = 1851;
-	lImageView.backgroundColor  = [UIColor yellowColor];
+    if(isDoublePage)
+    {
+        PageIndex lIndexes = [self giveDoublePageIndexesFromSinglePageIndex:pPageIndex];
+        lScrollView = [[[PDFPageView alloc]initWithDoublePageIndex:lIndexes.index1 andIndex:lIndexes.index2] autorelease];
+    }else
+	lScrollView = [[[PDFPageView alloc]initWithPageIndex:pPageIndex] autorelease];
 	
-	
-	//On met la frame en fonction des bordures
-	CGRect lBorders = self.presentation == sliderPresentationSinglePage  ? self.singlePageBorders : self.doublePageBorders  ;
-	CGRect lRect = CGRectMake(lBorders.origin.x,lBorders.origin.y , self.view.bounds.size.width - (lBorders.origin.x+lBorders.size.width), self.view.bounds.size.height - (lBorders.origin.y+lBorders.size.height));
-
-	lImageView.frame =lRect;
-
-	
-	UIActivityIndicatorView* lIndicator  =[[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-	lIndicator.tag = 1826;
-	lIndicator.hidesWhenStopped = YES;
-	
-	lIndicator.center = lImageView.center;
-	[lIndicator startAnimating];
-	
-	[lImageView addSubview:lIndicator];
-	[lScrollView addSubview:lImageView];
-	
-	
-	
+    
+    lScrollView.frame =CGRectMake(self.view.bounds.size.width * (lRealPageIndex-1), 0, self.view.bounds.size.width, self.view.bounds.size.height);
+    lScrollView.borders = self.presentation == sliderPresentationSinglePage  ? self.singlePageBorders : self.doublePageBorders  ;
+    lScrollView.tag =pPageIndex;
+    
 	//On l'ajoute
 	[mScrollView addSubview:lScrollView];
 	
 	NSLog(@"*ADD scrollview %d",lScrollView.tag);
 	
 
-
+    CGRect lBorders = self.presentation == sliderPresentationSinglePage  ? self.singlePageBorders : self.doublePageBorders;
 	//Le rectangle de l'image
 	CGSize lSize = CGSizeMake( self.view.bounds.size.width - (lBorders.origin.x+lBorders.size.width), self.view.bounds.size.height - (lBorders.origin.y+lBorders.size.height));
 	

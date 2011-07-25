@@ -252,40 +252,33 @@ CGAffineTransform rightPageFit(CGRect innerRect, CGRect outerRect) {
 		
 	}else {
 
-		CGPDFPageRef lPage = soloPage;
+        CGPDFPageRef lPage = soloPage;
 		
 		CGRect rect = CGPDFPageGetBoxRect(lPage, kCGPDFCropBox);
-	
+        
 		rect = CGRectIntegral(rect);
 		
+		CGSize cachePageSize = CGSizeMake(pImageRect.size.width, pImageRect.size.height);
 		
-		
-        CGRect lFitRect =CGRectIntegral( aspectFit2(rect, pImageRect));
-        
-        CGSize cachePageSize = CGSizeMake(pImageRect.size.width, pImageRect.size.height);
 		
 		CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
 		CGContextRef ctx = CGBitmapContextCreate(NULL, 
-										cachePageSize.width, 
-										cachePageSize.height, 
-										8,						/* bits per component*/
-										cachePageSize.width * 4, 	/* bytes per row */
-										colorSpace, 
-										kCGImageAlphaPremultipliedLast);
+                                                 cachePageSize.width, 
+                                                 cachePageSize.height, 
+                                                 8,						/* bits per component*/
+                                                 cachePageSize.width * 4, 	/* bytes per row */
+                                                 colorSpace, 
+                                                 kCGImageAlphaPremultipliedLast);
 		CGColorSpaceRelease(colorSpace);
-
-	
-        CGContextSetRGBFillColor(ctx, 255, 255, 255, 1);
-		CGContextFillRect(ctx, pImageRect);
         
         
 		
-//		CGContextSetRGBFillColor(ctx, 255, 255, 255, 1);
-//		CGContextFillRect(ctx, aspectFit2(rect, pImageRect));
-//	
-		CGAffineTransform transform = aspectFit(rect,lFitRect);
-//		
-//		
+		CGContextSetRGBFillColor(ctx, 255, 255, 255, 1);
+		CGContextFillRect(ctx, aspectFit2(rect, pImageRect));
+        
+		CGAffineTransform transform = aspectFit(rect,pImageRect);
+		
+		
 		CGContextConcatCTM(ctx, transform);
 		
 		CGContextDrawPDFPage(ctx, lPage);
@@ -296,6 +289,7 @@ CGAffineTransform rightPageFit(CGRect innerRect, CGRect outerRect) {
 		
 		CGImageRelease(lImageRef);
 		CGContextRelease(ctx);
+
 
 
 
