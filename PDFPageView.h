@@ -10,7 +10,7 @@
 
 @protocol PDFPageViewDelegate;
 
-@interface PDFPageView : UIScrollView 
+@interface PDFPageView : UIScrollView <UIScrollViewDelegate >
 {
 	UIImageView* mImageView;
 
@@ -38,7 +38,8 @@
 
 @property(nonatomic,retain)UIImage* image;
 @property(nonatomic,assign)CGRect borders;
-@property(nonatomic,assign)id<PDFPageViewDelegate> delegate;
+@property(nonatomic,assign)id<PDFPageViewDelegate> pdfpagedelegate;
+
 @end
 
 

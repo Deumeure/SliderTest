@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "PDFPageView.h"
 
 @protocol SliderViewControllerDataSource;
 @protocol SliderViewControllerDelegate;
@@ -20,7 +20,7 @@ typedef enum SliderPresentation
 	
 } SliderPresentation;
 
-@interface SliderViewController : UIViewController
+@interface SliderViewController : UIViewController<PDFPageViewDelegate>
 {
 	@private
 	

@@ -7,7 +7,7 @@
 //
 
 #import "SliderViewController.h"
-#import "PDFPageView.h"
+
 
 @interface SliderViewController (Private)
 
@@ -269,7 +269,7 @@
         lScrollView = [[[PDFPageView alloc]initWithDoublePageIndex:lIndexes.index1 andIndex:lIndexes.index2] autorelease];
     }else
 	lScrollView = [[[PDFPageView alloc]initWithPageIndex:pPageIndex] autorelease];
-	
+	lScrollView.pdfpagedelegate=self;
     
     lScrollView.frame =CGRectMake(self.view.bounds.size.width * (lRealPageIndex-1), 0, self.view.bounds.size.width, self.view.bounds.size.height);
     lScrollView.borders = self.presentation == sliderPresentationSinglePage  ? self.singlePageBorders : self.doublePageBorders  ;
@@ -375,40 +375,6 @@
     [self pageDidShow];
 }
 
--(void)pageDidHide
-{
-     [mLinkAnimationTimer release];
-    [mLinkAnimationTimer invalidate];
-    mLinkAnimationTimer= nil;
-    
-    PDFPageView* lPageHidden = (PDFPageView*)[mScrollView viewWithTag:mCurrentPage];
-    [lPageHidden pageDidHide];
-    
-  
-}
-
-
--(void)pageDidShow
-{
- 
-    [mLinkAnimationTimer release];
-    [mLinkAnimationTimer invalidate];
-     mLinkAnimationTimer= nil;
-    
-    mLinkAnimationTimer = [[NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(showLinkFireMethod:) userInfo:[NSNumber numberWithInt:mCurrentPage] repeats:NO] retain];
-}
-
-- (void)showLinkFireMethod:(NSTimer*)theTimer
-{
-    NSLog(@"showLinkFireMethod");
-    PDFPageView* lPageShown = (PDFPageView*)[mScrollView viewWithTag:[theTimer.userInfo intValue]];
-    [lPageShown pageDidShow];
-    
-     NSLog(@"EndshowLinkFireMethod");
-    
-    [mLinkAnimationTimer release];
-    mLinkAnimationTimer = nil;
-}
 
 //Page à la page précédente
 -(void)pageMinus
@@ -470,6 +436,40 @@
     //On prévient la page qu'elle est affichée
     [self pageDidShow];
     
+}
+-(void)pageDidHide
+{
+    [mLinkAnimationTimer release];
+    [mLinkAnimationTimer invalidate];
+    mLinkAnimationTimer= nil;
+    
+    PDFPageView* lPageHidden = (PDFPageView*)[mScrollView viewWithTag:mCurrentPage];
+    [lPageHidden pageDidHide];
+    
+    
+}
+
+
+-(void)pageDidShow
+{
+    
+    [mLinkAnimationTimer release];
+    [mLinkAnimationTimer invalidate];
+    mLinkAnimationTimer= nil;
+    
+    mLinkAnimationTimer = [[NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(showLinkFireMethod:) userInfo:[NSNumber numberWithInt:mCurrentPage] repeats:NO] retain];
+}
+
+- (void)showLinkFireMethod:(NSTimer*)theTimer
+{
+    NSLog(@"showLinkFireMethod");
+    PDFPageView* lPageShown = (PDFPageView*)[mScrollView viewWithTag:[theTimer.userInfo intValue]];
+    [lPageShown pageDidShow];
+    
+    NSLog(@"EndshowLinkFireMethod");
+    
+    [mLinkAnimationTimer release];
+    mLinkAnimationTimer = nil;
 }
 
 
@@ -596,6 +596,18 @@
 //	NSLog(@"mCurrentPage %d",mCurrentPage);
 }
 
+
+#pragma mark-
+#pragma PDFPageView delegate
+
+-(void)pdfPageView:(PDFPageView*)pSender linkDidSelectWithType:(uint)pType andDatas:(NSString*)pLinkDatas
+{
+    
+}
+-(void)pdfPageView:(PDFPageView*)pSender zoomDidBeginWithScale:(CGFloat)pScale
+{
+    
+}
 
 #pragma mark -
 #pragma mark Paging utils functions

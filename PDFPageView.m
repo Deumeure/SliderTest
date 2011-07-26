@@ -62,6 +62,10 @@
     
     
     self.canCancelContentTouches = YES;
+    self.minimumZoomScale = 1.0f;
+    self.maximumZoomScale = 2;
+    self.delegate = self;
+    
     
     mImageView = [[UIImageView alloc]initWithFrame:self.bounds];
     self.backgroundColor = [UIColor yellowColor];
@@ -137,7 +141,31 @@
 {
     mHasToAnimate = NO;
 }
+#pragma mark-
+#pragma UIScrollView delegate
 
+- (void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(UIView *)view atScale:(float)scale 
+{
+
+	if (scale == self.minimumZoomScale) 
+        return;
+    
+    
+    self.zoomScale = 1.0f;
+    [mDelegate pdfPageView:self zoomDidBeginWithScale:scale];
+    
+    
+}
+
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
+    return mImageView;
+}
+
+- (void)scrollViewWillBeginZooming:(UIScrollView *)scrollView withView:(UIView *)view
+{
+    
+}
 
 #pragma mark-
 #pragma Maths functions
@@ -336,6 +364,6 @@
 
 @dynamic image;
 @synthesize borders = mBorders;
-@synthesize delegate = mDelegate;
+@synthesize pdfpagedelegate = mDelegate;
 
 @end
