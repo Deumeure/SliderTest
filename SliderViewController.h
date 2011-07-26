@@ -43,6 +43,8 @@ typedef enum SliderPresentation
 	CGRect mDoublePageBorders;
 	
 	
+    NSTimer* mLinkAnimationTimer;
+    
 	//uint mRealPageCount;
 	
 }

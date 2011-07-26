@@ -314,10 +314,11 @@
 	if(mCurrentPage == mPageCount)
 		return;
 	
-    //On prévient la page qu'elle n'est plus affichée
-    PDFPageView* lPageHidden = (PDFPageView*)[mScrollView viewWithTag:mCurrentPage];
-    [lPageHidden pageDidHide];
     
+    [self pageDidHide];
+    
+    //On prévient la page qu'elle n'est plus affichée
+
 	//TODO Ce code est assez pourri mais il fonctionne correctement....
 	//On decache la page la plus en arriere
 	if(self.presentation == sliderPresentationSinglePage)
@@ -370,10 +371,44 @@
 
     
     //On prévient la page qu'elle est affichée
-    PDFPageView* lPageShown = (PDFPageView*)[mScrollView viewWithTag:mCurrentPage];
-    [lPageShown pageDidShow];
+  
+    [self pageDidShow];
 }
 
+-(void)pageDidHide
+{
+     [mLinkAnimationTimer release];
+    [mLinkAnimationTimer invalidate];
+    mLinkAnimationTimer= nil;
+    
+    PDFPageView* lPageHidden = (PDFPageView*)[mScrollView viewWithTag:mCurrentPage];
+    [lPageHidden pageDidHide];
+    
+  
+}
+
+
+-(void)pageDidShow
+{
+ 
+    [mLinkAnimationTimer release];
+    [mLinkAnimationTimer invalidate];
+     mLinkAnimationTimer= nil;
+    
+    mLinkAnimationTimer = [[NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(showLinkFireMethod:) userInfo:[NSNumber numberWithInt:mCurrentPage] repeats:NO] retain];
+}
+
+- (void)showLinkFireMethod:(NSTimer*)theTimer
+{
+    NSLog(@"showLinkFireMethod");
+    PDFPageView* lPageShown = (PDFPageView*)[mScrollView viewWithTag:[theTimer.userInfo intValue]];
+    [lPageShown pageDidShow];
+    
+     NSLog(@"EndshowLinkFireMethod");
+    
+    [mLinkAnimationTimer release];
+    mLinkAnimationTimer = nil;
+}
 
 //Page à la page précédente
 -(void)pageMinus
@@ -383,8 +418,7 @@
 		return;
 	
     //On prévient la page qu'elle n'est plus affichée
-    PDFPageView* lPageHidden = (PDFPageView*)[mScrollView viewWithTag:mCurrentPage];
-    [lPageHidden pageDidHide];
+    [self pageDidHide];
     
     //TODO Ce code est assez pourri mais il fonctionne correctement....
 	//On decache la page la plus en avant
@@ -434,8 +468,7 @@
 	NSLog(@"page %d",mCurrentPage);
     
     //On prévient la page qu'elle est affichée
-    PDFPageView* lPageShown = (PDFPageView*)[mScrollView viewWithTag:mCurrentPage];
-    [lPageShown pageDidShow];
+    [self pageDidShow];
     
 }
 
