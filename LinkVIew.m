@@ -21,17 +21,21 @@
        
         mLinkType  = [[pLinkInfos objectForKey:@"type"]intValue];
         mLinkDatas =[pLinkInfos retain];
+        self.backgroundColor = [UIColor blackColor];
+        self.alpha = 0.0f;
+        
+
+        
+        
     }
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code.
-}
-*/
+
+
+
+
+
 
 - (void)dealloc 
 {
@@ -47,7 +51,7 @@
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:1.0f];
 
-    self.alpha = 1.0f;
+    self.alpha = 0.5f;
     
     [UIView commitAnimations];
 }
@@ -65,23 +69,25 @@
 
 -(void)animate
 {
-    [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:1.0f];
 
-    self.alpha = 1.0f;
-    
-    [UIView commitAnimations];
-    
-    
-    [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:1.0f];
-    [UIView setAnimationDelay:1.0f];
     self.alpha = 0.0f;
+    [UIView beginAnimations:@"ss" context:NULL];
+    [UIView setAnimationDuration:0.5f];
+    [UIView setAnimationDelegate:self];
+    [UIView setAnimationDidStopSelector:@selector(animationDidStop:finished:context:)];
+    
+    self.alpha = 0.5f;
     
     [UIView commitAnimations];
+    
+    
+ 
 }
 
-
+- (void)animationDidStop:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context
+{
+    [self hide];
+}
 
 
 @synthesize linkDatas = mLinkDatas;

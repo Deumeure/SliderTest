@@ -30,24 +30,15 @@
 {	
 	
 	
-//	//La page 1 est toujours PAIR
-//	if(PAIR(pPageIndex))
-//	{
-		mPageIndex= pPageIndex;
-		mPDFPage = 	CGPDFPageRetain(pPage);
+
+    mPageIndex= pPageIndex;
+    mPDFPage = 	CGPDFPageRetain(pPage);
 
 		
-		mPageIndex2= pPageIndex2;
-		mPDFPage2 = 	CGPDFPageRetain(pPage2);
+    mPageIndex2= pPageIndex2;
+    mPDFPage2 = 	CGPDFPageRetain(pPage2);
 		
-//	}else {
-//		mPageIndex2= pPageIndex;
-//		mPDFPage2 = 	CGPDFPageRetain(pPage);
-//		
-//		
-//		mPageIndex= pPageIndex2;
-//		mPDFPage = 	CGPDFPageRetain(pPage2);
-//	}
+
 
 	mDoublePage = YES;
 	
@@ -62,27 +53,7 @@
 //Renvoi l'index valide en cas de solopage
 #define soloIndex (mPageIndex ==0 ? mPageIndex2	: mPageIndex)
 
-//-(CGSize)originaleSize
-//{
-//	CGSize lSize = CGSizeZero;
-//	
-//	if(!self.isSinglePage)
-//	{
-//		CGRect lRect  = CGPDFPageGetBoxRect(mPDFPage, kCGPDFCropBox);
-//		
-//		lSize = CGSizeMake(lRect.size.width*2, lRect.size.height*2);
-//		
-//	}else {
-//		
-//		CGRect lRect  = CGPDFPageGetBoxRect(soloPage, kCGPDFCropBox);
-//		
-//		lSize = CGSizeMake(lRect.size.width, lRect.size.height);
-//		
-//	}
-//
-//	
-//	return lSize;
-//}
+
 
 
 CGAffineTransform aspectFit(CGRect innerRect, CGRect outerRect) {
@@ -187,9 +158,9 @@ CGAffineTransform rightPageFit(CGRect innerRect, CGRect outerRect) {
 
 		//CGContextGetCTM(<#CGContextRef c#>)
 		CGContextSetRGBFillColor(ctx, 0, 0, 255, 1);
-		CGContextFillRect(ctx, pImageRect);
-        
-        
+//		CGContextFillRect(ctx, pImageRect);
+//        
+//        
         
 		CGContextSaveGState(ctx);
 		

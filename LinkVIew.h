@@ -13,6 +13,8 @@
 {
     uint mLinkType;
 	NSDictionary* mLinkDatas;
+    
+ 
 }
 
 - (id)initWithLinkInfos:(NSDictionary*)pLinkInfos ;
@@ -21,6 +23,7 @@
 -(void)show;
 -(void)hide;
 -(void)animate;
+
 
 
 

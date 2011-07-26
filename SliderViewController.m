@@ -44,7 +44,6 @@
 	
 		mLockObject = [[NSObject alloc]init];
 		
-
 	}
 	
 		
@@ -78,7 +77,8 @@
 	//[self gotoPage:1];
 	
 	self.presentation = UIInterfaceOrientationIsPortrait(self.interfaceOrientation) ? sliderPresentationSinglePage	: sliderPresentationDoublePage;
-	
+	mScrollView.bounces=NO;
+
 	
 }
 
@@ -260,32 +260,8 @@
 	//On cherche le "vrai" index de page pour placer la scrollbar
 	uint lRealPageIndex = [self getRealPageIndex:pPageIndex];
 		
-	//On créé la scrollview
-//	lScrollView = [[[UIScrollView alloc]initWithFrame:CGRectMake(self.view.bounds.size.width * (lRealPageIndex-1), 0, self.view.bounds.size.width, self.view.bounds.size.height)] autorelease];
-//	lScrollView.tag = pPageIndex;
-//	
-//	//On créé  l' imageView
-//	UIImageView* lImageView = [[[UIImageView alloc]initWithFrame:CGRectMake(0,0, 768, 1024)] autorelease];
-//	lImageView.tag = 1851;
-//	lImageView.backgroundColor  = [UIColor yellowColor];
-//	
-//	
-//	//On met la frame en fonction des bordures
-//	CGRect lBorders = self.presentation == sliderPresentationSinglePage  ? self.singlePageBorders : self.doublePageBorders  ;
-//	CGRect lRect = CGRectMake(lBorders.origin.x,lBorders.origin.y , self.view.bounds.size.width - (lBorders.origin.x+lBorders.size.width), self.view.bounds.size.height - (lBorders.origin.y+lBorders.size.height));
-//
-//	lImageView.frame =lRect;
-//
-//	
-//	UIActivityIndicatorView* lIndicator  =[[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-//	lIndicator.tag = 1826;
-//	lIndicator.hidesWhenStopped = YES;
-//	
-//	lIndicator.center = lImageView.center;
-//	[lIndicator startAnimating];
-//	
-//	[lImageView addSubview:lIndicator];
-//	[lScrollView addSubview:lImageView];
+	//On créé la PDFPageView
+
 	
     if(isDoublePage)
     {
@@ -322,7 +298,10 @@
 		
 		[mDataSource sliderViewController:self renderDoublePageAtIndex:lIndex.index1 andIndex:lIndex.index2 size:lSize];
 	}
-
+    
+    
+  
+    
 	
 }
 
@@ -335,6 +314,10 @@
 	if(mCurrentPage == mPageCount)
 		return;
 	
+    //On prévient la page qu'elle n'est plus affichée
+    PDFPageView* lPageHidden = (PDFPageView*)[mScrollView viewWithTag:mCurrentPage];
+    [lPageHidden pageDidHide];
+    
 	//TODO Ce code est assez pourri mais il fonctionne correctement....
 	//On decache la page la plus en arriere
 	if(self.presentation == sliderPresentationSinglePage)
@@ -384,6 +367,11 @@
 
 	
 	NSLog(@"page %d",mCurrentPage);
+
+    
+    //On prévient la page qu'elle est affichée
+    PDFPageView* lPageShown = (PDFPageView*)[mScrollView viewWithTag:mCurrentPage];
+    [lPageShown pageDidShow];
 }
 
 
@@ -394,7 +382,11 @@
 	if(mCurrentPage == 0)
 		return;
 	
-	//TODO Ce code est assez pourri mais il fonctionne correctement....
+    //On prévient la page qu'elle n'est plus affichée
+    PDFPageView* lPageHidden = (PDFPageView*)[mScrollView viewWithTag:mCurrentPage];
+    [lPageHidden pageDidHide];
+    
+    //TODO Ce code est assez pourri mais il fonctionne correctement....
 	//On decache la page la plus en avant
 	if(self.presentation == sliderPresentationSinglePage)
 	{
@@ -440,6 +432,11 @@
 	
 
 	NSLog(@"page %d",mCurrentPage);
+    
+    //On prévient la page qu'elle est affichée
+    PDFPageView* lPageShown = (PDFPageView*)[mScrollView viewWithTag:mCurrentPage];
+    [lPageShown pageDidShow];
+    
 }
 
 
@@ -522,12 +519,19 @@
 	
 	uint lRealCurrentPage = [self getRealPageIndex:mCurrentPage];
 	
-	NSLog(@"lCalculatedCurrentPage %d",lCalculatedCurrentPage);
-	NSLog(@"lRealurrentPage %d",lRealCurrentPage);
-	
+//	NSLog(@"lCalculatedCurrentPage %d",lCalculatedCurrentPage);
+//	NSLog(@"lRealurrentPage %d",lRealCurrentPage);
+//	
 	float lkk =  (scrollView.contentOffset.x  / self.view.bounds.size.width +1.0f) -((int)scrollView.contentOffset.x  / self.view.bounds.size.width  +1);
 	
 
+    lkk = (lCalculatedCurrentPage * mScrollView.frame.size.width) -mScrollView.contentOffset.x ;
+    
+//	NSLog(@"");
+//	NSLog(@"");
+//	NSLog(@"");
+    
+	
 	
 	//Verifier que la page correspond a l'index de la double page histroire de pas faire tourner pour rien
 //	if(lCalculatedCurrentPage != lRealCurrentPage && isDoublePage)
@@ -536,9 +540,11 @@
 //			return;
 //	}
 
+    NSLog(@"kk %f",lkk);
+    
 	if (lRealCurrentPage > lCalculatedCurrentPage)
 	{
-		if(lkk >0.2f)
+		if(lkk <mScrollView.frame.size.width-100)
 			return;
 		
 		[self pageMinus];
